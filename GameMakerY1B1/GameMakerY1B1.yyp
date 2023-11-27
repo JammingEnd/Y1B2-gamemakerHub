@@ -39,7 +39,7 @@
     {"id":{"name":"evil_star","path":"sprites/evil_star/evil_star.yy",},},
     {"id":{"name":"BasicFont","path":"fonts/BasicFont/BasicFont.yy",},},
     {"id":{"name":"Spr_RedBox","path":"sprites/Spr_RedBox/Spr_RedBox.yy",},},
-    {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
+    {"id":{"name":"spr_Shamek","path":"sprites/spr_Shamek/spr_Shamek.yy",},},
     {"id":{"name":"obj_player_shamek","path":"objects/obj_player_shamek/obj_player_shamek.yy",},},
     {"id":{"name":"Obj_TextDisplay","path":"objects/Obj_TextDisplay/Obj_TextDisplay.yy",},},
     {"id":{"name":"Obj_RedBoxObj","path":"objects/Obj_RedBoxObj/Obj_RedBoxObj.yy",},},
