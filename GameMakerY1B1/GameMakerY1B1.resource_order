@@ -17,8 +17,11 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
-    {"name":"obj_player_shamek","order":2,"path":"objects/obj_player_shamek/obj_player_shamek.yy",},
+
+    {"name":"spr_bigmoma","order":1,"path":"sprites/spr_bigmoma/spr_bigmoma.yy",},
+    {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
+    {"name":"evil_star","order":3,"path":"sprites/evil_star/evil_star.yy",},
+
     {"name":"Obj_TextDisplay","order":1,"path":"objects/Obj_TextDisplay/Obj_TextDisplay.yy",},
   ],
 }

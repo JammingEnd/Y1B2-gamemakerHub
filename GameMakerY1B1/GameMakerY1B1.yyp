@@ -34,6 +34,9 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"spr_bigmoma","path":"sprites/spr_bigmoma/spr_bigmoma.yy",},},
+    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
+    {"id":{"name":"evil_star","path":"sprites/evil_star/evil_star.yy",},},
     {"id":{"name":"BasicFont","path":"fonts/BasicFont/BasicFont.yy",},},
     {"id":{"name":"Spr_RedBox","path":"sprites/Spr_RedBox/Spr_RedBox.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
