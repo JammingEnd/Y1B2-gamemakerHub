@@ -21,5 +21,6 @@
     {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"evil_star","order":3,"path":"sprites/evil_star/evil_star.yy",},
     {"name":"Obj_TextDisplay","order":1,"path":"objects/Obj_TextDisplay/Obj_TextDisplay.yy",},
+    {"name":"obj_small_shamek","order":2,"path":"objects/obj_small_shamek/obj_small_shamek.yy",},
   ],
 }

@@ -42,6 +42,7 @@
     {"id":{"name":"spr_Shamek","path":"sprites/spr_Shamek/spr_Shamek.yy",},},
     {"id":{"name":"obj_player_shamek","path":"objects/obj_player_shamek/obj_player_shamek.yy",},},
     {"id":{"name":"Obj_TextDisplay","path":"objects/Obj_TextDisplay/Obj_TextDisplay.yy",},},
+    {"id":{"name":"obj_small_shamek","path":"objects/obj_small_shamek/obj_small_shamek.yy",},},
     {"id":{"name":"Obj_RedBoxObj","path":"objects/Obj_RedBoxObj/Obj_RedBoxObj.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
