@@ -35,6 +35,7 @@
   },
   "resources": [
     {"id":{"name":"spr_bigmoma","path":"sprites/spr_bigmoma/spr_bigmoma.yy",},},
+    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
     {"id":{"name":"BasicFont","path":"fonts/BasicFont/BasicFont.yy",},},
     {"id":{"name":"Spr_RedBox","path":"sprites/Spr_RedBox/Spr_RedBox.yy",},},
     {"id":{"name":"Obj_TextDisplay","path":"objects/Obj_TextDisplay/Obj_TextDisplay.yy",},},
