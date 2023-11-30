@@ -34,6 +34,7 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"spr_BlueBox","path":"sprites/spr_BlueBox/spr_BlueBox.yy",},},
     {"id":{"name":"BasicFont","path":"fonts/BasicFont/BasicFont.yy",},},
     {"id":{"name":"Spr_RedBox","path":"sprites/Spr_RedBox/Spr_RedBox.yy",},},
     {"id":{"name":"NPC_interface","path":"objects/NPC_interface/NPC_interface.yy",},},
