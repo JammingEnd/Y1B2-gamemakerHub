@@ -36,6 +36,7 @@
   "resources": [
     {"id":{"name":"BasicFont","path":"fonts/BasicFont/BasicFont.yy",},},
     {"id":{"name":"Spr_RedBox","path":"sprites/Spr_RedBox/Spr_RedBox.yy",},},
+    {"id":{"name":"NPC_interface","path":"objects/NPC_interface/NPC_interface.yy",},},
     {"id":{"name":"Obj_RedBoxObj","path":"objects/Obj_RedBoxObj/Obj_RedBoxObj.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
