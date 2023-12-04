@@ -1,7 +1,7 @@
 {
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
-  "name": "BasicFont",
+  "name": "fnt_basic_font",
   "AntiAlias": 0,
   "applyKerning": 0,
   "ascender": 20,

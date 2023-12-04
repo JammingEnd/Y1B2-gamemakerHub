@@ -15,11 +15,18 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Buttons","order":3,"path":"folders/Objects/Buttons.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"spr_BlueBox","order":1,"path":"sprites/spr_BlueBox/spr_BlueBox.yy",},
     {"name":"obj_player","order":2,"path":"objects/obj_player/obj_player.yy",},
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
+    {"name":"obj_controls","order":4,"path":"objects/obj_controls/obj_controls.yy",},
     {"name":"NPC_interface","order":1,"path":"objects/NPC_interface/NPC_interface.yy",},
+    {"name":"obj_exit_button","order":3,"path":"objects/obj_exit_button/obj_exit_button.yy",},
+    {"name":"obj_help_button","order":2,"path":"objects/obj_help_button/obj_help_button.yy",},
+    {"name":"obj_play_button","order":1,"path":"objects/obj_play_button/obj_play_button.yy",},
+    {"name":"spr_button","order":3,"path":"sprites/spr_button/spr_button.yy",},
   ],
 }
