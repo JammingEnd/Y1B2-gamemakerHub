@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Spr_LeftDown_corner_wall",
-    "path": "sprites/Spr_LeftDown_corner_wall/Spr_LeftDown_corner_wall.yy",
+    "name": "SPr_LeftDown_corner_withWall",
+    "path": "sprites/SPr_LeftDown_corner_withWall/SPr_LeftDown_corner_withWall.yy",
   },
   "spriteMaskId": null,
   "visible": true,
