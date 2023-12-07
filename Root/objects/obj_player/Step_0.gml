@@ -99,7 +99,7 @@ case 3: sprite_index = spr_player_idle_down; break;
 
 
 		
-	// Set my listener if Sequence is playing
+	// Setting pickup audio position if Sequence is playing
 	if (instance_exists(obj_control) && obj_control.sequenceState == seqState.playing)
 	{
 		var _camX = camera_get_view_x(view_camera[0])+floor(camera_get_view_width(view_camera[0])*0.5);
