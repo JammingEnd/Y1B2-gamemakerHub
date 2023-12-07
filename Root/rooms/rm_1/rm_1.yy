@@ -10,6 +10,8 @@
     {"name":"inst_5135563E","path":"rooms/rm_1/rm_1.yy",},
     {"name":"inst_2726804","path":"rooms/rm_1/rm_1.yy",},
     {"name":"inst_3416BEF1","path":"rooms/rm_1/rm_1.yy",},
+    {"name":"inst_404EA0E1","path":"rooms/rm_1/rm_1.yy",},
+    {"name":"inst_5CCFB313","path":"rooms/rm_1/rm_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -21,6 +23,8 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"TargetPos_y","path":"objects/obj_door/obj_door.yy",},"value":"200",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"TargetRoom","path":"objects/obj_door/obj_door.yy",},"value":"rm_2",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1800.0,"y":2300.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_404EA0E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_test","path":"objects/obj_npc_test/obj_npc_test.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3100.0,"y":1100.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5CCFB313","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-100.0,"y":-100.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4289045925,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
