@@ -1,13 +1,13 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "rm_2",
-  "creationCodeFile": "rooms/rm_2/RoomCreationCode.gml",
+  "name": "rm_forest",
+  "creationCodeFile": "rooms/rm_forest/RoomCreationCode.gml",
   "inheritCode": false,
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_2297DE88","path":"rooms/rm_2/rm_2.yy",},
+    {"name":"inst_2297DE88","path":"rooms/rm_forest/rm_forest.yy",},
   ],
   "isDnd": false,
   "layers": [
