@@ -58,11 +58,11 @@ if (vx == 0 && vy == 0)
 // If moving
 if (vx != 0 || vy != 0)
 {
-	if !collision_point(x+vx,y,obj_par_environment,true,true)
+	if !collision_point(x+vx,y,Obj_par_walls,true,true)
 	{
 		x += vx;
 	}
-	if !collision_point(x,y+vy,obj_par_environment,true,true)
+	if !collision_point(x,y+vy,Obj_par_walls,true,true)
 	{
 		y += vy;
 	}
