@@ -50,6 +50,7 @@
     {"id":{"name":"obj_button_par","path":"objects/obj_button_par/obj_button_par.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"scr_sequenceControl","path":"scripts/scr_sequenceControl/scr_sequenceControl.yy",},},
+    {"id":{"name":"Obj_par_walls","path":"objects/Obj_par_walls/Obj_par_walls.yy",},},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
     {"id":{"name":"obj_npc_test","path":"objects/obj_npc_test/obj_npc_test.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

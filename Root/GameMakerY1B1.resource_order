@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"Obj_par_walls","order":1,"path":"objects/Obj_par_walls/Obj_par_walls.yy",},
+  ],
 }

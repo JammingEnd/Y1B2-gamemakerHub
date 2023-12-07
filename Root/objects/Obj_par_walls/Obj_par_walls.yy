@@ -1,18 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_RightDown_Corner_Wall",
+  "name": "Obj_par_walls",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Walls",
-    "path": "folders/Objects/Walls.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
-  "parentObjectId": {
-    "name": "Obj_par_walls",
-    "path": "objects/Obj_par_walls/Obj_par_walls.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "Spr_rightDown_corner_wall",
-    "path": "sprites/Spr_rightDown_corner_wall/Spr_rightDown_corner_wall.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
