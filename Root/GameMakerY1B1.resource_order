@@ -1,6 +1,19 @@
 {
-  "FolderOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"Temp Objects","order":5,"path":"folders/Objects/Temp Objects.yy",},
+    {"name":"Walls","order":6,"path":"folders/Objects/Walls.yy",},
+    {"name":"Menu","order":1,"path":"folders/Sprites/Menu.yy",},
+    {"name":"Menu stuff","order":10,"path":"folders/Objects/Menu stuff.yy",},
+    {"name":"Menu Text","order":1,"path":"folders/Objects/Menu stuff/Menu Text.yy",},
+  ],
   "ResourceOrderSettings": [
-    {"name":"Obj_par_walls","order":1,"path":"objects/Obj_par_walls/Obj_par_walls.yy",},
+    {"name":"spr_menu","order":1,"path":"sprites/spr_menu/spr_menu.yy",},
+    {"name":"Obj_par_walls","order":7,"path":"objects/Obj_par_walls/Obj_par_walls.yy",},
+    {"name":"obj_player","order":3,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"obj_controls","order":9,"path":"objects/obj_controls/obj_controls.yy",},
+    {"name":"obj_settings","order":1,"path":"objects/obj_settings/obj_settings.yy",},
+    {"name":"NPC_interface","order":2,"path":"objects/NPC_interface/NPC_interface.yy",},
+    {"name":"obj_door","order":1,"path":"objects/obj_door/obj_door.yy",},
+    {"name":"spr_betterbutton","order":2,"path":"sprites/spr_betterbutton/spr_betterbutton.yy",},
   ],
 }

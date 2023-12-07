@@ -11,7 +11,7 @@
   ],
   "parent": {
     "name": "Buttons",
-    "path": "folders/Objects/Buttons.yy",
+    "path": "folders/Objects/Menu stuff/Buttons.yy",
   },
   "parentObjectId": {
     "name": "obj_button_par",
@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_button",
-    "path": "sprites/spr_button/spr_button.yy",
+    "name": "spr_betterbutton",
+    "path": "sprites/spr_betterbutton/spr_betterbutton.yy",
   },
   "spriteMaskId": null,
   "visible": true,
