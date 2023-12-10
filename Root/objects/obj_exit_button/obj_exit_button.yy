@@ -11,7 +11,7 @@
   ],
   "parent": {
     "name": "Buttons",
-    "path": "folders/Objects/Menu stuff/Buttons.yy",
+    "path": "folders/Objects/-Official/Menu stuff/Buttons.yy",
   },
   "parentObjectId": {
     "name": "obj_button_par",

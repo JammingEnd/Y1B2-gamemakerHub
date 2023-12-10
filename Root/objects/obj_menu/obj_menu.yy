@@ -14,7 +14,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Menu Text",
-    "path": "folders/Objects/Menu stuff/Menu Text.yy",
+    "path": "folders/Objects/-Official/Menu stuff/Menu Text.yy",
   },
   "parentObjectId": null,
   "persistent": false,

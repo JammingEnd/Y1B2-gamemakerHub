@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Walls",
-    "path": "folders/Sprites/Walls.yy",
+    "path": "folders/Sprites/Temp Sprites/Walls.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

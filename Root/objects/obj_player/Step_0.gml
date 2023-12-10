@@ -125,7 +125,6 @@ npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-550);
 show_debug_message("obj_player has found an NPC!");
 }
 if !nearbyNPC {
-show_debug_message("obj_player hasn't found anything");
 // Get rid of prompt
 scr_dismissPrompt(npcPrompt,0);
 }

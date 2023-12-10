@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "evironment sarah",
-    "path": "folders/Objects/evironment sarah.yy",
+    "name": "Building_walls_etc",
+    "path": "folders/Objects/-Official/Building_walls_etc.yy",
   },
   "parentObjectId": {
     "name": "Obj_par_walls",

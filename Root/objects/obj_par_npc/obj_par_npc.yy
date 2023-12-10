@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Temp Objects",
-    "path": "folders/Objects/Temp Objects.yy",
+    "path": "folders/Objects/Temp/Temp Objects.yy",
   },
   "parentObjectId": null,
   "persistent": false,

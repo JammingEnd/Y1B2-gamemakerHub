@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "environment sarah",
-    "path": "folders/Sprites/environment sarah.yy",
+    "name": "Fauna",
+    "path": "folders/Sprites/-Official/Fauna.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

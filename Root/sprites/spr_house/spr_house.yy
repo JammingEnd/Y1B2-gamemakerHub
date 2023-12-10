@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "environment sarah",
-    "path": "folders/Sprites/environment sarah.yy",
+    "name": "Buildings_walls_etc",
+    "path": "folders/Sprites/-Official/Buildings_walls_etc.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
