@@ -1,12 +1,12 @@
 {
   "FolderOrderSettings": [
+    {"name":"evironment sarah","order":12,"path":"folders/Objects/evironment sarah.yy",},
     {"name":"Menu stuff","order":10,"path":"folders/Objects/Menu stuff.yy",},
     {"name":"Menu Text","order":1,"path":"folders/Objects/Menu stuff/Menu Text.yy",},
     {"name":"Temp Objects","order":5,"path":"folders/Objects/Temp Objects.yy",},
     {"name":"Walls","order":6,"path":"folders/Objects/Walls.yy",},
-    {"name":"Menu","order":1,"path":"folders/Sprites/Menu.yy",},
     {"name":"environment sarah","order":3,"path":"folders/Sprites/environment sarah.yy",},
-    {"name":"evironment sarah","order":12,"path":"folders/Objects/evironment sarah.yy",},
+    {"name":"Menu","order":1,"path":"folders/Sprites/Menu.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_wall","order":3,"path":"objects/obj_wall/obj_wall.yy",},
@@ -24,5 +24,6 @@
     {"name":"obj_door","order":1,"path":"objects/obj_door/obj_door.yy",},
     {"name":"spr_betterbutton","order":2,"path":"sprites/spr_betterbutton/spr_betterbutton.yy",},
     {"name":"spr_npc","order":2,"path":"sprites/spr_npc/spr_npc.yy",},
+    {"name":"Font2","order":1,"path":"fonts/Font2/Font2.yy",},
   ],
 }
