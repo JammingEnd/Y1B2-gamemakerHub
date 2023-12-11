@@ -2,6 +2,7 @@
 
 // Game variables
 global.playerControl = true;
+
 //townBGMvolume = audio_sound_get_gain(snd_townBGM);
 //townAmbienceVolume = audio_sound_get_gain(snd_townAmbience);
 global.gameOver = false;
@@ -36,3 +37,4 @@ enum npcState
 	normal,
 	done,
 }
+
