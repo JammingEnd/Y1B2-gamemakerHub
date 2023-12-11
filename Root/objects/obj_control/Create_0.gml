@@ -17,7 +17,6 @@ enum playerState
 	carryIdle,
 	puttingDown,
 }
-	
 // Sequence states
 enum seqState
 {

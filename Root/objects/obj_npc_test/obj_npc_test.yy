@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Temp Objects",
-    "path": "folders/Objects/Temp/Temp Objects.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "parentObjectId": {
     "name": "obj_par_npc",
@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "random_which",
-    "path": "sprites/random_which/random_which.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

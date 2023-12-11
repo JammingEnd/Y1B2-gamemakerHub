@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Temp Objects",
-    "path": "folders/Objects/Temp/Temp Objects.yy",
+    "name": "GameMakerY1B1",
+    "path": "GameMakerY1B1.yyp",
   },
   "parentObjectId": null,
   "persistent": false,
