@@ -1,13 +1,16 @@
-/// @description Player movement, more
-
-// Check keys for movement
+// check keys for movement
 if (global.playerControl == true)
 {
-	moveRight = keyboard_check(vk_right);
-	moveUp = keyboard_check(vk_up);
-	moveLeft = keyboard_check(vk_left);
-	moveDown = keyboard_check(vk_down);
+moveRight = keyboard_check(vk_right);
+moveLeft = keyboard_check(vk_left);
+moveUp = keyboard_check(vk_up);
+moveDown = keyboard_check(vk_down);
 }
+
+// calculate movement
+vx = ((moveRight - moveLeft) * walkSpeed);
+vy = ((moveDown - moveUp) * walkSpeed);
+
 //trigger to prevent PC movement
 if (global.playerControl == false)
 {
@@ -46,10 +49,6 @@ if (running == false)
 	startDust = 0;
 }
 
-// Calculate movement
-vx = ((moveRight - moveLeft) * (walkSpeed+runSpeed) * (1-carryLimit));
-vy = ((moveDown - moveUp) * (walkSpeed+runSpeed) * (1-carryLimit));
-
 // If Idle
 if (vx == 0 && vy == 0)
 {
@@ -59,11 +58,11 @@ if (vx == 0 && vy == 0)
 // If moving
 if (vx != 0 || vy != 0)
 {
-	if !collision_point(x+vx,y,obj_par_environment,true,true)
+	if !collision_point(x+vx,y,Obj_par_walls,true,true)
 	{
 		x += vx;
 	}
-	if !collision_point(x,y+vy,obj_par_environment,true,true)
+	if !collision_point(x,y+vy,Obj_par_walls,true,true)
 	{
 		y += vy;
 	}
@@ -121,7 +120,8 @@ if nearbyNPC {
 // Pop up prompt
 if (npcPrompt == noone || npcPrompt == undefined) {
 }
-npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-250);
+//where the prompt pops up +debug message
+npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-550);
 show_debug_message("obj_player has found an NPC!");
 }
 if !nearbyNPC {

@@ -1,17 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_npc",
-  "eventList": [],
+  "name": "obj_npc_test",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"myText","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"OBAMNA\"",},
+  ],
   "parent": {
     "name": "Npc's",
     "path": "folders/Objects/-Official/Npc's.yy",
   },
   "parentObjectId": {
-    "name": "Obj_par_walls",
-    "path": "objects/Obj_par_walls/Obj_par_walls.yy",
+    "name": "obj_par_npc",
+    "path": "objects/obj_par_npc/obj_par_npc.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

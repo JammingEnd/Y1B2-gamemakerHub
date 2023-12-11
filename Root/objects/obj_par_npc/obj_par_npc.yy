@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "GameMakerY1B1",
-    "path": "GameMakerY1B1.yyp",
+    "name": "Npc's",
+    "path": "folders/Objects/-Official/Npc's.yy",
   },
   "parentObjectId": null,
   "persistent": false,

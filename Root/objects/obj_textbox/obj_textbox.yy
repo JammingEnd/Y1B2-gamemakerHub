@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Temp Objects",
-    "path": "folders/Objects/Temp/Temp Objects.yy",
+    "name": "Npc's",
+    "path": "folders/Objects/-Official/Npc's.yy",
   },
   "parentObjectId": null,
   "persistent": false,
