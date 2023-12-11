@@ -21,6 +21,7 @@
   "ResourceOrderSettings": [
     {"name":"random_which","order":1,"path":"sprites/random_which/random_which.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"Temp_player","order":3,"path":"objects/Temp_player/Temp_player.yy",},
     {"name":"spr_menu","order":1,"path":"sprites/spr_menu/spr_menu.yy",},
     {"name":"spr_BlueBox","order":6,"path":"sprites/spr_BlueBox/spr_BlueBox.yy",},
     {"name":"Obj_par_walls","order":6,"path":"objects/Obj_par_walls/Obj_par_walls.yy",},

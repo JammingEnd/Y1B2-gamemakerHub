@@ -62,6 +62,7 @@
     {"id":{"name":"Spr_Void_Wall","path":"sprites/Spr_Void_Wall/Spr_Void_Wall.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"scr_promptControl","path":"scripts/scr_promptControl/scr_promptControl.yy",},},
+    {"id":{"name":"Temp_player","path":"objects/Temp_player/Temp_player.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
     {"id":{"name":"spr_BlueBox","path":"sprites/spr_BlueBox/spr_BlueBox.yy",},},
     {"id":{"name":"spr_player_idle_left","path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},},
