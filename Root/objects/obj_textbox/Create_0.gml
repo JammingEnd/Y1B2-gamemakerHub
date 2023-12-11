@@ -21,16 +21,26 @@ txtb_img_spd = 6/60;
 //the text
 page = 0;
 page_number = 0;
-text[0] = "Hello.";
-text[1] = "I AM THE KING OF POLAND";
-text[2] = "I fucked your mom";
-text[3] = "WOOOOOO YEAHHHHHH.";
+text[0] = "I AM DEFEATED";
 text_length[0] = string_length(text[0]);
 draw_char = 0;
 text_spd = 1;
+textbox_x = 0;
+textbox_y = 0;
+accept_key = 0;
+txtb_spr_w =0;
+txtb_spr_h = 0;
 
 setup = false;
 
+//to make writing text easier IDKW writing this in script won't work
+function scr_text(_text){
+
+text[page_number] = _text;
+
+page_number++;
+
+}
 
 
 

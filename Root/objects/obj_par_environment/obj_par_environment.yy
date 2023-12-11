@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Starting screen buttons6",
-    "path": "Starting screen buttons6.yyp",
+    "name": "GameMakerY1B1",
+    "path": "GameMakerY1B1.yyp",
   },
   "parentObjectId": null,
   "persistent": false,

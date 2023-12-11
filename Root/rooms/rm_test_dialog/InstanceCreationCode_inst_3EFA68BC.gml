@@ -1,0 +1,3 @@
+scr_text("PLEASE WORK FOR THE LOVE OF GOD")
+scr_text("A A A A A A A A A A A A A A")
+scr_text("PLEASE WORK FOR THE LOVE OF GOD")

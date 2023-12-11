@@ -77,6 +77,6 @@ draw_sprite_ext(txtb_spr, txtb_img, textbox_x + text_x_offset[page],textbox_y, t
 
 
 //draw the text
-var _drawtext = string_copy(text[page], 1, draw_char);
+var _drawtext = string_copy(text[page], 1, round(draw_char));
 draw_text_ext(textbox_x + text_x_offset[page] + border, textbox_y + border, _drawtext, line_sep, line_width);
 

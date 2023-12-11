@@ -37,4 +37,3 @@ enum npcState
 	normal,
 	done,
 }
-
