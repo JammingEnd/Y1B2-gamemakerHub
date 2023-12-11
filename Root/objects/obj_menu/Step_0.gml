@@ -33,7 +33,7 @@ if accept_key {
 		case 1:
 		switch(pos){
 			//window size
-			case 0: break;
+			case 0: room_goto(rm_test_dialog) break;
 			//brightness
 			case 1: break;
 			//conreols

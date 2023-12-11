@@ -1,17 +1,36 @@
-/// @description Variables, setup
+/// @description Textbox properties
+depth = -9999;
 
-// Textbox variables
-textToShow = "I ran over a kid..."
-textWidth = 450;
-lineHeight = 28;
-global.playerControl = false;
-fadeMe = 0;
-fadeSpeed = 0.1;
-image_alpha = 0;
-sequenceToShow = noone;
+//textbox parameter
+textbox_width = 1735;
+textbox_height = 295;
 
-// Play UI sound
-//audio_play_sound(snd_pop01,1,0);
+//space between text & border
+border = 80;
+//space between lines
+line_sep =80;
+//Spacee befor creating a ne line of text
+line_width = textbox_width - border*2;
 
-// Dismiss any visible prompts
-scr_dismissPrompt(obj_prompt,0);
+//animate textbox background if any
+txtb_spr = spr_menu;
+txtb_img = 0;
+//set speed to (animation frame rate)/(game frame rate)
+txtb_img_spd = 6/60;
+
+//the text
+page = 0;
+page_number = 0;
+text[0] = "psst, I've got to tell you something very inportant.";
+text[1] = "DO NOT boil a lamb in it's mother's milk";
+text[2] = "It's a message passed down our generations. We do not know why but our ancestors passed down this message, but we have faith it's for good reason.";
+text[3] = "Don't dare think about doing it, it's said to end with everyone dead.";
+text_length[0] = string_length(text[0]);
+draw_char = 0;
+text_spd = 1;
+
+setup = false;
+
+
+
+

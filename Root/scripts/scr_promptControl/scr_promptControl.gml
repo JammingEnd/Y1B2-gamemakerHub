@@ -2,7 +2,7 @@ function scr_showPrompt(_object,_x,_y)
 {
 	if (instance_exists(_object))
 	{
-		if (!instance_exists(obj_textbox) && !instance_exists(obj_prompt))
+		if (!instance_exists(obj_textbox_old) && !instance_exists(obj_prompt))
 		{
 			if (obj_player.myState != playerState.puttingDown)
 			{

@@ -4,16 +4,13 @@
   "name": "obj_textbox",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":32,"eventType":5,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Npc's",
-    "path": "folders/Objects/-Official/Npc's.yy",
+    "name": "Menu Text",
+    "path": "folders/Objects/-Official/Menu stuff/Menu Text.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -31,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_button",
-    "path": "sprites/spr_button/spr_button.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -13,10 +13,10 @@ if (global.playerControl == true)
 		{
 				//Decide text to show
 				_text = nearbyNPC.myText;
-				if (!instance_exists(obj_textbox))
+				if (!instance_exists(obj_textbox_old))
 				{
 					//create text & text box & positioning
-					iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-400,-10000,obj_textbox);
+					iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-400,-10000,obj_textbox_old);
 					iii.textToShow = _text;
 					//remove player control
 					global.playerControl = false;
@@ -27,16 +27,16 @@ if (global.playerControl == true)
 		if (nearbyNPC.myState == npcState.done)
 		{
 			_text = nearbyNPC.itemTextDone;
-			if (!instance_exists(obj_textbox))
+			if (!instance_exists(obj_textbox_old))
 			{
-				iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-400,-10000,obj_textbox);
+				iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-400,-10000,obj_textbox_old);
 				iii.textToShow = _text;
 			}
 		}
 	}
 		
 	if (global.playerControl == true){
-		if (instance_exists(obj_textbox))
+		if (instance_exists(obj_textbox_old))
 				{
 					//add player control
 					global.playerControl = true;
