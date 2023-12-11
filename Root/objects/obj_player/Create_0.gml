@@ -1,6 +1,6 @@
 //Trackable Values
-trackable_trust = 0;
-trackable_time = 0;
+global.trackable_trust = 0;
+global.trackable_time = 0;
 
 
 //movement related

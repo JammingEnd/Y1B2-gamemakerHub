@@ -106,6 +106,7 @@
     {"id":{"name":"Spr_vertical_wall","path":"sprites/Spr_vertical_wall/Spr_vertical_wall.yy",},},
     {"id":{"name":"Spr_rightUp_corner_wall","path":"sprites/Spr_rightUp_corner_wall/Spr_rightUp_corner_wall.yy",},},
     {"id":{"name":"obj_house","path":"objects/obj_house/obj_house.yy",},},
+    {"id":{"name":"scr_utils","path":"scripts/scr_utils/scr_utils.yy",},},
     {"id":{"name":"Spr_LeftUp_corner_wall","path":"sprites/Spr_LeftUp_corner_wall/Spr_LeftUp_corner_wall.yy",},},
     {"id":{"name":"Obj_RIghtUp_Corner_wall","path":"objects/Obj_RIghtUp_Corner_wall/Obj_RIghtUp_Corner_wall.yy",},},
     {"id":{"name":"spr_font_basic","path":"sprites/spr_font_basic/spr_font_basic.yy",},},
