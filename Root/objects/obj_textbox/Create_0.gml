@@ -21,10 +21,10 @@ txtb_img_spd = 6/60;
 //the text
 page = 0;
 page_number = 0;
-text[0] = "psst, I've got to tell you something very inportant.";
-text[1] = "DO NOT boil a lamb in it's mother's milk";
-text[2] = "It's a message passed down our generations. We do not know why but our ancestors passed down this message, but we have faith it's for good reason.";
-text[3] = "Don't dare think about doing it, it's said to end with everyone dead.";
+text[0] = "Hello.";
+text[1] = "I AM THE KING OF POLAND";
+text[2] = "I fucked your mom";
+text[3] = "WOOOOOO YEAHHHHHH.";
 text_length[0] = string_length(text[0]);
 draw_char = 0;
 text_spd = 1;
