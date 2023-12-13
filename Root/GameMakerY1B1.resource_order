@@ -20,6 +20,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"random_which","order":1,"path":"sprites/random_which/random_which.yy",},
+    {"name":"Sprite37","order":1,"path":"sprites/Sprite37/Sprite37.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
     {"name":"spr_speak","order":4,"path":"sprites/spr_speak/spr_speak.yy",},
     {"name":"rm_test_dialog","order":2,"path":"rooms/rm_test_dialog/rm_test_dialog.yy",},
