@@ -1,7 +1,7 @@
-/// @description Animation, depth
+/// @description Insert description here
 text_id = "";
 
-// Change appearance with state
+// Change appearance with state (might use this in future)
 switch myState
 {
 	case npcState.normal:
@@ -28,3 +28,9 @@ switch myState
 	
 // Depth sorting
 depth = -y;
+
+
+
+
+
+

@@ -58,11 +58,11 @@ if (vx == 0 && vy == 0)
 // If moving
 if (vx != 0 || vy != 0)
 {
-	if !collision_point(x+vx,y,Obj_par_walls,true,true)
+	if !collision_point(x+vx,y,Obj_par_walls,true,true) && !collision_point(x+vx,y,obj_par_npc,true,true)
 	{
 		x += vx;
 	}
-	if !collision_point(x,y+vy,Obj_par_walls,true,true)
+	if !collision_point(x,y+vy,Obj_par_walls,true,true) && !collision_point(x,y+vy,obj_par_npc,true,true)
 	{
 		y += vy;
 	}
@@ -121,7 +121,7 @@ if nearbyNPC {
 if (npcPrompt == noone || npcPrompt == undefined) {
 }
 //where the prompt pops up +debug message
-npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-550);
+npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.sprite_height+80);
 show_debug_message("obj_player has found an NPC!");
 }
 if !nearbyNPC {

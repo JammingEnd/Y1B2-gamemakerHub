@@ -1,18 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_speak",
+  "name": "obj_npc_cat_angel",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu Text",
-    "path": "folders/Objects/-Official/Menu stuff/Menu Text.yy",
+    "name": "Npc's",
+    "path": "folders/Objects/-Official/Npc's.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_par_npc",
+    "path": "objects/obj_par_npc/obj_par_npc.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_speak",
-    "path": "sprites/spr_speak/spr_speak.yy",
+    "name": "spr_Cat_Angel",
+    "path": "sprites/spr_Cat_Angel/spr_Cat_Angel.yy",
   },
   "spriteMaskId": null,
   "visible": true,

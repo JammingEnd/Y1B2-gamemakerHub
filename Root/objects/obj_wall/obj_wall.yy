@@ -10,8 +10,8 @@
     "path": "folders/Objects/-Official/Building_walls_etc.yy",
   },
   "parentObjectId": {
-    "name": "obj_par_environment",
-    "path": "objects/obj_par_environment/obj_par_environment.yy",
+    "name": "Obj_par_walls",
+    "path": "objects/Obj_par_walls/Obj_par_walls.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
