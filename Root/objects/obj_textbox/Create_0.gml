@@ -21,7 +21,7 @@ txtb_img_spd = 6/60;
 //the text
 page = 0;
 page_number = 0;
-text[0] = "";
+text[0] = "Hi";
 text_length[0] = string_length(text[0]);
 draw_char = 0;
 text_spd = 1;

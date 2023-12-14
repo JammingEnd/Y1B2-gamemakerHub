@@ -21,15 +21,40 @@ switch (_text_id){
 			scr_text("You'll see my co-workers in each room, talk to each one of them for instructions.")
 			break;
 		
-		
+//------------NPC2--------------//
 		
 	case "npc2":
-		scr_text("Hi! I'm NPC 2 motherfucker")
-		scr_text("Fuck you")
+		scr_text("I HAVE BEEN SUMMONED AT LAST!!")
+		scr_text("huh? You came here to free me?")
+			scr_option("Yeah...", "npc2 - Yeah");
+			scr_option("Nuh-uh", "npc2 - Nuh");
+		break;
+	case "npc2 - Yeah":
+		scr_text("HAHAHAHAHA")
+		scr_text("Sorry bud, looks like your late to the party.")
+		scr_text("But hey, on the bright side you can watch me destroy the world.")
+		scr_text("Wanna see it now?")
+			scr_option("Hell Yeah", "npc2 - Hell Yeah");
+			scr_option("Maybe not", "npc2 - Not");
+		break;
+				case "npc2 - Hell Yeah":
+				scr_text("Gotcha, *Snaps Finger*");
+				scr_text("");
+				game_end();
+				break;
+				
+				case "npc2 - Not":
+				scr_text("Gotcha, maybe next time");
+				break;
+				
+	case "npc2 - Nuh":
+		scr_text("Huh, the folks around here must have been getting bored bringing someone the likes of you here.")
+		scr_text("Anyway, want to see me end the world?")
+			scr_option("Hell Yeah", "npc2 - Hell Yeah");
+			scr_option("Maybe not", "npc2 - Not");
 		break;
 	
-	
-	
+//-----------NPC3---------//
 	
 	case "npc3":
 		scr_text("Hi! I'm NPC 3 motherfucker")
