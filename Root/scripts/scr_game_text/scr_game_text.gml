@@ -78,6 +78,24 @@ switch (_text_id){
 		scr_text("Thanks for listening man, I don't think the others realise how big of a deal this is.");
 		scr_add_trust(10)
 		scr_subtract_ment(5)
+		break;
+	
+	case "npc5":
+		scr_text("There's not much here");
+		scr_text("Everyone here says the same thing, pretty boring to be honest.");
+		scr_subtract_ment(5)
+		break;
+		
+	case "npc6":
+		scr_text("Wonder what the number on your far left corner does?");
+		scr_text("I heard it keeps track of out Trust, the Time, and your Mental State.");
+		scr_text("I don't know what Time is, thats a muggle concept from your culture that we don't have here");
+		scr_subtract_ment(5)
+		break;
+
+
 
 	}
+	
+	
 }

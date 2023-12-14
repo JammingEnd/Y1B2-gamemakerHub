@@ -60,6 +60,7 @@
     {"name":"inst_2D86DF9E","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_6E420D9B","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_5647A43D","path":"rooms/rm_witch_home/rm_witch_home.yy",},
+    {"name":"inst_24C27A6E","path":"rooms/rm_witch_home/rm_witch_home.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -121,6 +122,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2D86DF9E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_cat_angel","path":"objects/obj_npc_cat_angel/obj_npc_cat_angel.yy",},"properties":[],"rotation":0.0,"scaleX":1.408998,"scaleY":1.3663003,"x":2600.0002,"y":600.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E420D9B","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_shadow","path":"objects/obj_npc_shadow/obj_npc_shadow.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":2900.0,"y":900.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5647A43D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player_UI","path":"objects/obj_player_UI/obj_player_UI.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1100.0,"y":1400.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24C27A6E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_shadow","path":"objects/obj_npc_shadow/obj_npc_shadow.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":1.2950001,"x":3304.0,"y":2457.6401,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":100,"gridY":100,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_witchHouse","path":"sprites/spr_witchHouse/spr_witchHouse.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
