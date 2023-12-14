@@ -1,3 +1,9 @@
+//global values
+global.TrustValue = 0;
+global.TimeValue = 0;
+global.MentValue = 100;
+
+
 walkSpeed = 16;
 vx = 0;
 vy = 0;
@@ -7,7 +13,7 @@ moveLeft= 0;
 moveUp = 0;
 moveDown = 0;
 nearbyNPC = noone;
-lookRange = 300;
+lookRange = 200;
 hasGreeted = false;
 npcPrompt = noone;
 myState = playerState.idle;

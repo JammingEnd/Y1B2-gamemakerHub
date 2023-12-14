@@ -30,3 +30,31 @@ function scr_option (_option, _link_id){
 	option_number++;
 	
 }
+
+///param +number trust
+function scr_add_trust (_trust){
+	
+global.TrustValue = global.TrustValue + _trust;
+
+}
+
+///param -number trust
+function scr_subtract_trust (_trust){
+	
+global.TrustValue = global.TrustValue - _trust;
+
+}
+
+///param number
+function scr_add_ment (_Ment){
+	
+global.MentValue = global.MentValue + _Ment;
+
+}
+
+///param number
+function scr_subtract_ment (_Ment){
+	
+global.MentValue = global.MentValue - _Ment;
+
+}
