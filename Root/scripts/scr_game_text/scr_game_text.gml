@@ -88,9 +88,8 @@ switch (_text_id){
 		
 	case "npc6":
 		scr_text("Wonder what the number on your far left corner does?");
-		scr_text("I heard it keeps track of out Trust, the Time, and your Mental State.");
+		scr_text("I heard it keeps track of our Trust, the Time, and your Mental State.");
 		scr_text("I don't know what Time is, thats a muggle concept from your culture that we don't have here");
-		scr_subtract_ment(5)
 		break;
 
 
