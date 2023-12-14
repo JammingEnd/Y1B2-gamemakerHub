@@ -1,5 +1,6 @@
 /// @description Draw background
 draw_self();
+depth = -9999999
 //Define font
 draw_set_font(global.font_main);
 //follow camera

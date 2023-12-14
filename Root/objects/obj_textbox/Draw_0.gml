@@ -25,9 +25,80 @@ if setup == false
 			//if no character portrait (centers box in middle)
 		text_x_offset[p] = 90;
 		
+		//setting individual characters and finding where the lines of the text should break
+		for (var c = 0; c < text_length[p]; c++)
+		{
+		
+		var _char_pos = c+1;
+		
+		//store individual characters in the "char" array
+		char[c, p] = string_char_at(text[p], _char_pos);
+		
+		//get current width of the line
+		var _txt_up_to_char = string_copy( text[p], 1, _char_pos );
+		var _current_txt_w = string_width(_txt_up_to_char) - string_width(char[c, p]);
+		
+		//get the last free space (plus one so next line won't start with a space)
+		if char[c, p] == " " {last_free_space = _char_pos+1};
+		
+		//get the line breaks
+		if _current_txt_w - line_break_offset[p] > line_width
+		{
+		//if line gets too long, instead of cutting mid word, line break from last empty space
+		line_break_pos[ line_break_num[p] , p ] = last_free_space;
+		//add 1 to total number of line breaks
+		line_break_num[p]++;
+		//get entire string up to the last free space
+		var _txt_up_to_last_space = string_copy(text[p], 1, last_free_space );
+		//getting string of last free space 
+		var _last_free_space_string = string_char_at(text[p], last_free_space );
+		//total string width after cutting away string after last free space
+		line_break_offset[p] = string_width(_txt_up_to_last_space) - string_width(_last_free_space_string);
 		}
-	
+		
 	}
+	
+		//getting each characters coordinates
+		 for (var c = 0; c < text_length[p]; c++)
+		 {
+ 
+		 var _char_pos = c + 1;
+		 var _txt_x = text_x_offset[p] + border;
+		 var _txt_y = border;
+		 //get current width of the line
+		 var _txt_up_to_char = string_copy( text[p], 1, _char_pos );
+		 var _current_txt_w = string_width(_txt_up_to_char) - string_width(char[c, p]);
+		 //multiplier for y value
+		 var _txt_line = 0;
+ 
+		//compensate for string breaks
+			for (var lb = 0; lb < line_break_num[p]; lb++)
+			{
+				//if the current looping character is after a line break
+				if _char_pos >= line_break_pos[lb, p]
+					{
+					var _str_copy = string_copy(text[p], line_break_pos[lb, p], _char_pos-line_break_pos[lb, p]);
+					_current_txt_w = string_width(_str_copy);
+			
+					//record the "line" this character should be on
+					_txt_line = lb+1;//+1 since lb starts at 0
+			
+					}
+			}
+ 
+		//add to the x and y coordinate based on new info
+		char_x[c, p] = _txt_x + _current_txt_w;
+		char_y[c, p] = _txt_y + _txt_line*line_sep;
+	 }
+		
+		
+	}
+	
+}
+ 
+ 
+ 
+ 
  
 //typing the text
 if draw_char < text_length[page]
@@ -38,36 +109,36 @@ if draw_char < text_length[page]
 }
 
 //flip through pages untill done
-if accept_key
+if accept_key && cool_down < 1
 {
-
-//if typing is done
-if draw_char == text_length[page]
-	{
-		
-	//next page
-	if page < page_number - 1
+	cool_down = 15;
+	//if typing is done
+	if draw_char == text_length[page]
 		{
-		page++;
-		draw_char = 0;
+		
+		//next page
+		if page < page_number - 1
+			{
+			page++;
+			draw_char = 0;
+			}
+			//destroy textbox 
+			else
+			{
+				//link text for options
+				if option_number > 0 {
+					create_textbox(option_link_id[option_pos]);
+				}
+			instance_destroy();
+			global.playerControl = true;
+			}
 		}
-		//destroy textbox 
+		//if not done typing
 		else
 		{
-			//link text for options
-			if option_number > 0 {
-				create_textbox(option_link_id[option_pos]);
-			}
-		instance_destroy();
-		global.playerControl = true;
+			//draw the rest of text instantly
+			draw_char = text_length[page];
 		}
-	}
-	//if not done typing
-	else
-	{
-		//draw the rest of text instantly
-		draw_char = text_length[page];
-	}
 }
 
 
@@ -83,8 +154,13 @@ draw_sprite_ext(txtb_spr, txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_spr_w, 
 
 
 //draw the text
-var _drawtext = string_copy(text[page], 1, round(draw_char));
-draw_text_ext(textbox_x + text_x_offset[page] + border, textbox_y + border, _drawtext, line_sep, line_width);
+for(var c = 0; c < draw_char; c++)
+{
+//the text
+draw_text(textbox_x + char_x[c, page], textbox_y + char_y[c, page], char[c, page]);
+}
+//var _drawtext = string_copy(text[page], 1, round(draw_char));
+//draw_text_ext(textbox_x + text_x_offset[page] + border, textbox_y + border, _drawtext, line_sep, line_width);
 
 //------------------------options----------------------//
 if draw_char == text_length[page] && page == page_number - 1

@@ -1,6 +1,18 @@
+//store where in body text it should move onto next line
+function scr_set_defaults_for_text(){
+	line_break_pos[0, page_number] = 999;
+	//tracks number of line breaks
+	line_break_num[page_number] = 0;
+	//keep track width of pixels to reset each character's x position 
+	//(measure length of first broken line of text to measure next line break)
+	line_break_offset[page_number] = 0;
+}
+
 /// @param text
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_text(_text){
+
+scr_set_defaults_for_text();
 	
 text[page_number] = _text;
 
@@ -30,6 +42,7 @@ function scr_option (_option, _link_id){
 	option_number++;
 	
 }
+
 
 ///param +number trust
 function scr_add_trust (_trust){
