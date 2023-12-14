@@ -90,8 +90,7 @@ draw_text_ext(textbox_x + text_x_offset[page] + border, textbox_y + border, _dra
 if draw_char == text_length[page] && page == page_number - 1
 {
 	//option selection arrow
-	option_pos += keyboard_check(vk_down) - keyboard_check(vk_up);
-	option_pos = clamp(option_pos, 0, option_number-1);
+	dialogue_active = true;
 	
 	//drawing the options
 	//Vertical space between the options

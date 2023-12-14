@@ -4,6 +4,8 @@ function scr_game_text(_text_id){
 
 switch (_text_id){
 	
+#region//NPC1 - Intro guy
+
 	case "npc1":
 		scr_text("Hi! Welcome to Witch Cauldron.Co.")
 		scr_text("You have been hired to partake in the construction of the demon summoning circle")
@@ -20,7 +22,7 @@ switch (_text_id){
 			scr_text("Um... Glad you'r stoked about this.")
 			scr_text("You'll see my co-workers in each room, talk to each one of them for instructions.")
 			break;
-		
+#endregion
 //------------NPC2--------------//
 		
 	case "npc2":
