@@ -40,7 +40,7 @@ switch (_text_id){
 				case "npc2 - Hell Yeah":
 				scr_text("Gotcha, *Snaps Finger*");
 				scr_text("");
-				game_end();
+				room_goto(rm_test_dialog);
 				break;
 				
 				case "npc2 - Not":
@@ -57,9 +57,14 @@ switch (_text_id){
 //-----------NPC3---------//
 	
 	case "npc3":
-		scr_text("Hi! I'm NPC 3 motherfucker")
-		scr_text("Fuck you")
+		scr_text("Hi, I am the Polish god");
+		scr_text("The world has indeed ended.");
+		scr_text("Too bad I won't be able to fuck your mom anymore.");
+			scr_option("What the-", "npc3 - What");
 		break;
+			case ("npc3 - What"):
+			game_end();
+			break;
 
 	}
 }

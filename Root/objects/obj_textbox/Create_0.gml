@@ -21,7 +21,7 @@ txtb_img_spd = 6/60;
 //the text
 page = 0;
 page_number = 0;
-text[0] = "Hi";
+text[0] = "";
 text_length[0] = string_length(text[0]);
 draw_char = 0;
 text_spd = 1;
@@ -30,7 +30,9 @@ textbox_y = 0;
 accept_key = 0;
 txtb_spr_w =0;
 txtb_spr_h = 0;
-
+//test
+var p = 1;
+text_x_offset[p] = 90;
 //options
 //chosen option
 option[0] = "";
