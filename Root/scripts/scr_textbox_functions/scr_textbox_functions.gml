@@ -6,19 +6,77 @@ function scr_set_defaults_for_text(){
 	//keep track width of pixels to reset each character's x position 
 	//(measure length of first broken line of text to measure next line break)
 	line_break_offset[page_number] = 0;
+	//variable for every letter/character
+	for (var c = 0; c < 500; c++)
+		{
+		col_1[c, page_number] = c_white;
+		col_2[c, page_number] = c_white;
+		col_3[c, page_number] = c_white;
+		col_4[c, page_number] = c_white;
+		
+		float_text[c, page_number] = 0;
+		float_dir[c, page_number] = c*20;
+		float_strength[c, page_number] = 2;
+		float_speed[c, page_number] = 1;
+		
+		shake_text[c, page_number] = 0;
+		shake_dir[c, page_number] = irandom(360);
+		shake_timer[c, page_number] = irandom(4);
+		}
 	//default all textbox to this
 	txtb_spr[page_number] = spr_menu;
 	//choosing the speaker sprite
 	speaker_sprite[page_number] = noone;
 	//which side speaker sprite is
 	speaker_side[page_number] = 0;
+	//play sound while character is speaking
+	//snd[page_number] = snd_default_voice;
+	
 }
 
+//----text VFX -----//
+/// @param 1st_char
+/// @param last_char
+/// @param col1
+/// @param col2
+/// @param col3
+/// @param col4
+function scr_text_color(_start, _end, _col1, _col2, _col3, _col4){
 
+// loops between all characters and finds all characters between parameter & sets all color to argument
+for (var c = _start; c <= _end; c++)
+	{
+	col_1[c, page_number-1] = _col1;
+	col_2[c, page_number-1] = _col2;
+	col_3[c, page_number-1] = _col3;
+	col_4[c, page_number-1] = _col4;
+	}
+}
+/// @param start
+/// @param end
+/// @param [strength]
+function scr_text_float(_start, _end) 
+{
+	for (var c = _start; c <= _end; c++)
+		{
+		float_text[c, page_number-1] = true;
+			if argument_count > 2 {
+				float_strength[c, page_number-1] = argument[2];
+			}
+		}
 
+}
+
+function scr_text_shake(_start, _end){
+	for (var c = _start; c <= _end; c++)
+		{
+		shake_text[c, page_number-1] = true;
+		}
+}
 
 /// @param text
 /// @param [character]
+/// @param [side -1:left, 1:right]
 function scr_text(_text){
 
 scr_set_defaults_for_text();
@@ -32,6 +90,7 @@ text[page_number] = _text;
 			case "cat_angel":
 				speaker_sprite[page_number] = spr_talk_Cat_Angel;
 				txtb_spr[page_number] = spr_menu;
+				//snd[page_number] = snd_file;
 				break;
 			
 			case "god":
@@ -40,6 +99,11 @@ text[page_number] = _text;
 				break;
 			
 			}
+	}
+	
+	//side the character will appear on
+	if argument_count > 2 {
+	 speaker_side[page_number] = argument[2];
 	}
 
 page_number++;

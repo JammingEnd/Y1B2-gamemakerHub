@@ -24,7 +24,7 @@ option[0, 1] = "Settings";
 option[0, 2] = "Quit Game";
 
 //settings menu
-option[1, 0] = "Windows Size";
+option[1, 0] = "Windows Full Screen";
 option[1, 1] = "Brightness";
 option[1, 2] = "Controls";
 option[1, 3] = "Back";

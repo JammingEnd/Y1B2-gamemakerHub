@@ -17,3 +17,10 @@ function scr_playSequence(_seqToPlay)
 		}
 	}
 }
+
+//windows full screen
+function scr_windows_toggle(){
+	if (window_get_fullscreen()){
+			window_set_fullscreen(false);} 
+			else{window_set_fullscreen(true);}
+}

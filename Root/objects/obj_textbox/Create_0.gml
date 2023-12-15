@@ -53,9 +53,14 @@ dialogue_active = false;
 
 setup = false;
 
+//sound add [0] to variable to adjust sound per line
+snd_delay = 4;
+snd_count = snd_delay;
+
 //effects
 scr_set_defaults_for_text();
 //keep track of last space in text where last character to go to calc where to break in advance
 last_free_space = 0;
-
+text_pause_timer = 0;
+text_pause_time = 16;
 cool_down = 15;

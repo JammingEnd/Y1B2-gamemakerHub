@@ -15,9 +15,9 @@
     {"name":"Items","order":4,"path":"folders/Sprites/-Official/Items.yy",},
     {"name":"Menu","order":3,"path":"folders/Sprites/-Official/Menu.yy",},
     {"name":"NPC's","order":2,"path":"folders/Sprites/-Official/NPC's.yy",},
+    {"name":"Talk Screen","order":4,"path":"folders/Sprites/-Official/NPC's/Talk Screen.yy",},
     {"name":"Little Town Stuff","order":2,"path":"folders/Sprites/Temp Sprites/Little Town Stuff.yy",},
     {"name":"Walls","order":3,"path":"folders/Sprites/Temp Sprites/Walls.yy",},
-    {"name":"Talk Screen","order":4,"path":"folders/Sprites/-Official/NPC's/Talk Screen.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"random_which","order":1,"path":"sprites/random_which/random_which.yy",},

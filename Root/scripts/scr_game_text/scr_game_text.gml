@@ -63,9 +63,11 @@ switch (_text_id){
 	case "npc3":
 		scr_text("Hi, I'm Shamek.", "god");
 		scr_text("A Polish God by the way.", "god");
-		scr_text("He's lying, he's another slave worker just like you...", "cat_angel");
+			scr_text_color(2, 12, c_red, c_yellow, c_red, c_yellow);
+			scr_text_float(2, 12);
+		scr_text("He's lying, he's another slave worker just like you...", "cat_angel", 1);
 		scr_text("I can prove it.", "god");
-		scr_text("Bullshit.", "cat_angel");
+		scr_text("Bullshit.", "cat_angel", 1);
 		scr_text("Ready?", "god");
 			scr_option("My body's ready", "npc3 - ready");
 			scr_option("I have a bad feeling about this, maybe later", "npc3 - Later");

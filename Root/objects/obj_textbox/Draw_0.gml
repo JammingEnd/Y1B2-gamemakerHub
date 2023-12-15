@@ -120,13 +120,38 @@ if setup == false
  
  
  
-//typing the text
-if draw_char < text_length[page]
-{
-	draw_char += text_spd;
-	//sets min & max value for draw_char speed
-	draw_char = clamp(draw_char, 0, text_length[page]);
+//typing the text & pause logic
+	if text_pause_timer <= 0
+	{
+		if draw_char < text_length[page]
+		{
+			draw_char += text_spd;
+			//sets min & max value for draw_char speed
+			draw_char = clamp(draw_char, 0, text_length[page]);
+			var _check_char = string_char_at(text[page], draw_char);
+			if _check_char == "." || _check_char == "?"||_check_char == "!"|| _check_char == ","
+			{
+			text_pause_timer = text_pause_time;
+			//if !audio_is_playing(snd[page]){
+				//audio_play_sound(snd[page], 8, false);
+				//}
+			} 
+		else
+			{
+			//typing sound
+			//if snd_count < snd_delay {
+				//snd_count++;
+			//}else{
+			//snd_count = 0;
+			//audio_play_sound(snd[page], 8, false);
+			//}
+			}
+		}
+	
+	} else {
+	text_pause_timer--;
 }
+
 
 //flip through pages untill done
 if accept_key && cool_down < 1
@@ -190,8 +215,30 @@ draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_s
 //draw the text
 for(var c = 0; c < draw_char; c++)
 {
+//----special effect stuff----//
+//floating wavy text
+var _float_y = 0;
+if float_text[c, page] == true
+{
+float_dir[c, page] += -6;
+_float_y = dsin(float_dir[c, page])*1;
+}
+//shake text
+var _shake_x = 0;
+var _shake_y = 0;
+if shake_text[c, page] == true
+{
+shake_timer[c, page]--;
+if shake_timer[c, page] <= 0 {
+	shake_timer[c, page] = irandom(6);
+	shake_dir[c, page] = irandom(360);
+	}
+_shake_x = lengthdir_x(1, shake_dir[c, page]);
+_shake_y = lengthdir_y(1, shake_dir[c, page]);
+}
+
 //the text
-draw_text(textbox_x + char_x[c, page], textbox_y + char_y[c, page], char[c, page]);
+draw_text_color(textbox_x + char_x[c, page] + _shake_x, textbox_y + char_y[c, page] + (_float_y*float_strength[c, page]) + _shake_y, char[c, page], col_1[c, page], col_2[c, page], col_3[c, page], col_4[c, page], 1);
 }
 //var _drawtext = string_copy(text[page], 1, round(draw_char));
 //draw_text_ext(textbox_x + text_x_offset[page] + border, textbox_y + border, _drawtext, line_sep, line_width);
