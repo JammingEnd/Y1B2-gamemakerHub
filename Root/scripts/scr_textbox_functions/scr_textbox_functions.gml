@@ -6,22 +6,50 @@ function scr_set_defaults_for_text(){
 	//keep track width of pixels to reset each character's x position 
 	//(measure length of first broken line of text to measure next line break)
 	line_break_offset[page_number] = 0;
+	//default all textbox to this
+	txtb_spr[page_number] = spr_menu;
+	//choosing the speaker sprite
+	speaker_sprite[page_number] = noone;
+	//which side speaker sprite is
+	speaker_side[page_number] = 0;
 }
 
+
+
+
 /// @param text
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+/// @param [character]
 function scr_text(_text){
 
 scr_set_defaults_for_text();
 	
 text[page_number] = _text;
 
+	//get char info if char is specified (can add voices too)
+	if argument_count > 1 {
+		switch (argument[1])
+			{
+			case "cat_angel":
+				speaker_sprite[page_number] = spr_talk_Cat_Angel;
+				txtb_spr[page_number] = spr_menu;
+				break;
+			
+			case "god":
+				speaker_sprite[page_number] = spr_talk_god;
+				txtb_spr[page_number] = spr_menu;
+				break;
+			
+			}
+	}
+
 page_number++;
 
 }
 
-///@param text_id
 
+
+
+///@param text_id
 function create_textbox(_text_id) {
 
 	with(instance_create_depth(0,0,-9999, obj_textbox))

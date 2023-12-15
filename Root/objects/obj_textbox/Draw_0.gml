@@ -22,7 +22,27 @@ if setup == false
 		text_length[p] = string_length(text[p]);
 		
 		//get the x position for the text box
-			//if no character portrait (centers box in middle)
+			//character on center
+			text_x_offset[p] = 800;
+			portrait_x_offset[p] = 960;
+			
+			//character on the left
+			if speaker_side[p] == -1{
+				text_x_offset[p] = 480;
+				portrait_x_offset[p] = 480;
+			}
+			//character on the right
+			if speaker_side[p] == 1{
+				text_x_offset[p] = 1440;
+				portrait_x_offset[p] = 1440;
+			}
+			//if no char 
+			if speaker_sprite[p] == noone {
+				text_x_offset[p] = 480;
+				}
+			
+			
+		//if no character portrait (centers box in middle)
 		text_x_offset[p] = 90;
 		
 		//setting individual characters and finding where the lines of the text should break
@@ -147,11 +167,25 @@ if accept_key && cool_down < 1
 var _txtb_x = textbox_x + text_x_offset[page];
 var _txtb_y = textbox_y;
 txtb_img += txtb_img_spd;
-txtb_spr_w = sprite_get_width(txtb_spr);
-txtb_spr_h = sprite_get_height(txtb_spr);
-//back of the textbox
-draw_sprite_ext(txtb_spr, txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1);
+txtb_spr_w = sprite_get_width(txtb_spr[page]);
+txtb_spr_h = sprite_get_height(txtb_spr[page]);
+//draw the speaker
+if speaker_sprite[page] != noone
+	{
+	sprite_index = speaker_sprite[page];
+	if draw_char == text_length[page] {image_index = 0};
+	var _speaker_x = textbox_x + portrait_x_offset[page];
+	//if speaker_side[page] == -1 {_speaker_x += sprite_width};
+	//draw the speaker
+	//draw_sprite_ext(txtb_spr[page], txtb_img,  camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - sprite_width/2, camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - sprite_height/2, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, 1);
+	//draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, 1);
+	//draw_sprite_ext(sprite_index, image_index, camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - sprite_width/2, camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - sprite_height/2, speaker_side[page], 1, 0, c_white, 1);
+	draw_sprite_ext(sprite_index, image_index, camera_get_view_x(view_camera[0]) + portrait_x_offset[page], textbox_y, 1, 1, 0, c_white, 1);
+	}
 
+
+//back of the textbox
+draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1);
 
 //draw the text
 for(var c = 0; c < draw_char; c++)
@@ -181,7 +215,7 @@ if draw_char == text_length[page] && page == page_number - 1
 	//the option box
 	var _o_w = string_width(option[op]) + _op_bord*2
 	//position of text box               distance from the left   calc new option position
-	draw_sprite_ext(txtb_spr, txtb_img, _txtb_x + _op_left_offset, (_txtb_y - _op_space*option_number + _op_space*op), _o_w/txtb_spr_w, (_op_space-10)/txtb_spr_h, 0, c_white, 1)
+	draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x + _op_left_offset, (_txtb_y - _op_space*option_number + _op_space*op), _o_w/txtb_spr_w, (_op_space-10)/txtb_spr_h, 0, c_white, 1)
 	
 	//write option text
 	draw_text(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 20 + _op_space*op, option[op]);

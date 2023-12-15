@@ -29,45 +29,53 @@ switch (_text_id){
 //------------NPC2--------------//
 		
 	case "npc2":
-		scr_text("I HAVE BEEN SUMMONED AT LAST!!")
-		scr_text("huh? You came here to free me?")
+		scr_text("I HAVE BEEN SUMMONED AT LAST!!", "cat_angel");
+		scr_text("huh? You came here to free me?", "cat_angel");
 			scr_option("Yeah...", "npc2 - Yeah");
 			scr_option("Nuh-uh", "npc2 - Nuh");
 		break;
 	case "npc2 - Yeah":
-		scr_text("HAHAHAHAHA")
-		scr_text("Sorry bud, looks like your late to the party.")
-		scr_text("But hey, on the bright side you can watch me destroy the world.")
-		scr_text("Wanna see it now?")
+		scr_text("HAHAHAHAHA", "cat_angel");
+		scr_text("Sorry bud, looks like your late to the party.", "cat_angel");
+		scr_text("But hey, on the bright side you can watch me destroy the world.", "cat_angel");
+		scr_text("Wanna see it now?", "cat_angel");
 			scr_option("Hell Yeah", "npc2 - Hell Yeah");
 			scr_option("Maybe not", "npc2 - Not");
 		break;
 				case "npc2 - Hell Yeah":
-				scr_text("Gotcha, *Snaps Finger*");
+				scr_text("Gotcha, *Snaps Finger*", "cat_angel");
 				scr_text("");
 				room_goto(rm_test_dialog);
 				break;
 				
 				case "npc2 - Not":
-				scr_text("Gotcha, maybe next time");
+				scr_text("Gotcha, maybe next time", "cat_angel");
 				break;
 				
 	case "npc2 - Nuh":
-		scr_text("Huh, the folks around here must have been getting bored bringing someone the likes of you here.")
-		scr_text("Anyway, want to see me end the world?")
+		scr_text("Huh, the folks around here must have been getting bored bringing someone the likes of you here.", "cat_angel");
+		scr_text("Anyway, want to see me end the world?", "cat_angel");
 			scr_option("Hell Yeah", "npc2 - Hell Yeah");
 			scr_option("Maybe not", "npc2 - Not");
 		break;
 
 //-----------NPC3---------//
 	case "npc3":
-		scr_text("Hi, I am the Polish god");
-		scr_text("The world has indeed ended.");
-		scr_text("Too bad I won't be able to date your mom anymore.");
-			scr_option("What the-", "npc3 - What");
+		scr_text("Hi, I'm Shamek.", "god");
+		scr_text("A Polish God by the way.", "god");
+		scr_text("He's lying, he's another slave worker just like you...", "cat_angel");
+		scr_text("I can prove it.", "god");
+		scr_text("Bullshit.", "cat_angel");
+		scr_text("Ready?", "god");
+			scr_option("My body's ready", "npc3 - ready");
+			scr_option("I have a bad feeling about this, maybe later", "npc3 - Later");
 		break;
-			case ("npc3 - What"):
+			case ("npc3 - ready"):
 			game_end();
+			break;
+			
+			case ("npc3 - Later"):
+			scr_text("Fine, tell me when you are ready for the truth.", "god");
 			break;
 			
 //-----------NPC3---------//
@@ -76,14 +84,14 @@ switch (_text_id){
 		scr_text("But we decided to not do that this time, and what do you know!");
 		scr_text("The Demon was summoned either way!! We assumed it was neccesary to the ritual but we didn't need to ever do that in the past.");
 		scr_text("Thanks for listening man, I don't think the others realise how big of a deal this is.");
-		scr_add_trust(10)
-		scr_subtract_ment(5)
+		scr_add_trust(10);
+		scr_subtract_ment(5);
 		break;
 	
 	case "npc5":
 		scr_text("There's not much here");
 		scr_text("Everyone here says the same thing, pretty boring to be honest.");
-		scr_subtract_ment(5)
+		scr_subtract_ment(5);
 		break;
 		
 	case "npc6":

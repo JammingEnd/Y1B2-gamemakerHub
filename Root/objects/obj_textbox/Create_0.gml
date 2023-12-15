@@ -1,5 +1,5 @@
 /// @description Textbox properties
-depth = -9999;
+depth = -999999999;
 
 //textbox parameter
 textbox_width = 1735;
@@ -13,7 +13,7 @@ line_sep =80;
 line_width = textbox_width - border*2;
 
 //animate textbox background if any
-txtb_spr = spr_menu;
+txtb_spr[0] = spr_menu;
 txtb_img = 0;
 //set speed to (animation frame rate)/(game frame rate)
 txtb_img_spd = 6/60;

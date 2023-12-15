@@ -17,6 +17,7 @@
     {"name":"NPC's","order":2,"path":"folders/Sprites/-Official/NPC's.yy",},
     {"name":"Little Town Stuff","order":2,"path":"folders/Sprites/Temp Sprites/Little Town Stuff.yy",},
     {"name":"Walls","order":3,"path":"folders/Sprites/Temp Sprites/Walls.yy",},
+    {"name":"Talk Screen","order":4,"path":"folders/Sprites/-Official/NPC's/Talk Screen.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"random_which","order":1,"path":"sprites/random_which/random_which.yy",},
@@ -37,6 +38,7 @@
     {"name":"spr_player_idle_down","order":1,"path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},
     {"name":"spr_player","order":5,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"obj_par_npc","order":2,"path":"objects/obj_par_npc/obj_par_npc.yy",},
+    {"name":"obj_npc_demon","order":5,"path":"objects/obj_npc_demon/obj_npc_demon.yy",},
     {"name":"spr_witchHouse","order":3,"path":"sprites/spr_witchHouse/spr_witchHouse.yy",},
     {"name":"obj_player_UI","order":8,"path":"objects/obj_player_UI/obj_player_UI.yy",},
     {"name":"spr_player_walk_left","order":2,"path":"sprites/spr_player_walk_left/spr_player_walk_left.yy",},
@@ -57,6 +59,7 @@
     {"name":"spr_Cat_Angel","order":8,"path":"sprites/spr_Cat_Angel/spr_Cat_Angel.yy",},
     {"name":"spr_npc","order":2,"path":"sprites/spr_npc/spr_npc.yy",},
     {"name":"obj_speak","order":5,"path":"objects/obj_speak/obj_speak.yy",},
+    {"name":"spr_talk_god","order":1,"path":"sprites/spr_talk_god/spr_talk_god.yy",},
     {"name":"spr_button","order":3,"path":"sprites/spr_button/spr_button.yy",},
     {"name":"obj_item","order":1,"path":"objects/obj_item/obj_item.yy",},
     {"name":"obj_prompt","order":1,"path":"objects/obj_prompt/obj_prompt.yy",},
