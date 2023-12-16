@@ -20,13 +20,13 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 328,
+  "height": 282,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3b818602-e25a-4df5-b5b8-6bc132fddd6d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 7,
   "parent": {
     "name": "Little Town Stuff",
     "path": "folders/Sprites/Temp Sprites/Little Town Stuff.yy",
@@ -65,8 +65,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 129,
-    "yorigin": 301,
+    "xorigin": 62,
+    "yorigin": 282,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -76,5 +76,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 253,
+  "width": 124,
 }

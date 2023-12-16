@@ -26,7 +26,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4186a7e5-df23-4ee6-8d42-6189a14cd2bf","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 7,
   "parent": {
     "name": "Little Town Stuff",
     "path": "folders/Sprites/Temp Sprites/Little Town Stuff.yy",
@@ -66,7 +66,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 126,
-    "yorigin": 298,
+    "yorigin": 328,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

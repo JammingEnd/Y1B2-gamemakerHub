@@ -1,11 +1,14 @@
 // check keys for movement
 if (global.playerControl == true)
 {
-moveRight = keyboard_check(vk_right);
-moveLeft = keyboard_check(vk_left);
-moveUp = keyboard_check(vk_up);
-moveDown = keyboard_check(vk_down);
+moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
+moveLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
+moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
+moveDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
 }
+
+//check shoot
+shootkey = mouse_check_button(mb_left);
 
 // calculate movement
 vx = ((moveRight - moveLeft) * walkSpeed);
@@ -20,34 +23,20 @@ if (global.playerControl == false)
 	moveDown = 0;
 }
 	
-// Run with Shift key
-running = keyboard_check(vk_shift);
-
-// Speed up if running
-if (running == true)
-{
-	// Ramp up
-	if (runSpeed < runMax)
-	{
-		runSpeed += 2;
-	}
-	// Start creating dust
-	if (startDust == 0)
-	{
-		alarm[0] = 2;
-		startDust = 1;
-	}
-}
-// Slow down if no longer running
-if (running == false)
-{
-	// Ramp down
-	if (runSpeed > 0)
-	{
-		runSpeed -= 1;
-	}
-	startDust = 0;
-}
+#region //player movement
+	//get the directions
+	var _horizkey = moveRight - moveLeft;
+	var _vertkey = moveDown - moveUp;
+	dir = point_direction(0, 0, _horizkey, _vertkey);
+	
+	//get the x and y speeds
+	var _spd = 0;
+	var _inputlevel = point_distance(0, 0, _horizkey, _vertkey);
+	 _inputlevel = clamp(_inputlevel, 0, 1);
+	_spd = walkSpeed * _inputlevel;
+	
+	vx = lengthdir_x(_spd, dir);
+	vy = lengthdir_y(_spd, dir);
 
 // If Idle
 if (vx == 0 && vy == 0)
@@ -55,52 +44,67 @@ if (vx == 0 && vy == 0)
 	myState = playerState.idle;	
 }
 
-// If moving
+// If moving and if there are no walls
 if (vx != 0 || vy != 0)
 {
-	if !collision_point(x+vx,y,Obj_par_walls,true,true) && !collision_point(x+vx,y,obj_par_npc,true,true)
+	if !collision_point(x+vx,y,Obj_par_walls,true,true) && !collision_point(x+vx,y,obj_par_npc,true,true) && !collision_point(x+vx,y,obj_soft_wall,true,true)
 	{
 		x += vx;
 	}
-	if !collision_point(x,y+vy,Obj_par_walls,true,true) && !collision_point(x,y+vy,obj_par_npc,true,true)
+	if !collision_point(x,y+vy,Obj_par_walls,true,true) && !collision_point(x,y+vy,obj_par_npc,true,true)  && !collision_point(x,y+vy,obj_soft_wall,true,true)
 	{
 		y += vy;
 	}
+}
+#endregion	
+
+
+#region // Sprite Control
+
+	//player aiming
+	centerY = y + centerYoffset;
 	
-	// Change direction based on movement
-	if (vx > 0)
-	{
-		dir = 0;
-	}
-	if (vx < 0)
-	{
-		dir = 2;
-	}	
-	if (vy > 0)
-	{
-		dir = 3;
-	}
-	if (vy < 0)
-	{
-		dir = 1;
-	}
+	//aim
+	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
 
-	// If Idle
-if (vx == 0 && vy == 0) {
-// Change idle Sprite based on last direction
-switch dir {
-case 0: sprite_index = spr_player_idle_right; break;
-case 1: sprite_index = spr_player_idle_up; break;
-case 2: sprite_index = spr_player_idle_left; break;
-case 3: sprite_index = spr_player_idle_down; break;
+	//make sure player is facing correct direction
+	//face = round(dir/90);
+		face = round(aimDir/90);
+		if face == 4 {face = 0;};
+	
+	//animate
+		if vx == 0 && vy == 0
+		{
+			image_index = 0;
+		}
+	
+	//Set the player sprite
+		mask_index = playerSpr[playerState.idle][3];
+		sprite_index = playerSpr[playerState.idle][face];
+
+#endregion
+
+#region//shoot the weapon
+if shootTimer > 0 {shootTimer--;};
+if shootkey && shootTimer <= 0
+{
+	//reset the timer
+	shootTimer = shootCooldown;
+	
+	//create bullet
+	var _xoffset = lengthdir_x(weaponlength + weaponoffsetDist, aimDir);
+	var _yoffset = lengthdir_y(weaponlength + weaponoffsetDist, aimDir);
+	var _bulletInst = instance_create_depth(x + _xoffset, centerY + _yoffset, depth-999999, obj_bullet);
+	
+	//change bullet direction
+	with(_bulletInst)
+	{
+		dir = other.aimDir;
+	}
 }
-}
-
-
-
-		
-	// Setting pickup audio position if Sequence is playing
-	if (instance_exists(obj_control) && obj_control.sequenceState == seqState.playing)
+#endregion
+#region // Setting pickup audio position if Sequence is playing
+if (instance_exists(obj_control) && obj_control.sequenceState == seqState.playing)
 	{
 		var _camX = camera_get_view_x(view_camera[0])+floor(camera_get_view_width(view_camera[0])*0.5);
 		var _camY = camera_get_view_y(view_camera[0])+floor(camera_get_view_height(view_camera[0])*0.5);
@@ -112,9 +116,9 @@ case 3: sprite_index = spr_player_idle_down; break;
 		// Otherwise, move audio listener with me
 		audio_listener_set_position(0,x,y,0);
 	}
-}
-	
-// Check for collision with NPCs
+#endregion
+
+#region// Check for collision with NPCs and prompt pop-up
 nearbyNPC = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,obj_par_npc,false,true);
 if nearbyNPC {
 // Pop up prompt
@@ -128,9 +132,6 @@ if !nearbyNPC {
 // Get rid of prompt
 scr_dismissPrompt(npcPrompt,0);
 }
-
-// Auto-choose Sprite based on state and direction
-sprite_index = playerSpr[myState][dir];
-
+#endregion
 // Depth sorting
-depth = -y;
+depth = -bbox_bottom;
