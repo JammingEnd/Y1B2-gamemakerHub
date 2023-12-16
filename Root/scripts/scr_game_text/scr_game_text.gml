@@ -26,8 +26,8 @@ switch (_text_id){
 			scr_add_trust(5)
 			break;
 #endregion
-//------------NPC2--------------//
-		
+
+#region //-----------Cat Angel---------//		
 	case "npc2":
 		scr_text("I HAVE BEEN SUMMONED AT LAST!!", "cat_angel");
 		scr_text("huh? You came here to free me?", "cat_angel");
@@ -58,8 +58,9 @@ switch (_text_id){
 			scr_option("Hell Yeah", "npc2 - Hell Yeah");
 			scr_option("Maybe not", "npc2 - Not");
 		break;
+#endregion
 
-//-----------NPC3---------//
+#region //-----------Polish God---------//
 	case "npc3":
 		scr_text("Hi, I'm Shamek.", "god");
 		scr_text("A Polish God by the way.", "god");
@@ -95,8 +96,9 @@ switch (_text_id){
 		break;
 		
 		
-			
-//-----------NPC3---------//
+#endregion			
+
+#region //-----------Cloaked Guy Near Cat Angel---------//
 	case "npc4":
 		scr_text("It was tradition to always sacrifice one of our workers for demon summoning.");
 		scr_text("But we decided to not do that this time, and what do you know!");
@@ -118,9 +120,7 @@ switch (_text_id){
 		scr_text("I don't know what Time is, thats a muggle concept from your culture that we don't have here");
 		break;
 
+#endregion
 
-
-	}
-	
-	
+	}	
 }

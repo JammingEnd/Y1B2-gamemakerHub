@@ -161,15 +161,3 @@ function scr_subtract_ment (_Ment){
 global.MentValue = global.MentValue - _Ment;
 
 }
-
-
-#region ///NPC script tracker bullshit///
-
-/// param script_name
-function scr_cha_scr_npc3 (_script){
-
-global.npc3 = _script
-
-}
-
-#endregion
