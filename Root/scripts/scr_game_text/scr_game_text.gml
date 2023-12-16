@@ -78,7 +78,7 @@ switch (_text_id){
 			
 			case ("npc3 - Later"):
 			scr_text("Fine, tell me when you are ready for the truth.", "god");
-				scr_change_script("npc3 - Later2")
+				scr_cha_scr_npc3("npc3 - Later2")
 			break;
 	
 	case ("npc3 - Later2"):

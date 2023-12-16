@@ -1,5 +1,4 @@
 /// @description Animation, depth
-my_text = "";
 
 // Change appearance with state
 switch myState

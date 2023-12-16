@@ -6,9 +6,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"my_text","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"OBAMNA\"",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Npc's",
     "path": "folders/Objects/-Official/Npc's.yy",

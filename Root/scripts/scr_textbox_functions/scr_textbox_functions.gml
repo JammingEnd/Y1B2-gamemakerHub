@@ -110,11 +110,6 @@ page_number++;
 
 }
 
-/// @param script_name
-function scr_change_script (_text){
-	text_id = "_text";
-}
-
 
 ///@param text_id
 function create_textbox(_text_id) {
@@ -166,3 +161,15 @@ function scr_subtract_ment (_Ment){
 global.MentValue = global.MentValue - _Ment;
 
 }
+
+
+#region ///NPC script tracker bullshit///
+
+/// param script_name
+function scr_cha_scr_npc3 (_script){
+
+global.npc3 = _script
+
+}
+
+#endregion
