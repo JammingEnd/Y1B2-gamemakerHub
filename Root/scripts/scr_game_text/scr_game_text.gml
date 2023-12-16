@@ -64,7 +64,7 @@ switch (_text_id){
 		scr_text("Hi, I'm Shamek.", "god");
 		scr_text("A Polish God by the way.", "god");
 			scr_text_color(2, 12, c_red, c_yellow, c_red, c_yellow);
-			scr_text_float(2, 12);
+			scr_text_float(2, 12, 4);
 		scr_text("He's lying, he's another slave worker just like you...", "cat_angel", 1);
 		scr_text("I can prove it.", "god");
 		scr_text("Bullshit.", "cat_angel", 1);
@@ -78,7 +78,23 @@ switch (_text_id){
 			
 			case ("npc3 - Later"):
 			scr_text("Fine, tell me when you are ready for the truth.", "god");
+				scr_change_script("npc3 - Later2")
 			break;
+	
+	case ("npc3 - Later2"):
+	scr_text("Are you finally ready?", "god");
+		scr_option("Yes", "Player - ready");
+		scr_option("Nevermind", "Player - not_ready");
+	break;
+		case ("Player - ready"):
+		game_end();
+		break;
+		
+		case ("Player - not_ready"):
+		scr_text("You are testing my patience kid.", "god");
+		break;
+		
+		
 			
 //-----------NPC3---------//
 	case "npc4":

@@ -4,7 +4,10 @@
   "name": "obj_npc_demon",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"my_text","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"npc3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"my_text","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"npc1",},
+  ],
   "parent": {
     "name": "Npc's",
     "path": "folders/Objects/-Official/Npc's.yy",

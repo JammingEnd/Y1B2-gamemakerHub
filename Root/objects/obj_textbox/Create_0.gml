@@ -64,3 +64,7 @@ last_free_space = 0;
 text_pause_timer = 0;
 text_pause_time = 16;
 cool_down = 15;
+
+//destroy & fade effect
+//text box properties
+global.playerControl = false;

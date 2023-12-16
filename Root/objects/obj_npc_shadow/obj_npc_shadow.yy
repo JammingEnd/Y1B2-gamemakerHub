@@ -7,7 +7,7 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"myText","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"OBAMNA\"",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"my_text","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"\"OBAMNA\"",},
   ],
   "parent": {
     "name": "Npc's",

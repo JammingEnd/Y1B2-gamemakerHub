@@ -11,15 +11,13 @@ if (global.playerControl == true)
 		// If NPC is still available
 		if (nearbyNPC.myState == npcState.normal)
 		{
-				//Decide text to show
-				_text = nearbyNPC.text_id;
+			//Decide text to show
+			_text = nearbyNPC.text_id;
+			
 				if (!instance_exists(obj_textbox))
 				{
 					//create text & text box & positioning
 					 create_textbox(_text);
-					
-					//remove player control
-					global.playerControl = false;
 				}
 			
 		}
@@ -29,17 +27,10 @@ if (global.playerControl == true)
 			_text = nearbyNPC.itemTextDone;
 			if (!instance_exists(obj_textbox))
 			{
-				iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-400,-10000,obj_textbox_old);
+				iii = instance_create_depth(nearbyNPC.x,nearbyNPC.y-400,-10000,obj_textbox);
 				iii.textToShow = _text;
 			}
 		}
 	}
 		
-	if (global.playerControl == true){
-		if (instance_exists(obj_textbox_old))
-				{
-					//add player control
-					global.playerControl = true;
-				}
-	}
 }

@@ -175,7 +175,6 @@ if accept_key && cool_down < 1
 					create_textbox(option_link_id[option_pos]);
 				}
 			instance_destroy();
-			global.playerControl = true;
 			}
 		}
 		//if not done typing
@@ -239,6 +238,8 @@ _shake_y = lengthdir_y(1, shake_dir[c, page]);
 
 //the text
 draw_text_color(textbox_x + char_x[c, page] + _shake_x, textbox_y + char_y[c, page] + (_float_y*float_strength[c, page]) + _shake_y, char[c, page], col_1[c, page], col_2[c, page], col_3[c, page], col_4[c, page], 1);
+//remove player contro upon creating
+global.playerControl = false;
 }
 //var _drawtext = string_copy(text[page], 1, round(draw_char));
 //draw_text_ext(textbox_x + text_x_offset[page] + border, textbox_y + border, _drawtext, line_sep, line_width);

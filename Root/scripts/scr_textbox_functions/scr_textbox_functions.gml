@@ -110,7 +110,10 @@ page_number++;
 
 }
 
-
+/// @param script_name
+function scr_change_script (_text){
+	text_id = "_text";
+}
 
 
 ///@param text_id
