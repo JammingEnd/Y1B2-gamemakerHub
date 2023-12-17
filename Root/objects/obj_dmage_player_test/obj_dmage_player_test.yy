@@ -1,15 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_soft_wall",
-  "eventList": [],
+  "name": "obj_dmage_player_test",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Building_walls_etc",
-    "path": "folders/Objects/-Official/Building_walls_etc.yy",
+    "name": "weapons",
+    "path": "folders/Objects/-Official/Player_related/weapons.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_damage_player",
+    "path": "objects/obj_damage_player/obj_damage_player.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,9 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_soft_wall",
-    "path": "sprites/spr_soft_wall/spr_soft_wall.yy",
+    "name": "spr_damage_player_test",
+    "path": "sprites/spr_damage_player_test/spr_damage_player_test.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

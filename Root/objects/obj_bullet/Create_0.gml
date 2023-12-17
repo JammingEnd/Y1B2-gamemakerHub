@@ -11,6 +11,7 @@ yspd = 0;
 dirFix = false;
 maxDist = 8000;
 destroy = false;
+enemyDestroy = true;
 
 
 

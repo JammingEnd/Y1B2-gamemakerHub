@@ -12,11 +12,11 @@ if xspd > 0 {face = 1;}
 if xspd < 0 {face = -1;}
 
 //collisions
-if place_meeting(x +xspd, y, obj_wall) || place_meeting(x +xspd, y, obj_enemy_parent)
+if place_meeting(x +xspd, y, Obj_par_walls) || place_meeting(x +xspd, y, obj_enemy_parent)
 {
  xspd = 0;
 }
-if place_meeting(x, y + yspd, obj_wall) || place_meeting(x, y + yspd, obj_enemy_parent)
+if place_meeting(x, y + yspd, Obj_par_walls) || place_meeting(x, y + yspd, obj_enemy_parent)
 {
  yspd = 0;
 }

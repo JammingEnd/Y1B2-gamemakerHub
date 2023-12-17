@@ -59,6 +59,8 @@ if (vx != 0 || vy != 0)
 }
 #endregion	
 
+//get damaged by, have invincibility frames
+get_damaged(obj_damage_player, true);
 
 #region // Sprite Control
 

@@ -3,3 +3,4 @@ event_inherited();
 
 spd = 80;
 maxDist = 450;
+enemyDestroy = false;

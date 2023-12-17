@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+get_damaged_create(10);
 
-damage = 1;
-hitConfirm = false;
+depth = -bbox_top;
 
 
 

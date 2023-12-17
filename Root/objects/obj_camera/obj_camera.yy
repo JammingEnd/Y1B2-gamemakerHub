@@ -1,13 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_soft_wall",
-  "eventList": [],
+  "name": "obj_camera",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Building_walls_etc",
-    "path": "folders/Objects/-Official/Building_walls_etc.yy",
+    "name": "Player_related",
+    "path": "folders/Objects/-Official/Player_related.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -25,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_soft_wall",
-    "path": "sprites/spr_soft_wall/spr_soft_wall.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": false,
 }

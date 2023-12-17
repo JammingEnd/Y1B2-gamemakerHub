@@ -3,6 +3,8 @@ global.TrustValue = 0;
 global.TimeValue = 0;
 global.MentValue = 100;
 
+//damage setup hp, invincibility frames toggle
+	get_damaged_create(30, true);
 
 walkSpeed = 16;
 vx = 0;

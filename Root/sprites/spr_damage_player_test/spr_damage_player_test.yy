@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_soft_wall",
+  "name": "spr_damage_player_test",
   "bbox_bottom": 159,
   "bbox_left": 0,
   "bbox_right": 159,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"569ea8dc-82ce-475f-9308-06708cf1e760",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c6b8a6e-2283-4c4b-8665-0e153586d04d",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 160,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6670a4be-0fc4-4f92-98d7-99e0e705d978","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e3d9b599-a141-4fc8-9932-16efc6a88fb2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Buildings_walls_etc",
-    "path": "folders/Sprites/-Official/Buildings_walls_etc.yy",
+    "name": "sprites",
+    "path": "folders/Objects/-Official/Player_related/weapons/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_soft_wall",
+    "name": "spr_damage_player_test",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"569ea8dc-82ce-475f-9308-06708cf1e760","path":"sprites/spr_soft_wall/spr_soft_wall.yy",},},},"Disabled":false,"id":"7b99270e-aa77-4f1d-8b2c-64b14f982444","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5c6b8a6e-2283-4c4b-8665-0e153586d04d","path":"sprites/spr_damage_player_test/spr_damage_player_test.yy",},},},"Disabled":false,"id":"8448c291-3de3-4c53-a79e-52cd78708041","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

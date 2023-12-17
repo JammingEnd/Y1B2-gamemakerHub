@@ -12,3 +12,7 @@ if aimDir >= 180 && aimDir < 360
 	{
 		draw_my_weapon()
 	}
+	
+
+//draw hp as number
+draw_text(x, y+50, "HP:" + string(hp));

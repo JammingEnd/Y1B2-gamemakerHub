@@ -1,22 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy_parent",
+  "name": "obj_stone_block",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/-Official/Npc's/enemies.yy",
+    "name": "destructables",
+    "path": "folders/Objects/-Official/Building_walls_etc/destructables.yy",
   },
   "parentObjectId": {
-    "name": "obj_damage_player",
-    "path": "objects/obj_damage_player/obj_damage_player.yy",
+    "name": "Obj_par_walls",
+    "path": "objects/Obj_par_walls/Obj_par_walls.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -34,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemy",
-    "path": "sprites/spr_enemy/spr_enemy.yy",
+    "name": "spr_stone_block",
+    "path": "sprites/spr_stone_block/spr_stone_block.yy",
   },
   "spriteMaskId": null,
   "visible": true,

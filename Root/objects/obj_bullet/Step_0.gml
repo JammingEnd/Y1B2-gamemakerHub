@@ -8,6 +8,10 @@ y += yspd;
 
 
 //clean up
+	
+	//hit Confirm destroy
+	if hitConfirm == true && enemyDestroy == true {destroy = true;};
+	
 	//destroy
 	if destroy = true
 	{
