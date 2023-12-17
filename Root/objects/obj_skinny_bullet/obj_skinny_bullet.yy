@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bullet",
+  "name": "obj_skinny_bullet",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -13,8 +13,8 @@
     "path": "folders/Objects/-Official/Player_related/weapons.yy",
   },
   "parentObjectId": {
-    "name": "obj_damage_enemy",
-    "path": "objects/obj_damage_enemy/obj_damage_enemy.yy",
+    "name": "obj_bullet",
+    "path": "objects/obj_bullet/obj_bullet.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_magic_bullet",
-    "path": "sprites/spr_magic_bullet/spr_magic_bullet.yy",
+    "name": "spr_skinny_bullet",
+    "path": "sprites/spr_skinny_bullet/spr_skinny_bullet.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -5,6 +5,7 @@ moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 moveLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
 moveDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
+swapKeyPressed = mouse_check_button_pressed(mb_right);
 }
 
 //check shoot
@@ -84,22 +85,52 @@ if (vx != 0 || vy != 0)
 
 #endregion
 
+#region//weapon swapping
+	var _playerWeapons = global.PlayerWeapons;
+	
+	//cycle through weapons
+	if swapKeyPressed
+	{
+		//change the selecetion
+		selectedWeapon++;
+		//so it won't crash trying to acess array option that doesn't exist
+		if selectedWeapon >= array_length(_playerWeapons) {selectedWeapon = 0;};
+		//set the new weapon
+		weapon = _playerWeapons[selectedWeapon];
+	}
+#endregion
+
 #region//shoot the weapon
 if shootTimer > 0 {shootTimer--;};
 if shootkey && shootTimer <= 0
 {
 	//reset the timer
-	shootTimer = shootCooldown;
+	shootTimer = weapon.cooldown;
 	
 	//create bullet
-	var _xoffset = lengthdir_x(weaponlength + weaponoffsetDist, aimDir);
-	var _yoffset = lengthdir_y(weaponlength + weaponoffsetDist, aimDir);
-	var _bulletInst = instance_create_depth(x + _xoffset, centerY + _yoffset, depth-999999, obj_bullet);
-	
-	//change bullet direction
-	with(_bulletInst)
+	var _xoffset = lengthdir_x(weapon.length + weaponoffsetDist, aimDir);
+	var _yoffset = lengthdir_y(weapon.length + weaponoffsetDist, aimDir);
+	var _spread = weapon.spread;
+	//dont divide by bullet number spaces between bullet
+	//var _spreadDiv = _spread / weapon.bulletnum;
+	var _spreadDiv = _spread / max(weapon.bulletnum - 1, 1);
+	//run loop code untill i equals bullet num (creates correct number of bullets)
+	for (var i = 0; i < weapon.bulletnum; i++)
 	{
-		dir = other.aimDir;
+		var _bulletInst = instance_create_depth(x + _xoffset, centerY + _yoffset, depth-999999, weapon.bulletObj);
+	
+		//change bullet direction
+		with(_bulletInst)
+		{
+			dir = other.aimDir - _spread/2 + _spreadDiv*i;
+			//turn bullet to correct dir upon birth if needed
+			if dirFix == true
+			{
+			image_angle = dir;
+			}
+			
+		}
+		
 	}
 }
 #endregion

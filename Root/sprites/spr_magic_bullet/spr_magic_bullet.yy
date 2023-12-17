@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Temp Sprites",
-    "path": "folders/Sprites/Temp Sprites.yy",
+    "name": "sprites",
+    "path": "folders/Objects/-Official/Player_related/weapons/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

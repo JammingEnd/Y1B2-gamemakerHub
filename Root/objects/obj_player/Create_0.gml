@@ -48,7 +48,10 @@ audio_listener_set_orientation(0,0,1,0,0,0,1);
 	
 	//weapon info
 		shootTimer = 0;
-		shootCooldown = 9;
-		
-		bulletobj = obj_bullet;
-		weaponlength = sprite_get_bbox_right(spr_wand) - sprite_get_xoffset(spr_wand);
+		//add weapon to player weapon inv
+		array_push( global.PlayerWeapons, global.WeaponList.basicwand);
+		array_push( global.PlayerWeapons, global.WeaponList.yellowwand);
+		array_push( global.PlayerWeapons, global.WeaponList.redwand);
+
+selectedWeapon = 0;
+weapon = global.PlayerWeapons[selectedWeapon];

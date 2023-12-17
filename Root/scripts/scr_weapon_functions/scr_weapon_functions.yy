@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_shooter_functions",
+  "name": "scr_weapon_functions",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
