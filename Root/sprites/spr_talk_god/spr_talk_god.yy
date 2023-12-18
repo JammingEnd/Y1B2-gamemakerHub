@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Talk Screen",
-    "path": "folders/Sprites/-Official/NPC's/Talk Screen.yy",
+    "name": "Npc's Talking",
+    "path": "folders/Objects/-Official/Npc's/Npc's Talking.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sprite_shooter_tileset",
-  "bbox_bottom": 639,
+  "name": "use_this_tileset_sprite_as_template",
+  "bbox_bottom": 1279,
   "bbox_left": 0,
-  "bbox_right": 639,
+  "bbox_right": 1279,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -15,9 +15,9 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f9c77129-3e92-4eea-9974-bf96d2b3a43f",},
   ],
-  "gridX": 0,
-  "gridY": 0,
-  "height": 640,
+  "gridX": 160,
+  "gridY": 160,
+  "height": 1280,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6343d580-7224-420e-b77a-b7e299ac6d1f","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sprite_shooter_tileset",
+    "name": "use_this_tileset_sprite_as_template",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f9c77129-3e92-4eea-9974-bf96d2b3a43f","path":"sprites/sprite_shooter_tileset/sprite_shooter_tileset.yy",},},},"Disabled":false,"id":"778b6707-c796-427f-8bf1-0d63a60f44b3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f9c77129-3e92-4eea-9974-bf96d2b3a43f","path":"sprites/use_this_tileset_sprite_as_template/use_this_tileset_sprite_as_template.yy",},},},"Disabled":false,"id":"778b6707-c796-427f-8bf1-0d63a60f44b3","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 640,
+  "width": 1280,
 }

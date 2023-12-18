@@ -1,3 +1,4 @@
+#region //all other stuff
 //store where in body text it should move onto next line
 function scr_set_defaults_for_text(){
 	line_break_pos[0, page_number] = 999;
@@ -73,6 +74,7 @@ function scr_text_shake(_start, _end){
 		shake_text[c, page_number-1] = true;
 		}
 }
+#endregion
 
 /// @param text
 /// @param [character]
@@ -80,13 +82,13 @@ function scr_text_shake(_start, _end){
 function scr_text(_text){
 
 scr_set_defaults_for_text();
-	
 text[page_number] = _text;
 
-	//get char info if char is specified (can add voices too)
+//get character info if char is specified (can add voices too)
 	if argument_count > 1 {
 		switch (argument[1])
 			{
+				//write below here
 			case "cat_angel":
 				speaker_sprite[page_number] = spr_talk_Cat_Angel;
 				txtb_spr[page_number] = spr_menu;
@@ -97,11 +99,17 @@ text[page_number] = _text;
 				speaker_sprite[page_number] = spr_talk_god;
 				txtb_spr[page_number] = spr_menu;
 				break;
-			
+				
+			case "npcName":
+				speaker_sprite[page_number] = spr_talk_npcName;
+				txtb_spr[page_number] = spr_menu;
+				break;
+				
+			//dont write below this
 			}
 	}
 	
-	//side the character will appear on
+	//side the character will appear on middle by default
 	if argument_count > 2 {
 	 speaker_side[page_number] = argument[2];
 	}

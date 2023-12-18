@@ -1,4 +1,9 @@
 /// @description Animation, depth
+global.npc3 = npcname
+text_id = global.npc3
+
+// Depth sorting
+depth = -y;
 
 // Change appearance with state
 switch myState

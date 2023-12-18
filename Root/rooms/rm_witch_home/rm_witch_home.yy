@@ -76,6 +76,7 @@
     {"name":"inst_5D28D4EE","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_31D6427F","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_520CFCC8","path":"rooms/rm_witch_home/rm_witch_home.yy",},
+    {"name":"inst_75F01165","path":"rooms/rm_witch_home/rm_witch_home.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -157,6 +158,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"TargetRoom","path":"objects/obj_door/obj_door.yy",},"value":"rm_shooting_range",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"TargetPos_x","path":"objects/obj_door/obj_door.yy",},"value":"2600",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":600.0,"y":800.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75F01165","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_newNpc","path":"objects/obj_newNpc/obj_newNpc.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3000.0,"y":2200.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":100,"gridY":100,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_witchHouse","path":"sprites/spr_witchHouse/spr_witchHouse.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

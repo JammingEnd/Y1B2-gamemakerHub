@@ -4,6 +4,44 @@ function scr_game_text(_text_id){
 
 switch (_text_id){
 	
+#region //-----------NPC Name Template---------//
+	case "npcName": //script one of NPC Name
+		scr_text("Dialogue 1", "npcName");
+		scr_text("Dialogue 2", "npcName");
+			scr_text_color(9, 10, c_red, c_yellow, c_red, c_yellow);
+			scr_text_float(9, 10, 4);
+		scr_text("Dialogue 1 of npcName2", "god", 1);
+		scr_text("Dialogue 3", "npcName");
+		scr_text("Dialogue 2 of npcName2", "god", -1);
+		scr_text("Dialogue 4", "god");
+			scr_option("Yes", "player said yes");
+			scr_option("No", "player said no");
+		break;
+			case ("player said yes"):
+			game_end();
+			break;
+			
+			case ("player said no"):
+			scr_text("Dialogue 1 player said no", "npcName");
+				//change script upon choosing this option
+				scr_cha_scr_npc3("name of second script if player chose no")
+			break;
+	
+	//script 2 of NPC Name
+	case ("name of second script if player chose no"):
+	scr_text("Really NO?", "npcName");
+		scr_option("Yes", "player said yes 2");
+		scr_option("No", "Player said no 2");
+	break;
+		case ("player said yes 2"):
+		game_end();
+		break;
+		
+		case ("player said no 2"):
+		scr_text("Dialogue 1 of player said no 2", "npcNew");
+		break;	
+#endregion			
+
 #region//NPC1 - Intro guy
 
 	case "npc1":
@@ -122,5 +160,9 @@ switch (_text_id){
 
 #endregion
 
+
+
+
+//Do not write below this point
 	}	
 }

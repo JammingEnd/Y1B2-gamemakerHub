@@ -1,8 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_npc_demon",
-  "eventList": [],
+  "name": "obj_newNpc",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"npcname","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"npcName",},
@@ -31,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "random_which",
-    "path": "sprites/random_which/random_which.yy",
+    "name": "spr_talk_npcName",
+    "path": "sprites/spr_talk_npcName/spr_talk_npcName.yy",
   },
   "spriteMaskId": null,
   "visible": true,
