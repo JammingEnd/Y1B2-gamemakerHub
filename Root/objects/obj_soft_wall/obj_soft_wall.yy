@@ -30,5 +30,5 @@
     "path": "sprites/spr_soft_wall/spr_soft_wall.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

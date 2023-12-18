@@ -13,6 +13,6 @@ if aimDir >= 180 && aimDir < 360
 		draw_my_weapon()
 	}
 	
-
 //draw hp as number
 draw_text(x, y+50, "HP:" + string(hp));
+draw_text(x, y+70, "Enemy Bullet:" + string(instance_number(obj_enemy_bullet)));

@@ -36,3 +36,4 @@ function scr_dismissPrompt(_whichPrompt,_toReset)
 		}
 	}
 }
+

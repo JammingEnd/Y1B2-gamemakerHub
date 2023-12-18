@@ -1,15 +1,16 @@
 // check keys for movement
 if (global.playerControl == true)
 {
-moveRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
-moveLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
-moveUp = keyboard_check(vk_up) || keyboard_check(ord("W"));
-moveDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
-swapKeyPressed = mouse_check_button_pressed(mb_right);
+moveRight = global.rightKey
+moveLeft = global.leftKey
+moveUp = global.upKey
+moveDown = global.downKey
+shootkey = global.shootKey
+swapKeyPressed = global.swapKeyPressed
 }
 
 //check shoot
-shootkey = mouse_check_button(mb_left);
+
 
 // calculate movement
 vx = ((moveRight - moveLeft) * walkSpeed);
@@ -58,9 +59,6 @@ if (vx != 0 || vy != 0)
 	}
 }
 #endregion	
-
-//get damaged by, have invincibility frames
-get_damaged(obj_damage_player, true);
 
 #region // Sprite Control
 
@@ -168,3 +166,16 @@ scr_dismissPrompt(npcPrompt,0);
 #endregion
 // Depth sorting
 depth = -bbox_bottom;
+
+//get damaged by, have invincibility frames
+get_damaged(obj_damage_player, true);
+
+//death / Game over
+if hp <= 0 
+{
+	//create game over screen
+	instance_create_depth(0, 0, 0, obj_game_over);
+	//destroy ourself
+	instance_destroy();
+	exit;
+}

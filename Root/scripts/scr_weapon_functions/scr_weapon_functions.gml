@@ -67,6 +67,7 @@ redwand : new create_weapon(
 	//damage create event
 function get_damaged_create(_hp, _iframes = false)
 	{
+		maxHp = _hp;
 		 hp = _hp;
 
 		if _iframes == true
@@ -102,6 +103,9 @@ function get_damaged(_damageObj, _iframes = false)
 	if iframeTimer mod 5 == 0{
 		if image_alpha == 1{image_alpha = 0.3;}else{image_alpha = 1;}
 	}
+	
+	//clamp hp
+	hp = clamp(hp, 0, maxHp);
 	
 	//terminate rest of code
 	exit;
@@ -172,5 +176,8 @@ if _iframes == false {
 			}
 		 }
 	}
+	
+	//clamp hp
+	hp = clamp(hp, 0, maxHp);
 	 
 }

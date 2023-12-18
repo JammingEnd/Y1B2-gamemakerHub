@@ -5,7 +5,7 @@ function scr_game_text(_text_id){
 switch (_text_id){
 	
 #region //-----------NPC Name Template---------//
-	case "npcName": //script one of NPC Name
+	case "npcName1": //script one of NPC Name
 		scr_text("Dialogue 1", "npcName");
 		scr_text("Dialogue 2", "npcName");
 			scr_text_color(9, 10, c_red, c_yellow, c_red, c_yellow);
@@ -133,6 +133,11 @@ switch (_text_id){
 		scr_text("You are testing my patience kid.", "god");
 		break;
 		
+	case("god_dies"):
+		scr_text("Fuck you", "god");
+		scr_text_color(0, 8, c_red, c_yellow, c_red, c_yellow);
+		scr_text_shake(0, 12);
+		break;
 		
 #endregion			
 
