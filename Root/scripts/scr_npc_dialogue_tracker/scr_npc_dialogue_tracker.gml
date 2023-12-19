@@ -30,4 +30,12 @@ global.npcName = _script
 
 }
 
+//in use
+/// param script_name
+function scr_cha_scr_WeaponSmith (_script){
+
+global.Weapon_Smith = _script
+
+}
+
 #endregion

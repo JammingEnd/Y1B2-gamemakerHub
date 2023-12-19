@@ -2,9 +2,12 @@
 global.TrustValue = 0;
 global.TimeValue = 0;
 global.MentValue = 100;
+global.DuckCount = 0;
+
+plHp = 10 + global.HpValue
 
 //damage setup hp, invincibility frames toggle
-	get_damaged_create(10, true);
+	get_damaged_create(plHp, true);
 
 walkSpeed = 16;
 vx = 0;

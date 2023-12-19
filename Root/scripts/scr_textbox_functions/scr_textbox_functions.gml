@@ -99,6 +99,11 @@ text[page_number] = _text;
 				speaker_sprite[page_number] = spr_talk_god;
 				txtb_spr[page_number] = spr_menu;
 				break;
+			
+			case "Weapon_Smith":
+				speaker_sprite[page_number] = spr_talk_npc_weapon_smith;
+				txtb_spr[page_number] = spr_menu;
+				break;
 				
 			case "npcName":
 				speaker_sprite[page_number] = spr_talk_npcName;

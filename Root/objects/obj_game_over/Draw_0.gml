@@ -31,8 +31,9 @@ draw_set_alpha(1);
 //restart
 if acceptKey && alpha >= 1
 {
+	global.DuckCount = 0;
 	room_restart();
 	if !instance_exists(obj_player)
 	{instance_create_depth (2600, 300, 0, obj_player);};
-	instance_destroy (obj_game_over)
+	instance_destroy (obj_game_over);
 }

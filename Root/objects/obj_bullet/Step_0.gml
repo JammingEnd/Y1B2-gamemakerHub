@@ -1,4 +1,7 @@
 //move
+//calc damage
+damage = 2*(global.DamageValue+1)
+
 
 xspd =lengthdir_x(spd, dir);
 yspd = lengthdir_y(spd, dir);

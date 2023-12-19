@@ -8,7 +8,9 @@ global.downKey = 0;
 global.shootKey = 0;
 global.swapKeyPressed = 0;
 
-
+global.DamageValue = 0;
+global.FireRateValue = 0;
+global.HpValue = 0;
 
 
 

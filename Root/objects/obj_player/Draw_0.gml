@@ -14,5 +14,6 @@ if aimDir >= 180 && aimDir < 360
 	}
 	
 //draw hp as number
-draw_text(x, y+50, "HP:" + string(hp));
-draw_text(x, y+70, "Enemy Bullet:" + string(instance_number(obj_enemy_bullet)));
+draw_text(x, y-50, "HP:" + string(hp)+"/"+string(maxHp));
+draw_text(x, y +0, "Duck Count:" + string(global.DuckCount));
+//draw_text(x, y+70, "Enemy Bullet:" + string(instance_number(obj_enemy_bullet)));

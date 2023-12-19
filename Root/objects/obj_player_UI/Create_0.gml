@@ -11,13 +11,13 @@ op_space = 50;
 
 //selection position
 pos = 0;
-global.TrustValue = 0;
-global.TimeValue = 0;
-global.MentValue = 100;
+global.DamageValue = 0;
+global.FireRateValue = 0;
+global.HpValue = 10;
 //pause menu
-option[0, 0] = global.TrustValue;
-option[0, 1] = global.TimeValue;
-option[0, 2] = global.MentValue;
+option[0, 0] = ("Damage: x" + string(global.DamageValue));
+option[0, 1] = ("FireRate: x" + string(global.FireRateValue));
+option[0, 2] = ("HP:" + string(global.HpValue));
 
 //keep track of number of options in options array
 op_length = 0;

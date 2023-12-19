@@ -38,7 +38,7 @@ basicwand : new create_weapon(
 		spr_wand,
 		sprite_get_bbox_right(spr_wand) - sprite_get_xoffset(spr_wand),
 		obj_bullet,
-		9,
+		12,
 		1,
 		0
 		),
@@ -47,7 +47,7 @@ yellowwand : new create_weapon(
 		spr_wand_yellow,
 		sprite_get_bbox_right(spr_wand_yellow) - sprite_get_xoffset(spr_wand_yellow),
 		obj_skinny_bullet,
-		3,
+		6,
 		1,
 		0
 		), 
@@ -56,7 +56,7 @@ redwand : new create_weapon(
 		spr_wand_red,
 		sprite_get_bbox_right(spr_wand_red) - sprite_get_xoffset(spr_wand_red),
 		obj_star_bullet,
-		16,
+		24,
 		8,
 		30
 		), 

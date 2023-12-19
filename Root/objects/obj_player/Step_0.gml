@@ -16,6 +16,9 @@ swapKeyPressed = global.swapKeyPressed
 vx = ((moveRight - moveLeft) * walkSpeed);
 vy = ((moveDown - moveUp) * walkSpeed);
 
+//calc HP
+plHp = 10 + global.HpValue
+
 //trigger to prevent PC movement
 if (global.playerControl == false)
 {
@@ -105,7 +108,7 @@ if shootTimer > 0 {shootTimer--;};
 if shootkey && shootTimer <= 0
 {
 	//reset the timer
-	shootTimer = weapon.cooldown;
+	shootTimer = weapon.cooldown/(global.FireRateValue+1);
 	
 	//create bullet
 	var _xoffset = lengthdir_x(weapon.length + weaponoffsetDist, aimDir);

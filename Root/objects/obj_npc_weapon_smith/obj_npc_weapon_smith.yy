@@ -1,22 +1,22 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_enemy_bob",
+  "name": "obj_npc_weapon_smith",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"npcname","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"Weapon Smith",},
+  ],
   "parent": {
-    "name": "enemies",
-    "path": "folders/Objects/-Official/Npc's/enemies.yy",
+    "name": "Npc's",
+    "path": "folders/Objects/-Official/Npc's.yy",
   },
   "parentObjectId": {
-    "name": "obj_enemy_parent",
-    "path": "objects/obj_enemy_parent/obj_enemy_parent.yy",
+    "name": "obj_par_npc",
+    "path": "objects/obj_par_npc/obj_par_npc.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemy",
-    "path": "sprites/spr_enemy/spr_enemy.yy",
+    "name": "spr_talk_npc_weapon_smith",
+    "path": "sprites/spr_talk_npc_weapon_smith/spr_talk_npc_weapon_smith.yy",
   },
   "spriteMaskId": null,
   "visible": true,

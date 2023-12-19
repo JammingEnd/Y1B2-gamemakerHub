@@ -165,6 +165,30 @@ switch (_text_id){
 
 #endregion
 
+#region//-------Weapon Smith--------//
+
+	case "Weapon Smith":
+		scr_text("What do ya need son? I've got upgrades for ya.", "Weapon_Smith")
+			scr_option("+Damage -10Ducks", "Damage_Upgrade");
+			scr_option("+Firerate -15Ducks ", "Firerate_Upgrade");
+			scr_option("+HP -5Ducks, HP_Upgrade", "HP_Upgrade");
+		break;
+		case "Damage_Upgrade":
+			scr_text("Here ya go.", "Weapon_Smith");
+			global.DamageValue = global.DamageValue + 1
+			global.DuckCount = global.DuckCount - 10
+			break;
+		case "Firerate_Upgrade":
+			scr_text("Here ya go.", "Weapon_Smith")
+			global.FireRateValue = global.FireRateValue + 1
+			global.DuckCount = global.DuckCount - 15
+			break;
+		case "HP_Upgrade":
+			scr_text("Here ya go.", "Weapon_Smith")
+			global.HpValue = global.HpValue + 10
+			global.DuckCount = global.DuckCount - 5
+			break;
+#endregion
 
 
 
