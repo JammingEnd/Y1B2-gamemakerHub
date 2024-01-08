@@ -11,7 +11,7 @@ global.swapKeyPressed = 0;
 global.DamageValue = 0;
 global.FireRateValue = 0;
 global.HpValue = 0;
-
+global.Difficulty = 0;
 
 
 

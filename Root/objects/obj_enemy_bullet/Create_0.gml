@@ -2,7 +2,7 @@
 event_inherited();
 
 dir = 0;
-spd = 8;
+spd = 16;
 xspd = 0;
 yspd = 0;
 hitConfirm = false;

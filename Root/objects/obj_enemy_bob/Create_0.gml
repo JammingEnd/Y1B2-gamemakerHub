@@ -1,8 +1,8 @@
 //inherint the par event
 event_inherited();
 
-spd = 2;
-chaseSpd = 4;
+spd = 4;
+chaseSpd = 8;
 dir = 0;
 xspd = 0;
 yspd = 0;

@@ -100,7 +100,7 @@ switch (_text_id){
 
 #region //-----------Polish God---------//
 	case "npc3":
-		scr_text("Hi, I'm Shamek.", "god");
+		scr_text("Hi, I'm Przemek.", "god");
 		scr_text("A Polish God by the way.", "god");
 			scr_text_color(2, 12, c_red, c_yellow, c_red, c_yellow);
 			scr_text_float(2, 12, 4);
@@ -134,9 +134,9 @@ switch (_text_id){
 		break;
 		
 	case("god_dies"):
-		scr_text("Fuck you", "god");
-		scr_text_color(0, 8, c_red, c_yellow, c_red, c_yellow);
-		scr_text_shake(0, 12);
+		scr_text("Damn Youuuuuuu", "god");
+		scr_text_color(0, 14, c_red, c_yellow, c_red, c_yellow);
+		scr_text_shake(0, 14);
 		break;
 		
 #endregion			
