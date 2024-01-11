@@ -1,22 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_inventory",
+  "name": "obj_peristentContainer",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":69,"eventType":9,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":66,"eventType":9,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/-Official/Items.yy",
+    "name": "-Official",
+    "path": "folders/Objects/-Official.yy",
   },
-  "parentObjectId": {
-    "name": "obj_player",
-    "path": "objects/obj_player/obj_player.yy",
-  },
+  "parentObjectId": null,
   "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
