@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemy_pop",
-    "path": "sprites/spr_enemy_pop/spr_enemy_pop.yy",
+    "name": "spr_spider",
+    "path": "sprites/spr_spider/spr_spider.yy",
   },
   "spriteMaskId": null,
   "visible": true,
