@@ -18,7 +18,6 @@ global.HpValue = 10;
 option[0, 0] = ("Damage: x" + string(global.DamageValue));
 option[0, 1] = ("FireRate: x" + string(global.FireRateValue));
 option[0, 2] = ("HP:" + string(global.HpValue));
-option[0, 3] = ("Mental Stat:" + string(global.mental)) 
 
 //keep track of number of options in options array
 op_length = 0;
