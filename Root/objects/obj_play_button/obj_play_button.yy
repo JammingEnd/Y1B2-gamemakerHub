@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_betterbutton",
-    "path": "sprites/spr_betterbutton/spr_betterbutton.yy",
+    "name": "spr_playbutton",
+    "path": "sprites/spr_playbutton/spr_playbutton.yy",
   },
   "spriteMaskId": null,
   "visible": true,

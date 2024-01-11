@@ -45,6 +45,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"-Official","folderPath":"folders/Sprites/-Official.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Buildings_walls_etc","folderPath":"folders/Sprites/-Official/Buildings_walls_etc.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fauna","folderPath":"folders/Sprites/-Official/Fauna.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Icons","folderPath":"folders/Sprites/-Official/Icons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Sprites/-Official/Items.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menu","folderPath":"folders/Sprites/-Official/Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NPC's","folderPath":"folders/Sprites/-Official/NPC's.yy",},
@@ -54,13 +55,12 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Walls","folderPath":"folders/Sprites/Temp Sprites/Walls.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Icons","folderPath":"folders/Sprites/-Official/Icons.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"random_which","path":"sprites/random_which/random_which.yy",},},

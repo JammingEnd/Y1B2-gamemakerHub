@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_betterbutton",
-    "path": "sprites/spr_betterbutton/spr_betterbutton.yy",
+    "name": "spr_exitbutton",
+    "path": "sprites/spr_exitbutton/spr_exitbutton.yy",
   },
   "spriteMaskId": null,
   "visible": true,

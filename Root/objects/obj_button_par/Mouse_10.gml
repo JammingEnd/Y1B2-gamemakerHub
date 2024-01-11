@@ -1,2 +1,2 @@
 //how transparent it will become
-image_alpha = 0.6;
+image_alpha = 0;
