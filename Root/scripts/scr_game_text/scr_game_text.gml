@@ -185,7 +185,7 @@ switch (_text_id){
 			break;
 		case "HP_Upgrade":
 			scr_text("Here ya go.", "Weapon_Smith")
-			global.HpValue = global.HpValue + 10
+			global.HpValue += 10
 			global.DuckCount = global.DuckCount - 5
 			break;
 #endregion
