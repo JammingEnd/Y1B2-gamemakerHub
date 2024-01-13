@@ -1,7 +1,4 @@
 //global values
-global.TrustValue = 0;
-global.TimeValue = 0;
-global.MentValue = 100;
 global.DuckCount = 0;
 global.PlayerName = global.PersistantPlayerName;
 

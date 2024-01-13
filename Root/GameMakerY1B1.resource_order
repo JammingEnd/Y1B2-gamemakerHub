@@ -125,6 +125,7 @@
     {"name":"spr_helpbutton","order":7,"path":"sprites/spr_helpbutton/spr_helpbutton.yy",},
     {"name":"spr_npc","order":2,"path":"sprites/spr_npc/spr_npc.yy",},
     {"name":"obj_speak","order":5,"path":"objects/obj_speak/obj_speak.yy",},
+    {"name":"obj_player_time","order":11,"path":"objects/obj_player_time/obj_player_time.yy",},
     {"name":"obj_star_bullet","order":3,"path":"objects/obj_star_bullet/obj_star_bullet.yy",},
     {"name":"spr_wand_yellow","order":3,"path":"sprites/spr_wand_yellow/spr_wand_yellow.yy",},
     {"name":"spr_talk_god","order":1,"path":"sprites/spr_talk_god/spr_talk_god.yy",},

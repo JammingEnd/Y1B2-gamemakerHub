@@ -208,6 +208,7 @@
     {"id":{"name":"spr_helpbutton","path":"sprites/spr_helpbutton/spr_helpbutton.yy",},},
     {"id":{"name":"spr_npc","path":"sprites/spr_npc/spr_npc.yy",},},
     {"id":{"name":"obj_speak","path":"objects/obj_speak/obj_speak.yy",},},
+    {"id":{"name":"obj_player_time","path":"objects/obj_player_time/obj_player_time.yy",},},
     {"id":{"name":"obj_star_bullet","path":"objects/obj_star_bullet/obj_star_bullet.yy",},},
     {"id":{"name":"spr_wand_yellow","path":"sprites/spr_wand_yellow/spr_wand_yellow.yy",},},
     {"id":{"name":"Obj_RightDown_Corner_Wall","path":"objects/Obj_RightDown_Corner_Wall/Obj_RightDown_Corner_Wall.yy",},},
