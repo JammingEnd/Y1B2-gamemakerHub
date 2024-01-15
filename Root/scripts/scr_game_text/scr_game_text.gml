@@ -55,12 +55,10 @@ switch (_text_id){
 			scr_text("Don't think you can get out of here, we got your cat as liability.");
 			scr_text("And incase you forgor, you're in the witch realm where you have no rights as a muggle.")
 			scr_text("You'll see my co-workers in each room, talk to each one of them for instructions.")
-			scr_subtract_ment(10)
 			break;
 		case "npc1 - Hell yeah":
 			scr_text("Um... Glad you'r stoked about this.")
 			scr_text("You'll see my co-workers in each room, talk to each one of them for instructions.")
-			scr_subtract_ment(5)
 			scr_add_trust(5)
 			break;
 #endregion
@@ -147,14 +145,11 @@ switch (_text_id){
 		scr_text("But we decided to not do that this time, and what do you know!");
 		scr_text("The Demon was summoned either way!! We assumed it was neccesary to the ritual but we didn't need to ever do that in the past.");
 		scr_text("Thanks for listening man, I don't think the others realise how big of a deal this is.");
-		scr_add_trust(10);
-		scr_subtract_ment(5);
 		break;
 	
 	case "npc5":
 		scr_text("There's not much here");
 		scr_text("Everyone here says the same thing, pretty boring to be honest.");
-		scr_subtract_ment(5);
 		break;
 		
 	case "npc6":
