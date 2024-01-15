@@ -33,6 +33,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player_related","folderPath":"folders/Objects/-Official/Player_related.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"weapons","folderPath":"folders/Objects/-Official/Player_related/weapons.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"sprites","folderPath":"folders/Objects/-Official/Player_related/weapons/sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Potions","folderPath":"folders/Objects/-Official/Potions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Temp","folderPath":"folders/Objects/Temp.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Walls","folderPath":"folders/Objects/Temp/Walls.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Particle Systems","folderPath":"folders/Particle Systems.yy",},
@@ -57,13 +58,12 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Walls","folderPath":"folders/Sprites/Temp Sprites/Walls.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Potions","folderPath":"folders/Objects/-Official/Potions.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"random_which","path":"sprites/random_which/random_which.yy",},},
