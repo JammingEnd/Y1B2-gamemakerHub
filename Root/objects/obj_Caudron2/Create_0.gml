@@ -10,3 +10,11 @@ ds_list_add(global.AllRecipes, CreateNewRecipe(
 CreateItemNamesForRecipe(["Spider_Eye", "Rat_Tail"]),
 CreateItemAmountForRecipe([3, 1])
 ));
+
+//heres a new item rares :)
+
+ds_list_add(global.AllRecipes, CreateNewRecipe(
+"Speed_Potion", 
+CreateItemNamesForRecipe(["Spider_Eye", "Rat_Tail"]),
+CreateItemAmountForRecipe([2, 6])
+));

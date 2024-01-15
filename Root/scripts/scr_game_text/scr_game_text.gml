@@ -217,14 +217,32 @@ case "Cauldron":
 	case "PotionLink1":
 		{
 				var costString = "Cost:";
-	
-				for (i = 0; i < ds_list_size(global.AllRecipes[| 0].ItemAmountList); i++)
+				var index = 1;
+				for (i = 0; i < ds_list_size(global.AllRecipes[| index].ItemAmountList); i++)
 				{
 					
 						show_debug_message(string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount) + "Yippeee");
-						costString += string(global.AllRecipes[| 0].ItemAmountList[| i].RequireName);
+						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireName);
 						costString +=  ">";
-						costString += string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount);
+						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireAmount);
+						costString += "<,";
+						
+				}
+				scr_text(costString, "Cauldron");
+				
+		}
+	break;
+	case "PotionLink2":
+		{
+				var costString = "Cost:";
+				var index = 1;
+				for (i = 0; i < ds_list_size(global.AllRecipes[| index].ItemAmountList); i++)
+				{
+					
+						//show_debug_message(string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount) + "Yippeee");
+						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireName);
+						costString +=  ">";
+						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireAmount);
 						costString += "<,";
 						
 				}
