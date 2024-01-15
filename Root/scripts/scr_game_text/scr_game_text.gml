@@ -206,7 +206,32 @@ switch (_text_id){
 			break;
 #endregion
 
-
+case "Cauldron":
+	scr_text("The cauldron is hot, but no sign of magic. maybe you should put something in it", "Cauldron")
+		for(i = 0; i < ds_list_size(global.AllRecipes); i++)
+		{
+			scr_option(global.AllRecipes[| i].PotionName, $"PotionLink{i + 1}");	
+			
+		}
+	break;
+	case "PotionLink1":
+		{
+				var costString = "Cost:";
+	
+				for (i = 0; i < ds_list_size(global.AllRecipes[| 0].ItemAmountList); i++)
+				{
+					
+						show_debug_message(string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount) + "Yippeee");
+						costString += string(global.AllRecipes[| 0].ItemAmountList[| i].RequireName);
+						costString +=  ">";
+						costString += string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount);
+						costString += "<,";
+						
+				}
+				scr_text(costString, "Cauldron");
+				
+		}
+	break;
 
 //Do not write below this point
 	}	

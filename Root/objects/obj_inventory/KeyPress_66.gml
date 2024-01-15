@@ -19,7 +19,7 @@ for(i = 0; i < ds_list_size(playerInventory); i++)
 				//retrievedItem = instance_find(obj_item, refID)
 				retrievedItem = refID;
 				retrievedItem.amount += 1;
-				show_debug_message( retrievedItem.amount);
+				
 				return;
 			}
 	}

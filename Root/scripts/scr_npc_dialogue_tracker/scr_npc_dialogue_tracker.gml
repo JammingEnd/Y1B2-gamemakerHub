@@ -38,4 +38,12 @@ global.Weapon_Smith = _script
 
 }
 
+//in use
+/// param script_name
+function scr_cha_scr_Cauldron (_script){
+
+global.Cauldron = _script
+
+}
+
 #endregion
