@@ -18,3 +18,5 @@ ds_list_add(global.AllRecipes, CreateNewRecipe(
 CreateItemNamesForRecipe(["Spider_Eye", "Rat_Tail"]),
 CreateItemAmountForRecipe([2, 6])
 ));
+
+depth = -y;

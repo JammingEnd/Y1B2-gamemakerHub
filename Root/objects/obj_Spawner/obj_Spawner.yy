@@ -1,23 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Caudron2",
+  "name": "obj_Spawner",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"npcname","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"Cauldron",},
-  ],
+  "overriddenProperties": [],
   "parent": {
-    "name": "Potions",
-    "path": "folders/Objects/-Official/Potions.yy",
+    "name": "enemies",
+    "path": "folders/Objects/-Official/Npc's/enemies.yy",
   },
-  "parentObjectId": {
-    "name": "obj_par_npc",
-    "path": "objects/obj_par_npc/obj_par_npc.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -34,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_calderon",
-    "path": "sprites/spr_calderon/spr_calderon.yy",
+    "name": "Sprite83",
+    "path": "sprites/Sprite83/Sprite83.yy",
   },
   "spriteMaskId": null,
   "visible": true,

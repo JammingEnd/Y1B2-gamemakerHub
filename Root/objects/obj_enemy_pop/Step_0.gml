@@ -1,6 +1,15 @@
 //state machine
 switch ( state )
 {
+	
+	case -1:
+	
+	//fade in
+	if image_alpha < 1
+	{
+	 image_alpha += fadeSpd;
+	}
+	break;
 	//chase state
 	case 0:
 	

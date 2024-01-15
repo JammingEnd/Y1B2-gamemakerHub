@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wall",
-  "eventList": [],
+  "name": "Object72",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Building_walls_etc",
-    "path": "folders/Objects/-Official/Building_walls_etc.yy",
+    "name": "Fauna",
+    "path": "folders/Objects/-Official/Fauna.yy",
   },
-  "parentObjectId": {
-    "name": "Obj_par_walls",
-    "path": "objects/Obj_par_walls/Obj_par_walls.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_hard_wall2",
-    "path": "sprites/spr_hard_wall2/spr_hard_wall2.yy",
+    "name": "spr_bush",
+    "path": "sprites/spr_bush/spr_bush.yy",
   },
   "spriteMaskId": null,
   "visible": true,

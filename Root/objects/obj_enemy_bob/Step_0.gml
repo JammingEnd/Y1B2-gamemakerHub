@@ -1,26 +1,5 @@
 //state machine
-switch ( state )
-{
-	//chase state
-	case 0:
-	//chase player
-	if instance_exists(obj_player)
-	{dir = point_direction(x, y, obj_player.x, obj_player.y);}
-	spd = chaseSpd
-	break;
-	
-	//pause
-	case 1:
-	if instance_exists(obj_player)
-	{dir = point_direction(x, y, obj_player.x, obj_player.y);}
-	//set speed
-	spd = 0;
-	
-	//stop animating/set image index
-	image_index = 0;
-	
-	break;
-}
+
 
 // get speeds
 xspd = lengthdir_x(spd, dir);
@@ -57,4 +36,41 @@ depth = -y;
 //inherint the par event
 	//getting damaged and dying
 	event_inherited();
+	
+switch ( state )
+{
+	case -1:
+	
+	//fade in
+	if image_alpha < 1
+	{
+	 spd = 0
+	 damage = 0;
+	 image_alpha += fadeSpd;
+	}else{
+		state = 0;
+		damage = 1;
+		}
+	break;
+	
+	//chase state
+	case 0:
+	//chase player
+	if instance_exists(obj_player)
+	{dir = point_direction(x, y, obj_player.x, obj_player.y);}
+	spd = chaseSpd
+	break;
+	
+	//pause
+	case 1:
+	if instance_exists(obj_player)
+	{dir = point_direction(x, y, obj_player.x, obj_player.y);}
+	//set speed
+	spd = 0;
+	
+	//stop animating/set image index
+	image_index = 0;
+	
+	break;
+}
 

@@ -12,7 +12,10 @@
     "name": "Npc's",
     "path": "folders/Objects/-Official/Npc's.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Obj_par_walls",
+    "path": "objects/Obj_par_walls/Obj_par_walls.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

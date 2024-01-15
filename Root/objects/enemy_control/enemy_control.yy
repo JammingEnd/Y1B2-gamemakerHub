@@ -1,18 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wall",
-  "eventList": [],
+  "name": "enemy_control",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Building_walls_etc",
-    "path": "folders/Objects/-Official/Building_walls_etc.yy",
+    "name": "enemies",
+    "path": "folders/Objects/-Official/Npc's/enemies.yy",
   },
-  "parentObjectId": {
-    "name": "Obj_par_walls",
-    "path": "objects/Obj_par_walls/Obj_par_walls.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_hard_wall2",
-    "path": "sprites/spr_hard_wall2/spr_hard_wall2.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

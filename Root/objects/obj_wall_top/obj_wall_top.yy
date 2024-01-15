@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wall",
+  "name": "obj_wall_top",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_hard_wall2",
-    "path": "sprites/spr_hard_wall2/spr_hard_wall2.yy",
+    "name": "spr_hard_walltop",
+    "path": "sprites/spr_hard_walltop/spr_hard_walltop.yy",
   },
   "spriteMaskId": null,
   "visible": true,
