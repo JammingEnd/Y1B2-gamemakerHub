@@ -3,6 +3,27 @@
 function scr_game_text(_text_id){
 
 switch (_text_id){
+
+#region //-----------Tutorial Text---------//
+	case "Tutorial1": //script one of NPC Name
+		scr_text("Welcome, would you like a tutorial? Press W & S to select and Space to Confirm.");
+			scr_option("Yes", "player wants tutorial");
+			scr_option("No", "player hates tutorial");
+			break;
+			
+				case ("player wants tutorial"):
+				scr_text("Press Space to progress through or skip dialogue")
+				scr_text("W,A,S,D is used to move your character");
+				scr_text("Press Space once you are close to a character or object to try and interact with them.")
+				scr_text("Things you can interact with will have a flickering icon above it once approched")
+				scr_text("Thats all for now, good luck!!")
+					scr_text_float(19, 30, 4);
+					room_goto(rm_witch_home);
+				break;
+			
+				case ("player hates tutorial"):
+					room_goto(rm_witch_home);
+				break;
 	
 #region //-----------NPC Name Template---------//
 	case "npcName1": //script one of NPC Name

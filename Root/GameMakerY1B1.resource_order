@@ -74,7 +74,6 @@
     {"name":"spr_enemy_health","order":6,"path":"sprites/spr_enemy_health/spr_enemy_health.yy",},
     {"name":"spr_playbutton","order":5,"path":"sprites/spr_playbutton/spr_playbutton.yy",},
     {"name":"spr_player_walk_left","order":2,"path":"sprites/spr_player_walk_left/spr_player_walk_left.yy",},
-    {"name":"spr_snake","order":3,"path":"sprites/spr_snake/spr_snake.yy",},
     {"name":"spr_menu_center","order":12,"path":"sprites/spr_menu_center/spr_menu_center.yy",},
     {"name":"spr_timeline","order":2,"path":"sprites/spr_timeline/spr_timeline.yy",},
     {"name":"spr_map","order":6,"path":"sprites/spr_map/spr_map.yy",},

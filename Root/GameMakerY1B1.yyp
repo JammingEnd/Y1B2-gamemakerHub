@@ -131,7 +131,6 @@
     {"id":{"name":"spr_player_walk_left","path":"sprites/spr_player_walk_left/spr_player_walk_left.yy",},},
     {"id":{"name":"spr_menu_center","path":"sprites/spr_menu_center/spr_menu_center.yy",},},
     {"id":{"name":"Obj_LeftDown_Corner_WithWall","path":"objects/Obj_LeftDown_Corner_WithWall/Obj_LeftDown_Corner_WithWall.yy",},},
-    {"id":{"name":"spr_snake","path":"sprites/spr_snake/spr_snake.yy",},},
     {"id":{"name":"spr_spider","path":"sprites/spr_spider/spr_spider.yy",},},
     {"id":{"name":"spr_timeline","path":"sprites/spr_timeline/spr_timeline.yy",},},
     {"id":{"name":"spr_map","path":"sprites/spr_map/spr_map.yy",},},
