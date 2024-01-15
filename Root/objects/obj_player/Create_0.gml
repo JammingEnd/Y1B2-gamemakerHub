@@ -19,11 +19,13 @@ nearbyNPC = noone;
 lookRange = 200;
 hasGreeted = false;
 npcPrompt = noone;
-myState = playerState.idle;
+myState = playerState.walking;
 runSpeed = 0;
 runMax = 12;
 running = false;
 startDust = 0;
+
+gun = 0;
 
 // Create listener and set orientation
 audio_listener_set_position(0,x,y,0);
@@ -47,7 +49,7 @@ audio_listener_set_orientation(0,0,1,0,0,0,1);
 	playerSpr[playerState.walking][2] = spr_player_walk_left;
 	playerSpr[playerState.walking][3] = spr_player_walk_down;
 
-	sprite_index = playerSpr[playerState.idle][face];
+	sprite_index = playerSpr[playerState.walking][face];
 	
 	//weapon info
 		shootTimer = 0;

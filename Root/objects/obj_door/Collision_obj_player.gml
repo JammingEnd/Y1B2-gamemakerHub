@@ -5,7 +5,14 @@ global.DuckCount += 15000 - _time;
 global.TotalTime = 0;
 }
 
-if obj_player_roomtimer.transparent = 0 {obj_player_roomtimer.transparent = 1}else{obj_player_roomtimer.transparent = 0};
+if obj_player_roomtimer.transparent = 0 {
+	obj_player_roomtimer.transparent = 1;
+	obj_player.gun = 1;
+}else{
+	obj_player_roomtimer.transparent = 0;
+	obj_player.gun = 0;
+	
+};
 
 global.LevelTimerMilsec = 0;
 global.LevelTimerSec = 0;

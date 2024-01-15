@@ -161,16 +161,10 @@ global.TrustValue = global.TrustValue - _trust;
 
 }
 
-///param number
-function scr_add_ment (_Ment){
-	
-global.MentValue = global.MentValue + _Ment;
-
-}
 
 ///param number
-function scr_subtract_ment (_Ment){
+function scr_add_time(_Time){
 	
-global.MentValue = global.MentValue - _Ment;
+obj_player_time.minut += _Time;
 
 }
