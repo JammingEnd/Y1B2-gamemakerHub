@@ -73,7 +73,7 @@ function get_damaged_create(_hp, _iframes = false)
 		if _iframes == true
 		{
 		iframeTimer = 0;
-		iframeNumber = 90;
+		iframeNumber = 60;
 		}
 		//create the damage list
 		if _iframes == false

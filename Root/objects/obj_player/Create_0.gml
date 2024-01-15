@@ -1,8 +1,6 @@
 //global values
-global.TrustValue = 0;
-global.TimeValue = 0;
-global.MentValue = 100;
 global.DuckCount = 0;
+global.PlayerName = global.PersistantPlayerName;
 
 plHp = 10 + global.HpValue
 
@@ -60,3 +58,4 @@ audio_listener_set_orientation(0,0,1,0,0,0,1);
 
 selectedWeapon = 0;
 weapon = global.PlayerWeapons[selectedWeapon];
+

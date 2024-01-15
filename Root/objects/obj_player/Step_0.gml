@@ -17,7 +17,8 @@ vx = ((moveRight - moveLeft) * walkSpeed);
 vy = ((moveDown - moveUp) * walkSpeed);
 
 //calc HP
-plHp = 10 + global.HpValue
+maxHp = 10 + global.HpValue
+
 
 //trigger to prevent PC movement
 if (global.playerControl == false)

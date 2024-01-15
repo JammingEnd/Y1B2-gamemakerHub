@@ -12,6 +12,7 @@ if global.LevelTimerMilsec = 60 {
 
 global.LevelTimerMilsec = 0
 global.LevelTimerSec++
+obj_player_time.minut++
 };
 
 if global.LevelTimerSec = 60 {

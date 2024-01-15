@@ -10,7 +10,7 @@ if (!instance_exists(obj_menu))
 				global.playerControl = false;
 			}
 
-
+show_debug_message(global.PlayerName);
 
 
 
