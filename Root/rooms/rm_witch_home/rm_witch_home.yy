@@ -72,6 +72,7 @@
     {"name":"inst_31D6427F","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_520CFCC8","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_1C7EB969","path":"rooms/rm_witch_home/rm_witch_home.yy",},
+    {"name":"inst_39025566","path":"rooms/rm_witch_home/rm_witch_home.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -154,6 +155,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"propertyId":{"name":"TargetPos_y","path":"objects/obj_door/obj_door.yy",},"value":"300",},
           ],"rotation":-90.3161,"scaleX":1.0,"scaleY":1.0,"x":1400.0,"y":200.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1C7EB969","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_weapon_smith","path":"objects/obj_npc_weapon_smith/obj_npc_weapon_smith.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1500.0,"y":1000.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39025566","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_player_roomtimer","path":"objects/obj_player_roomtimer/obj_player_roomtimer.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1900.0,"y":1400.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":300,"effectEnabled":true,"effectType":null,"gridX":100,"gridY":100,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_witchHouse","path":"sprites/spr_witchHouse/spr_witchHouse.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
