@@ -1,5 +1,5 @@
 //draw the weapon behind player layer
-if aimDir >= 0 && aimDir < 180 
+if aimDir >= 0 && aimDir < 180 && gun = 1
 	{
 	draw_my_weapon()
 	}
@@ -7,11 +7,13 @@ if aimDir >= 0 && aimDir < 180
 //draw the player
 draw_self();
 
+if gun = 1{
 //draw weapon
 if aimDir >= 180 && aimDir < 360
 	{
 		draw_my_weapon()
 	}
+}
 	
 //draw hp as number
 draw_text(x, y-50, "HP:" + string(hp)+"/"+string(maxHp));

@@ -73,6 +73,7 @@ if (vx != 0 || vy != 0)
 	aimDir = point_direction(x, centerY, mouse_x, mouse_y);
 
 	//make sure player is facing correct direction
+if gun = 1{
 	//face = round(dir/90);
 		face = round(aimDir/90);
 		if face == 4 {face = 0;};
@@ -82,6 +83,39 @@ if (vx != 0 || vy != 0)
 		{
 			image_index = 0;
 		}
+}else{
+
+if (vx > 0)
+	{
+		face = 0;
+	}
+	if (vx < 0)
+	{
+		face = 2;
+	}	
+	if (vy > 0)
+	{
+		face = 3;
+	}
+	if (vy < 0)
+	{
+		face = 1;
+	}
+
+switch face {
+case 0: sprite_index = spr_player_walk_right; break;
+case 1: sprite_index = spr_player_idle_up; break;
+case 2: sprite_index = spr_player_walk_left; break;
+case 3: sprite_index = spr_player_walk_down; break;
+}
+
+//animate
+		if vx == 0 && vy == 0
+		{
+			image_index = 0;
+		}
+
+}
 	
 	//Set the player sprite
 		mask_index = playerSpr[playerState.idle][3];
@@ -89,6 +123,7 @@ if (vx != 0 || vy != 0)
 
 #endregion
 
+if gun = 1 {
 #region//weapon swapping
 	var _playerWeapons = global.PlayerWeapons;
 	
@@ -138,6 +173,8 @@ if shootkey && shootTimer <= 0
 	}
 }
 #endregion
+
+}
 #region // Setting pickup audio position if Sequence is playing
 if (instance_exists(obj_control) && obj_control.sequenceState == seqState.playing)
 	{
