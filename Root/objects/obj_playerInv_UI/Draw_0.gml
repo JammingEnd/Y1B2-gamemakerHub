@@ -8,6 +8,7 @@ textbox_x = camera_get_view_x(view_camera[0]);
 textbox_y = camera_get_view_y(view_camera[0]);
 //pipi
 ds_list_clear(itemList);
+
 for(i = 0; i < ds_list_size(playerInventory); i++)
 {
 	var refID = playerInventory[| i];
@@ -45,7 +46,11 @@ for (var i = 0; i < op_length; i++)
  {
 	 var _c = c_white;
 	 if pos == i{_c = c_white}
-	 show_debug_message(ds_list_find_value(itemList, i));
+	 if(ds_list_size(playerInventory) == 0 )
+	{
+		draw_text_transformed_color(x+op_border, y+op_border+op_space*i, "", 1, 1, 0, _c, _c, _c, _c, 1);
+		return;
+	}
 	 draw_text_transformed_color(x+op_border, y+op_border+op_space*i, ds_list_find_value(itemList, i) , 1, 1, 0, _c, _c, _c, _c, 1);
  }
   

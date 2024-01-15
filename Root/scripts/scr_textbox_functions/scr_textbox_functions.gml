@@ -109,7 +109,10 @@ text[page_number] = _text;
 				speaker_sprite[page_number] = spr_talk_npcName;
 				txtb_spr[page_number] = spr_menu;
 				break;
-				
+			case "Cauldron":
+				speaker_side[page_number] = spr_inventorybutton;
+				txtb_spr[page_number] = spr_menu;
+			break;
 			//dont write below this
 			}
 	}

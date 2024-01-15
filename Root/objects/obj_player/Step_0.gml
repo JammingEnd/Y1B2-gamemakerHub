@@ -198,7 +198,7 @@ if (npcPrompt == noone || npcPrompt == undefined) {
 }
 //where the prompt pops up +debug message
 npcPrompt = scr_showPrompt(nearbyNPC,nearbyNPC.x,nearbyNPC.y-nearbyNPC.sprite_height);
-show_debug_message("obj_player has found an NPC!");
+
 }
 if !nearbyNPC {
 // Get rid of prompt
