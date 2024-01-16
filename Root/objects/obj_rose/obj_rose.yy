@@ -1,17 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object72",
+  "name": "obj_rose",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_damage_enemy","path":"objects/obj_damage_enemy/obj_damage_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Fauna",
-    "path": "folders/Objects/-Official/Fauna.yy",
+    "name": "destructables",
+    "path": "folders/Objects/-Official/Building_walls_etc/destructables.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Obj_par_walls",
+    "path": "objects/Obj_par_walls/Obj_par_walls.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_bush",
-    "path": "sprites/spr_bush/spr_bush.yy",
+    "name": "spr_rose",
+    "path": "sprites/spr_rose/spr_rose.yy",
   },
   "spriteMaskId": null,
   "visible": true,

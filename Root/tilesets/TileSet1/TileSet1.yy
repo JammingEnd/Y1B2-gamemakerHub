@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "use_this_tileset_sprite_as_template",
-    "path": "sprites/use_this_tileset_sprite_as_template/use_this_tileset_sprite_as_template.yy",
+    "name": "leaves_green",
+    "path": "sprites/leaves_green/leaves_green.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

@@ -137,6 +137,15 @@ function create_textbox(_text_id) {
 
 }
 
+function create_textbox_big(_text_id) {
+
+	with(instance_create_depth(0,0,-9999, obj_textbox_big))
+		{
+		scr_game_text(_text_id);
+		}
+
+}
+
 ///param option
 ///param link_id
 

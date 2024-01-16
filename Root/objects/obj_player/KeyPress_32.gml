@@ -14,10 +14,14 @@ if (global.playerControl == true)
 			//Decide text to show
 			_text = nearbyNPC.text_id;
 			
-				if (!instance_exists(obj_textbox))
+				if (!instance_exists(obj_textbox)) && (!instance_exists(obj_textbox_big))
 				{
+					if obj_player_roomtimer.transparent = 0{
 					//create text & text box & positioning
 					 create_textbox(_text);
+					}else{
+					create_textbox_big(_text);
+					}
 				}
 			
 		}
