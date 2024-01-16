@@ -252,26 +252,26 @@ if draw_char == text_length[page] && page == page_number - 1
 	
 	//drawing the options
 	//Vertical space between the options
-	var _op_space = 100;
+	var _op_space = 200;
 	//space between text and textbox
-	var _op_bord = 40;
+	var _op_bord = 80;
 	//options distance from the left
-	var _op_left_offset = 85;
+	var _op_left_offset = 170;
 	
 	for (var op = 0; op < option_number; op++)
 	{
 	//the option box
 	var _o_w = string_width(option[op]) + _op_bord*2
 	//position of text box               distance from the left   calc new option position
-	draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x + _op_left_offset, (_txtb_y - _op_space*option_number + _op_space*op), (_o_w/txtb_spr_w)*2, ((_op_space-10)/txtb_spr_h)*2, 0, c_white, 1)
+	draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x + _op_left_offset, (_txtb_y - _op_space*option_number + _op_space*op), (_o_w*1.5)/txtb_spr_w, ((_op_space-10)/txtb_spr_h), 0, c_white, 1)
 	
 	//write option text
-	draw_text_transformed(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 20 + _op_space*op, option[op], 2, 2, 0);
+	draw_text_transformed(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 50 + _op_space*op, option[op], 2, 2, 0);
 	
 	//turn the selected option yellow
 	var _c = c_white;
 	 if option_pos == op{_c = c_yellow}
-	 draw_text_transformed_color(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 20 + _op_space*op, option[op], 2, 2, 0, _c, _c, _c, _c, 1);
+	 draw_text_transformed_color(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 50 + _op_space*op, option[op], 2, 2, 0, _c, _c, _c, _c, 1);
 	
 	//Draw the selection arrow
 	if option_pos == op
