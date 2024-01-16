@@ -3,7 +3,7 @@ op_length = array_length(option[menu_level])
 
 option[0, 0] = ("Timer: " + string(global.LevelTimerMin)+":" + string(global.LevelTimerSec)+":"+string(global.LevelTimerMilsec));
 
-if (transparent = 1){
+if (transparent = 1)&&(active = 1){
 global.LevelTimerMilsec++
 global.TotalTime++
 }

@@ -18,11 +18,12 @@ switch (_text_id){
 				scr_text("Things you can interact with will have a flickering icon above it once approched")
 				scr_text("Thats all for now, good luck!!")
 					scr_text_float(19, 30, 4);
-					room_goto(rm_witch_home);
+					room_goto(rm_forest);
 				break;
 			
 				case ("player hates tutorial"):
-					room_goto(rm_witch_home);
+					scr_text("ok.");
+					room_goto(rm_forest);
 				break;
 	
 #region //-----------NPC Name Template---------//
