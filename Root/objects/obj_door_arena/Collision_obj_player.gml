@@ -1,5 +1,6 @@
 obj_player.gun = 1;
 obj_player_roomtimer.active = 1;
+global.enemy_multi++
 
 global.LevelTimerMilsec = 0;
 global.LevelTimerSec = 0;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.npcName = npcname
-text_id = global.npcName
+global.Tutor = npcname
+text_id = global.Tutor
 
 
 

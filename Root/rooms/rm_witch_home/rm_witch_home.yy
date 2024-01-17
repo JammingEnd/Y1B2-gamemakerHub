@@ -28,7 +28,6 @@
     {"name":"inst_520CFCC8","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_1C7EB969","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_7EDDDA3A","path":"rooms/rm_witch_home/rm_witch_home.yy",},
-    {"name":"inst_43CA5F92","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_473F63E8","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_2AAD8AD4","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_2ED6841C","path":"rooms/rm_witch_home/rm_witch_home.yy",},
@@ -89,7 +88,6 @@
           ],"rotation":-90.3161,"scaleX":1.0,"scaleY":1.0,"x":1400.0,"y":200.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1C7EB969","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_weapon_smith","path":"objects/obj_npc_weapon_smith/obj_npc_weapon_smith.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1500.0,"y":1000.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EDDDA3A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_Caudron2","path":"objects/obj_Caudron2/obj_Caudron2.yy",},"properties":[],"rotation":0.0,"scaleX":0.38204333,"scaleY":0.375,"x":1392.6581,"y":3426.713,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43CA5F92","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_Spawner","path":"objects/obj_Spawner/obj_Spawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1600.0,"y":2300.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_473F63E8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":14.95,"scaleY":1.0,"x":104.65,"y":3958.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2AAD8AD4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":14.95,"scaleY":1.0,"x":2913.0466,"y":3928.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2ED6841C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.8233807,"scaleY":7.1813436,"x":2113.5564,"y":2858.398,},
@@ -120,7 +118,9 @@
           ],"rotation":0.0,"scaleX":1.0430908,"scaleY":1.0,"x":2392.2615,"y":4000.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background_1","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":100,"gridY":100,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_witchHouse","path":"sprites/spr_witchHouse/spr_witchHouse.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":false,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
-    {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4278650649,"depth":300,"effectEnabled":true,"effectType":null,"gridX":100,"gridY":100,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_2","assets":[
+        {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_5CF33456","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":8.4,"scaleY":6.55,"spriteId":{"name":"spr_planks","path":"sprites/spr_planks/spr_planks.yy",},"x":-160.0,"y":-96.0,},
+      ],"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
   ],
   "parent": {
     "name": "Rooms",
@@ -137,7 +137,7 @@
   "roomSettings": {
     "Height": 4000,
     "inheritRoomSettings": false,
-    "persistent": false,
+    "persistent": true,
     "Width": 5200,
   },
   "sequenceId": null,

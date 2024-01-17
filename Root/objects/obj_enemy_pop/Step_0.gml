@@ -7,12 +7,16 @@ switch ( state )
 	//fade in
 	if image_alpha < 1
 	{
+	 spd = 0
+	 damage = 0;
 	 image_alpha += fadeSpd;
+	}else{
+		state = 0;
+		damage = 2;
 	}
-	break;
 	//chase state
 	case 0:
-	
+	image_alpha = 1
 	//chase player
 	if instance_exists(obj_player)
 	{dir = point_direction(x, y, obj_player.x, obj_player.y);}

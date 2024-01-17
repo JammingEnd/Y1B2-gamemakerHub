@@ -1,6 +1,9 @@
 //inherint the par event
 event_inherited();
-
+global.total_spider_spawned++
+global.current_spider_count++
+global.current_enemy_count++
+global.total_enemy_spawned++
 spd = 2;
 chaseSpd = 4;
 dir = 0;
@@ -18,5 +21,5 @@ state = 0;
 	recoverTime = 45;
 	bulletInst = noone;
 	
-bulletXoffset = 0;
-bulletYoffset = -sprite_height;
+bulletXoffset = -40;
+bulletYoffset = 80;

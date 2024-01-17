@@ -11,6 +11,9 @@ obj_player.gun = 0;
 global.LevelTimerMilsec = 0;
 global.LevelTimerSec = 0;
 global.LevelTimerMin = 0;
+global.total_enemy_spawned = 0;
+global.total_rat_spawned = 0;
+global.total_spider_spawned = 0;
 
 UseDoor(TargetPos_x, TargetPos_y, TargetRoom);
 

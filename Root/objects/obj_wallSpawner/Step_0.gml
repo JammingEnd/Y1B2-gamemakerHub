@@ -4,15 +4,15 @@
 timer++;
 
 //reset timer if max number reached
-if instance_number(obj_enemy_parent) >= global.activeEnemyMax
-{
-timer = 0;
-}
+//if instance_number(obj_enemy_parent) >= global.activeEnemyMax
+//{
+//timer = 0;
+//}
 
-if timer >= spawnTime
+if timer >= spawnTime-(15*global.enemy_multi)
 {
 	//create enemy
-	var _inst = instance_create_depth(x,y, depth-1, obj_enemy_bob);
+	var _inst = instance_create_depth(x,y, depth-1, obj_spike_wall);
 	with (_inst)
 	{
 	//make ebemy invisible
@@ -20,7 +20,7 @@ if timer >= spawnTime
 	 state = -1;
 	}
 	//reset the timer
-	timer = 0;
+	instance_destroy();
 }
 
 

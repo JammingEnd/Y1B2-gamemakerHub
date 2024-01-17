@@ -1,5 +1,9 @@
 //inherint the par event
 event_inherited();
+global.total_rat_spawned++
+global.current_rat_count++
+global.current_enemy_count++
+global.total_enemy_spawned++
 
 spd = 4;
 chaseSpd = 8;

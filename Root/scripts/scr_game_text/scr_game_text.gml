@@ -253,9 +253,12 @@ case "Cauldron":
 	break;
 	
 #region//-------Masked Tutor--------//
-case "Tutor Finds Player":
-		scr_text("HALT.", "Tutor")
+case "Tutor":
+		scr_text("I HAVE BEEN SUMMONED AT LAST!!", "Tutor");
+		scr_text("huh? You came here to free me?", "Tutor");
 		break;
+
+#endregion
 
 //Do not write below this point
 	}	
