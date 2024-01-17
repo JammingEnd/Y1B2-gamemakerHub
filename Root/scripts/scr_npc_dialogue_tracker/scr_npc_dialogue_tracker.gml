@@ -46,4 +46,12 @@ global.Cauldron = _script
 
 }
 
+//in use
+/// param script_name
+function scr_cha_scr_Tutor (_script){
+
+global.Tutor = _script
+
+}
+
 #endregion

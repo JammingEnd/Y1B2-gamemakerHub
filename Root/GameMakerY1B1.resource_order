@@ -126,6 +126,7 @@
     {"name":"IMG_0758","order":6,"path":"sprites/IMG_0758/IMG_0758.yy",},
     {"name":"Spr_RedBox","order":4,"path":"sprites/Spr_RedBox/Spr_RedBox.yy",},
     {"name":"spr_magic_bullet","order":2,"path":"sprites/spr_magic_bullet/spr_magic_bullet.yy",},
+    {"name":"trigger_speech_area","order":2,"path":"objects/trigger_speech_area/trigger_speech_area.yy",},
     {"name":"obj_Caudron2","order":3,"path":"objects/obj_Caudron2/obj_Caudron2.yy",},
     {"name":"obj_peristentContainer","order":11,"path":"objects/obj_peristentContainer/obj_peristentContainer.yy",},
     {"name":"obj_enemy_pop","order":4,"path":"objects/obj_enemy_pop/obj_enemy_pop.yy",},

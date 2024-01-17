@@ -251,6 +251,11 @@ case "Cauldron":
 				
 		}
 	break;
+	
+#region//-------Masked Tutor--------//
+case "Tutor Finds Player":
+		scr_text("HALT.", "Tutor")
+		break;
 
 //Do not write below this point
 	}	

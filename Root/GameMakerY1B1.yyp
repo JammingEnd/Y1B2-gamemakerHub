@@ -195,6 +195,7 @@
     {"id":{"name":"Spr_RedBox","path":"sprites/Spr_RedBox/Spr_RedBox.yy",},},
     {"id":{"name":"Spr_Horizontal_wall","path":"sprites/Spr_Horizontal_wall/Spr_Horizontal_wall.yy",},},
     {"id":{"name":"spr_magic_bullet","path":"sprites/spr_magic_bullet/spr_magic_bullet.yy",},},
+    {"id":{"name":"trigger_speech_area","path":"objects/trigger_speech_area/trigger_speech_area.yy",},},
     {"id":{"name":"obj_Caudron2","path":"objects/obj_Caudron2/obj_Caudron2.yy",},},
     {"id":{"name":"obj_peristentContainer","path":"objects/obj_peristentContainer/obj_peristentContainer.yy",},},
     {"id":{"name":"Obj_RightDown_Corner_WithWall","path":"objects/Obj_RightDown_Corner_WithWall/Obj_RightDown_Corner_WithWall.yy",},},

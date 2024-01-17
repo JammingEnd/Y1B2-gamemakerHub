@@ -112,6 +112,11 @@ text[page_number] = _text;
 			case "Cauldron":
 				speaker_side[page_number] = spr_inventorybutton;
 				txtb_spr[page_number] = spr_menu;
+				
+			case "Tutor":
+				speaker_side[page_number] = spr_masked1;
+				txtb_spr[page_number] = spr_menu;
+			
 			break;
 			//dont write below this
 			}
