@@ -305,8 +305,10 @@ case "Tutor Go":
 		scr_text("Dont forget the materials and Soul power (duck shaped), you will need them", "Tutor");
 		scr_text("The faster you defeat the monsters the more Soul power (ducks) you gain", "Tutor");
 		scr_text("The more times you go in, the more difficult it gets so dont forget to brew potions and have one of our people tach you to throw spells better.", "Tutor");
+		scr_text("Once you enter the woods, aim with mouse and shoot using left mouse button");
+		scr_text("Right click to change spells");
 		scr_text("NOW GO, you are not the only one we need to take care of", "Tutor");
-			scr_cha_scr_Cauldron("Tutor Done")
+			scr_cha_scr_Tutor("Tutor Done")
 		break;
 		
 case "Tutor Done":
@@ -322,7 +324,7 @@ case "Statue":
 			scr_text_color(40, 55, c_purple, c_purple, c_purple, c_purple)
 			scr_text_float(40, 55)
 		scr_text("You feel a stare of anticipation from the statue", "Statue");
-			scr_cha_scr_Cauldron("Statue 2")
+			scr_cha_scr_Statue("Statue 2")
 case "Statue 2":
 		scr_text("It is written: A tribute to our spirit animal SNUSNU", "Statue");
 		break;

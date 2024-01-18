@@ -168,7 +168,6 @@
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
     {"id":{"name":"spr_helpbutton2","path":"sprites/spr_helpbutton2/spr_helpbutton2.yy",},},
-    {"id":{"name":"obj_npc_tutor78","path":"objects/obj_npc_tutor78/obj_npc_tutor78.yy",},},
     {"id":{"name":"Obj_Horizontal_Wall","path":"objects/Obj_Horizontal_Wall/Obj_Horizontal_Wall.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"spr_damage_player_test","path":"sprites/spr_damage_player_test/spr_damage_player_test.yy",},},

@@ -109,7 +109,6 @@
     {"name":"obj_enemy_parent","order":1,"path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},
     {"name":"obj_settings","order":1,"path":"objects/obj_settings/obj_settings.yy",},
     {"name":"spr_helpbutton2","order":8,"path":"sprites/spr_helpbutton2/spr_helpbutton2.yy",},
-    {"name":"obj_npc_tutor78","order":1,"path":"objects/obj_npc_tutor78/obj_npc_tutor78.yy",},
     {"name":"obj_inventory","order":1,"path":"objects/obj_inventory/obj_inventory.yy",},
     {"name":"spr_damage_player_test","order":6,"path":"sprites/spr_damage_player_test/spr_damage_player_test.yy",},
     {"name":"obj_itemNameCountDef","order":1,"path":"objects/obj_itemNameCountDef/obj_itemNameCountDef.yy",},

@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.Weapon_Smith = "noting";
+
+global.Statue = npcname
+
+
+
+
+
+
 
 // Inherit the parent event
 event_inherited();
