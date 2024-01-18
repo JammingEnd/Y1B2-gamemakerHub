@@ -2,7 +2,7 @@
 // You can write your code in this editor
 event_inherited();
 retrievedItem = undefined;
-playerInventory = ds_list_create();
+global.playerInventory = ds_list_create();
 
 enum inv 
 {

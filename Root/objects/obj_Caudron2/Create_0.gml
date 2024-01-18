@@ -2,8 +2,9 @@
 // You can write your code in this editor
 event_inherited();
 
-global.AllRecipes = ds_list_create()
+global.AllRecipes = ds_list_create();
 
+global.whatCurrentPotion = "";
 
 ds_list_add(global.AllRecipes, CreateNewRecipe(
 "Healing_potion", 

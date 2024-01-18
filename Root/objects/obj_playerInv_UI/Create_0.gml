@@ -11,9 +11,9 @@ op_space = 50;
 
 //selection position
 pos = 0;
-itemList = ds_list_create();
+//itemList = ds_list_create();
 //pause menu
-playerInventory = obj_inventory.playerInventory;
+playerInventory = global.playerInventory;
 
 
 

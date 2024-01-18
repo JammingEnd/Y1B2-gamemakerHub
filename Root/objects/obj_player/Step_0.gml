@@ -220,3 +220,20 @@ if hp <= 0
 	instance_destroy();
 	exit;
 }
+
+
+/// time effects
+if(SpeedPotionActive == true)
+{
+	walkSpeed = baseWalkSpeed * 1.5;
+	SpeedPotionTimer -= 1 / 60
+	if(SpeedPotionTimer <= 0)
+	{
+		SpeedPotionActive = false;
+	}
+	
+}
+else
+{
+	walkSpeed = baseWalkSpeed;	
+}
