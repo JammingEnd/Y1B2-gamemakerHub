@@ -101,7 +101,7 @@ text[page_number] = _text;
 				break;
 			
 			case "Weapon_Smith":
-				speaker_sprite[page_number] = spr_talk_npc_weapon_smith;
+				speaker_sprite[page_number] = spr_talk_smith;
 				txtb_spr[page_number] = spr_menu;
 				break;
 				

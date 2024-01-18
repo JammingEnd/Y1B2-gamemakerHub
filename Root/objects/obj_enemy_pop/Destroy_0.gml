@@ -8,3 +8,5 @@ instance_create_depth(x, y, -y, obj_item_drop);
 
 global.current_enemy_count--
 global.current_spider_count--
+
+OnDeath(obj_enemy_pop);

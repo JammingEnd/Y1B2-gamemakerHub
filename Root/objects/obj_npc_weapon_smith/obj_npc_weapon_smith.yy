@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_talk_npc_weapon_smith",
-    "path": "sprites/spr_talk_npc_weapon_smith/spr_talk_npc_weapon_smith.yy",
+    "name": "spr_masked3",
+    "path": "sprites/spr_masked3/spr_masked3.yy",
   },
   "spriteMaskId": null,
   "visible": true,
