@@ -9,6 +9,7 @@ chaseSpd = 4;
 dir = 0;
 xspd = 0;
 yspd = 0;
+timer = 0;
 
 face = 1;
 

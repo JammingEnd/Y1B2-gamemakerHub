@@ -74,3 +74,7 @@ switch ( state )
 	break;
 }
 
+if (place_meeting(x,y,obj_enemy_bob)) {timer++}else{timer = 0};
+
+if (timer >= 180){y-=random_range(-360, 360); };
+if (timer >= 180){x-=random_range(-360, 360); timer = 0;};

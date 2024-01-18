@@ -114,6 +114,11 @@ if place_meeting(x, y + yspd, Obj_par_walls) || place_meeting(x, y + yspd, obj_e
 x += xspd;
 y += yspd;
 
+if (place_meeting(x,y,obj_enemy_bob)) {timer++}else{timer = 0};
+
+if (timer >= 180){y-=random_range(-640, 640); };
+if (timer >= 180){x-=random_range(-640, 640); timer = 0;};
+
 //set depth 
 
 depth = -y;
