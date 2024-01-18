@@ -39,6 +39,7 @@
     {"name":"spr_speak","order":4,"path":"sprites/spr_speak/spr_speak.yy",},
     {"name":"rm_test_dialog","order":2,"path":"rooms/rm_test_dialog/rm_test_dialog.yy",},
     {"name":"obj_camera","order":3,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"spr_snake","order":5,"path":"sprites/spr_snake/spr_snake.yy",},
     {"name":"enemy_control","order":8,"path":"objects/enemy_control/enemy_control.yy",},
     {"name":"spr_player_UI","order":4,"path":"sprites/spr_player_UI/spr_player_UI.yy",},
     {"name":"leaves_orange","order":5,"path":"sprites/leaves_orange/leaves_orange.yy",},

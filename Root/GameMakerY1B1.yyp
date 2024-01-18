@@ -64,7 +64,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.0.121",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"random_which","path":"sprites/random_which/random_which.yy",},},
@@ -80,6 +80,7 @@
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"scr_promptControl","path":"scripts/scr_promptControl/scr_promptControl.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"spr_snake","path":"sprites/spr_snake/spr_snake.yy",},},
     {"id":{"name":"enemy_control","path":"objects/enemy_control/enemy_control.yy",},},
     {"id":{"name":"spr_player_UI","path":"sprites/spr_player_UI/spr_player_UI.yy",},},
     {"id":{"name":"leaves_orange","path":"sprites/leaves_orange/leaves_orange.yy",},},
