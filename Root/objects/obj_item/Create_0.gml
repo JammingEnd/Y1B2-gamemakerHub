@@ -6,4 +6,4 @@ data[0, 1] = 0;
 
 itemName = "";
 amount = 0;
-icon = spr_inventory;
+icon = undefined;

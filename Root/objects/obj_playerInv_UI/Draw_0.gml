@@ -34,8 +34,8 @@ width = _new_w + op_border*2;
 height = op_border*2 + string_height(ds_list_find_value(itemList, i)) + (op_length-1)*op_space;
 
 //center menu
-x = camera_get_view_x(view_camera[0]) +300;
-y = camera_get_view_y(view_camera[0]) +30;
+x = camera_get_view_x(view_camera[0]) +30;
+y = camera_get_view_y(view_camera[0]) +400;
 
 //draw menu back ground
 draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width, height/sprite_height, 0, c_white, 1);
