@@ -3,7 +3,10 @@
 timer++
 
 if (global.current_enemy_count <= 0 && timer >= 300) 
-{instance_destroy()};
+{
+	obj_player_roomtimer.timeactive = 0;
+	instance_destroy();
+};
 
 switch ( state )
 {

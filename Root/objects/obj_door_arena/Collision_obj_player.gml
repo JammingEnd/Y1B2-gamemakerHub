@@ -1,4 +1,5 @@
 obj_player.gun = 1;
+obj_player_time.active = 1;
 obj_player_roomtimer.active = 1;
 global.enemy_multi++
 

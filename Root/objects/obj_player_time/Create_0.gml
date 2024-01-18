@@ -3,7 +3,7 @@
 //doesnt really matter
 width = 640;
 height = 860;
-
+active = 1;
 //op_border define distance of letter from text_box boarder
 //op_space define space between the letter
 op_border = 35;

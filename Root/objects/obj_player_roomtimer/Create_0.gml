@@ -18,6 +18,7 @@ global.TotalTime = 0;
 
 transparent = 1;
 active = 0;
+timeactive = 0;
 
 //pause menu
 option[0, 0] = ("Timer: " + string(global.LevelTimerMin)+":" + string(global.LevelTimerSec)+":"+string(global.LevelTimerMilsec));
