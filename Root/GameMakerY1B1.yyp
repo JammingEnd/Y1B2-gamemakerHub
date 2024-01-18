@@ -207,6 +207,7 @@
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"obj_enemy_pop","path":"objects/obj_enemy_pop/obj_enemy_pop.yy",},},
     {"id":{"name":"Obj_vertical_wall","path":"objects/Obj_vertical_wall/Obj_vertical_wall.yy",},},
+    {"id":{"name":"obj_spike_wall_intro","path":"objects/obj_spike_wall_intro/obj_spike_wall_intro.yy",},},
     {"id":{"name":"spr_maskedW2","path":"sprites/spr_maskedW2/spr_maskedW2.yy",},},
     {"id":{"name":"spr_unmaskedW1","path":"sprites/spr_unmaskedW1/spr_unmaskedW1.yy",},},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},

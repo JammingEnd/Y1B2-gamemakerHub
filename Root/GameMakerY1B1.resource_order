@@ -134,6 +134,7 @@
     {"name":"obj_Caudron2","order":3,"path":"objects/obj_Caudron2/obj_Caudron2.yy",},
     {"name":"obj_peristentContainer","order":11,"path":"objects/obj_peristentContainer/obj_peristentContainer.yy",},
     {"name":"obj_enemy_pop","order":4,"path":"objects/obj_enemy_pop/obj_enemy_pop.yy",},
+    {"name":"obj_spike_wall_intro","order":9,"path":"objects/obj_spike_wall_intro/obj_spike_wall_intro.yy",},
     {"name":"spr_maskedW2","order":3,"path":"sprites/spr_maskedW2/spr_maskedW2.yy",},
     {"name":"spr_unmaskedW1","order":12,"path":"sprites/spr_unmaskedW1/spr_unmaskedW1.yy",},
     {"name":"TileSet1","order":2,"path":"tilesets/TileSet1/TileSet1.yy",},
