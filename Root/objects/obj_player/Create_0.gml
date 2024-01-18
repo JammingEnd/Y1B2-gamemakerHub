@@ -8,6 +8,7 @@ plHp = 10 + global.HpValue
 	get_damaged_create(plHp, true);
 
 walkSpeed = 16;
+baseWalkSpeed = 16;
 vx = 0;
 vy = 0;
 dir = 3;
@@ -61,3 +62,6 @@ audio_listener_set_orientation(0,0,1,0,0,0,1);
 selectedWeapon = 0;
 weapon = global.PlayerWeapons[selectedWeapon];
 
+/// status effect bools
+SpeedPotionActive = false;
+SpeedPotionTimer = 0;

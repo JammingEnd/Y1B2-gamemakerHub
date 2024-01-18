@@ -218,19 +218,21 @@ case "Cauldron":
 	case "PotionLink1":
 		{
 				var costString = "Cost:";
-				var index = 1;
+				var index = 0;
 				for (i = 0; i < ds_list_size(global.AllRecipes[| index].ItemAmountList); i++)
 				{
 					
 						show_debug_message(string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount) + "Yippeee");
 						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireName);
-						costString +=  ">";
+						costString +=  " (";
 						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireAmount);
-						costString += "<,";
+						costString += "),";
+						global.whatCurrentPotion = global.AllRecipes[| index].PotionName; 
 						
 				}
 				scr_text(costString, "Cauldron");
 				
+				scr_option("Brew", "_brewingPotion")
 		}
 	break;
 	case "PotionLink2":
@@ -242,16 +244,28 @@ case "Cauldron":
 					
 						//show_debug_message(string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount) + "Yippeee");
 						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireName);
-						costString +=  ">";
+						costString += " (";
 						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireAmount);
-						costString += "<,";
-						
+						costString += "),";
+						global.whatCurrentPotion = global.AllRecipes[| index].PotionName; 
 				}
 				scr_text(costString, "Cauldron");
 				
+				scr_option("Brew", "_brewingPotion");
 		}
 	break;
 	
+	
+	
+	case "_brewingPotion":
+		{
+				ExchangeRecoursesForItem(
+				$"{global.whatCurrentPotion}", 
+				CreateItemNamesForRecipe(["Spider_Eye", "Rat_Tail"]),
+				CreateItemAmountForRecipe([3, 1])
+				);
+		}
+	break;
 #region//-------Masked Tutor--------//
 case "Tutor":
 		scr_text("I HAVE BEEN SUMMONED AT LAST!!", "Tutor");

@@ -7,11 +7,14 @@ draw_set_font(global.font_main);
 textbox_x = camera_get_view_x(view_camera[0]);
 textbox_y = camera_get_view_y(view_camera[0]);
 //pipi
-ds_list_clear(itemList);
+
+
+
+var itemList = ds_list_create();
 
 for(i = 0; i < ds_list_size(playerInventory); i++)
 {
-	var refID = playerInventory[| i];
+	var refID = global.playerInventory[| i];
 	var readItem = refID;
 	ds_list_add(itemList, ($"{readItem.itemName}: {readItem.amount}")) ;
 }
