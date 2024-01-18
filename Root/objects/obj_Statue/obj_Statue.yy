@@ -4,14 +4,16 @@
   "name": "obj_Statue",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"npcname","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"Statue",},
+  ],
   "parent": {
-    "name": "Building_walls_etc",
-    "path": "folders/Objects/-Official/Building_walls_etc.yy",
+    "name": "More Official",
+    "path": "folders/Objects/-Official/Npc's/More Official.yy",
   },
   "parentObjectId": {
-    "name": "Obj_par_walls",
-    "path": "objects/Obj_par_walls/Obj_par_walls.yy",
+    "name": "obj_par_npc",
+    "path": "objects/obj_par_npc/obj_par_npc.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

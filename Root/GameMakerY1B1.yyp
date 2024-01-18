@@ -64,7 +64,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.0.121",
   },
   "resources": [
     {"id":{"name":"random_which","path":"sprites/random_which/random_which.yy",},},
@@ -92,6 +92,7 @@
     {"id":{"name":"obj_npc_cat_angel","path":"objects/obj_npc_cat_angel/obj_npc_cat_angel.yy",},},
     {"id":{"name":"spr_health_heal_circle","path":"sprites/spr_health_heal_circle/spr_health_heal_circle.yy",},},
     {"id":{"name":"obj_RatSpawner","path":"objects/obj_RatSpawner/obj_RatSpawner.yy",},},
+    {"id":{"name":"spr_speech_activate","path":"sprites/spr_speech_activate/spr_speech_activate.yy",},},
     {"id":{"name":"obj_game_over","path":"objects/obj_game_over/obj_game_over.yy",},},
     {"id":{"name":"spr_inventorybutton","path":"sprites/spr_inventorybutton/spr_inventorybutton.yy",},},
     {"id":{"name":"spr_BlueBox","path":"sprites/spr_BlueBox/spr_BlueBox.yy",},},
@@ -219,8 +220,8 @@
     {"id":{"name":"obj_rose","path":"objects/obj_rose/obj_rose.yy",},},
     {"id":{"name":"spr_selection_arrow","path":"sprites/spr_selection_arrow/spr_selection_arrow.yy",},},
     {"id":{"name":"obj_house","path":"objects/obj_house/obj_house.yy",},},
-    {"id":{"name":"trig_spe_man","path":"objects/trig_spe_man/trig_spe_man.yy",},},
     {"id":{"name":"Spr_LeftUp_corner_wall","path":"sprites/Spr_LeftUp_corner_wall/Spr_LeftUp_corner_wall.yy",},},
+    {"id":{"name":"spr_Statue_talking","path":"sprites/spr_Statue_talking/spr_Statue_talking.yy",},},
     {"id":{"name":"Obj_RIghtUp_Corner_wall","path":"objects/Obj_RIghtUp_Corner_wall/Obj_RIghtUp_Corner_wall.yy",},},
     {"id":{"name":"spr_font_basic","path":"sprites/spr_font_basic/spr_font_basic.yy",},},
     {"id":{"name":"obj_door_arena","path":"objects/obj_door_arena/obj_door_arena.yy",},},

@@ -54,4 +54,12 @@ global.Tutor = _script
 
 }
 
+//in use
+/// param script_name
+function scr_cha_scr_Statue (_script){
+
+global.Statue = _script
+
+}
+
 #endregion

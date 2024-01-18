@@ -13,18 +13,29 @@ switch (_text_id){
 			
 				case ("player wants tutorial"):
 				scr_text("Press Space to progress through or skip dialogue")
-				scr_text("W,A,S,D is used to move your character");
+				scr_text("W,A,S,D is used to move your character, relationally to the direction you want to move");
 				scr_text("Press Space once you are close to a character or object to try and interact with them.")
 				scr_text("Things you can interact with will have a flickering icon above it once approched")
 				scr_text("Thats all for now, good luck!!")
 					scr_text_float(19, 30, 4);
-					room_goto(rm_forest);
+					scr_option("Ok", "Tutorial Forest");
+					break;
+				
+				case "Tutorial Forest":
+				room_goto(rm_forest);
+				scr_text("After tripping into a portal you find yourself in this Straaaange place")
+					scr_text_float(55,65, 4)
+					scr_text_color(55, 65, c_orange,c_orange,c_orange,c_orange)
+				scr_text("You see a small house up north...")
+				scr_text("And a huge forest down South")
+				
 				break;
 			
 				case ("player hates tutorial"):
 					scr_text("ok.");
 					room_goto(rm_forest);
 				break;
+#endregion
 	
 #region //-----------NPC Name Template---------//
 	case "npcName1": //script one of NPC Name
@@ -207,6 +218,7 @@ switch (_text_id){
 			break;
 #endregion
 
+#region //---------Cauldron------//
 case "Cauldron":
 	scr_text("The cauldron is hot, but no sign of magic. maybe you should put something in it", "Cauldron")
 		for(i = 0; i < ds_list_size(global.AllRecipes); i++)
@@ -251,11 +263,53 @@ case "Cauldron":
 				
 		}
 	break;
-	
+
+#endregion
+
 #region//-------Masked Tutor--------//
 case "Tutor":
-		scr_text("I HAVE BEEN SUMMONED AT LAST!!", "Tutor");
-		scr_text("huh? You came here to free me?", "Tutor");
+		scr_text("Halt!!", "Tutor");
+		scr_text("You are...", "Tutor");
+		scr_text("It's been a while since we've received a Fallen from Earth Alpha", "Tutor");
+			scr_text_color(41, 47, c_blue, c_blue, c_blue, c_blue);
+			scr_text_shake(41, 47);
+		scr_text("Follow me inside, we will help you get back.")
+		break;
+
+#endregion
+
+#region//-------Masked Tutor - Go--------//
+case "Tutor Go":
+		scr_text("We will  have you fight monsters", "Tutor");
+		scr_text("Its for collecting resources", "Tutor");
+			global.startWall = 0;
+		scr_text("Here's a book about magic, you have 1min to learn it", "Tutor");
+		scr_text("You Learned 3 kinds of Magic");
+		scr_text("There's reason for you to do it, you also need to develop your magical strength for this to work", "Tutor");
+		scr_text("The monsters are in the forst down south outside", "Tutor");
+		scr_text("Dont forget the materials and Soul power (duck shaped), you will need them", "Tutor");
+		scr_text("The faster you defeat the monsters the more Soul power (ducks) you gain", "Tutor");
+		scr_text("The more times you go in, the more difficult it gets so dont forget to brew potions and have one of our people tach you to throw spells better.", "Tutor");
+		scr_text("NOW GO, you are not the only one we need to take care of", "Tutor");
+			scr_cha_scr_Cauldron("Tutor Done")
+		break;
+		
+case "Tutor Done":
+	scr_text("I SAID GO!!", "Tutor");
+break;
+
+#endregion
+
+#region//-------Statue--------//
+case "Statue":
+		scr_text("It is written: A tribute to our spirit animal SNUSNU", "Statue");
+		scr_text("You are going to be offering 5 diffrent special potions to this statue in order to open a portal back to your home", "Tutor");
+			scr_text_color(40, 55, c_purple, c_purple, c_purple, c_purple)
+			scr_text_float(40, 55)
+		scr_text("You feel a stare of anticipation from the statue", "Statue");
+			scr_cha_scr_Cauldron("Statue 2")
+case "Statue 2":
+		scr_text("It is written: A tribute to our spirit animal SNUSNU", "Statue");
 		break;
 
 #endregion

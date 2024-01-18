@@ -120,6 +120,11 @@ text[page_number] = _text;
 				txtb_spr[page_number] = spr_menu;
 			break;
 			
+			case "Statue":
+				speaker_sprite[page_number] = spr_Statue_talking;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			
 			//dont write below this
 			}
 	}

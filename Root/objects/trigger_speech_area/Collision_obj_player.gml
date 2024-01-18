@@ -3,7 +3,7 @@
 
 var _text, _seq;
 
-if (global.playerControl == true) && areaname = 1
+if (global.playerControl == true)
 {
 			//Decide text to show
 			_text = text_id;
@@ -13,10 +13,12 @@ if (global.playerControl == true) && areaname = 1
 					if obj_player_roomtimer.transparent = 0{
 					//create text & text box & positioning
 					create_textbox(_text);
-					areaname = 0;
+					instance_destroy();
+					character.signal = 1;
 					}else{
 					create_textbox_big(_text);
-					areaname = 0;
+					instance_destroy();
+					character.signal = 1;
 					}
 				}
 }
