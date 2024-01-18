@@ -1,10 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.Tutor_Halt = 1;
+
+
+signal = 0;
 
 
 
 
 
 
+// Inherit the parent event
+event_inherited();
 
