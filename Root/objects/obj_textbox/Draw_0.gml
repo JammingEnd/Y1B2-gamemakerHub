@@ -269,7 +269,7 @@ if draw_char == text_length[page] && page == page_number - 1
 	draw_text(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 20 + _op_space*op, option[op]);
 	
 	//turn the selected option yellow
-	var _c = c_black;
+	var _c = #2d2835;
 	 if option_pos == op{_c = global.selectColor}
 	 draw_text_transformed_color(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 20 + _op_space*op, option[op], 1, 1, 0, _c, _c, _c, _c, 1);
 	
