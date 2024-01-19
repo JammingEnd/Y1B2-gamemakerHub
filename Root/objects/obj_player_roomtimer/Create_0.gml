@@ -15,6 +15,7 @@ global.LevelTimerMin = 0;
 global.LevelTimerSec = 0;
 global.LevelTimerMilsec = 0;
 global.TotalTime = 0;
+global.TempMinuts = 0;
 
 transparent = 1;
 active = 0;

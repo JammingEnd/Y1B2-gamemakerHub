@@ -62,4 +62,18 @@ global.Statue = _script
 
 }
 
+//in use
+/// param script_name
+function scr_cha_scr_Medic (_script){
+
+global.Medic = _script
+
+}
+
+function scr_cha_scr_trigger_speech_medic (_script){
+
+global.TrigMedic = _script
+
+}
+
 #endregion

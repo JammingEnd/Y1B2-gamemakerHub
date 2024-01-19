@@ -14,6 +14,7 @@ global.LevelTimerMin = 0;
 global.total_enemy_spawned = 0;
 global.total_rat_spawned = 0;
 global.total_spider_spawned = 0;
+global.TempMinuts = 0;
 
 UseDoor(TargetPos_x, TargetPos_y, TargetRoom);
 

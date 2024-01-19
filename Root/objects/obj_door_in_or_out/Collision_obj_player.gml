@@ -5,6 +5,7 @@ if obj_player_roomtimer.transparent = 0 {
 global.LevelTimerMilsec = 0;
 global.LevelTimerSec = 0;
 global.LevelTimerMin = 0;
+global.TempMinuts = 0;
 
 UseDoor(TargetPos_x, TargetPos_y, TargetRoom);
 
