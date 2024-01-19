@@ -15,6 +15,8 @@ global.total_enemy_spawned = 0;
 global.total_rat_spawned = 0;
 global.total_spider_spawned = 0;
 global.TempMinuts = 0;
+obj_player_time.hour += 9;
+global.forest_spawn = 1;
 
 UseDoor(TargetPos_x, TargetPos_y, TargetRoom);
 

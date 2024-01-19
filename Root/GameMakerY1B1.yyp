@@ -75,6 +75,7 @@
     {"id":{"name":"spr_enemy_pop","path":"sprites/spr_enemy_pop/spr_enemy_pop.yy",},},
     {"id":{"name":"Sprite37","path":"sprites/Sprite37/Sprite37.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
+    {"id":{"name":"obj_wallSpawner_forest","path":"objects/obj_wallSpawner_forest/obj_wallSpawner_forest.yy",},},
     {"id":{"name":"spr_speak","path":"sprites/spr_speak/spr_speak.yy",},},
     {"id":{"name":"Spr_Void_Wall","path":"sprites/Spr_Void_Wall/Spr_Void_Wall.yy",},},
     {"id":{"name":"rm_test_dialog","path":"rooms/rm_test_dialog/rm_test_dialog.yy",},},

@@ -6,19 +6,20 @@ option[0, 0] = ("Timer: " + string(global.LevelTimerMin)+":" + string(global.Lev
 if (transparent = 1)&&(active = 1){
 global.LevelTimerMilsec++
 global.TotalTime++
+addminut++
 }
 
 if global.LevelTimerMilsec = 60 {
-
 global.LevelTimerMilsec = 0
 global.LevelTimerSec++
 };
 
-if global.LevelTimerMilsec = 60 || global.LevelTimerMilsec = 30{
+if addminut >= 15{
 
 if (timeactive = 1){
 	obj_player_time.minut++
 	global.TempMinuts++
+	addminut = 0;
 	};
 };
 

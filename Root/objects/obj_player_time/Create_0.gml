@@ -12,8 +12,9 @@ op_space = 50;
 //selection position
 pos = 0;
 
-hours = 0;
-hour = 8;
+days = 0;
+hours = 2;
+hour = 0;
 minuts = 3;
 minut = 0;
 scale = 1;

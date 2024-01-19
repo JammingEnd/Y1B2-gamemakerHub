@@ -37,6 +37,7 @@ for (var i = 0; i < op_length; i++)
  {
 	 var _c = c_black;
 	 if pos == i{_c = c_black}
-	 draw_text_transformed_color(x+(145*scale), (y+165*scale), option[menu_level, i], scale, scale, 0, _c, _c, _c, _c, 1);
+	 draw_text_transformed_color(x+(145*scale), (y+180*scale), option[menu_level, i], scale, scale, 0, _c, _c, _c, _c, 1);
+	 draw_text_transformed_color(x+(145*scale), (y+160*scale), "Day " + string(days), scale/2, scale/2, 0, _c, _c, _c, _c, 1);
  }
 }

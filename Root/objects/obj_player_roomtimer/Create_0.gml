@@ -8,7 +8,7 @@ height = 860;
 //op_space define space between the letter
 op_border = 35;
 op_space = 50;
-
+addminut = 0;
 //selection position
 pos = 0;
 global.LevelTimerMin = 0;

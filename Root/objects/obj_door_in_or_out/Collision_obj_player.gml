@@ -6,6 +6,7 @@ global.LevelTimerMilsec = 0;
 global.LevelTimerSec = 0;
 global.LevelTimerMin = 0;
 global.TempMinuts = 0;
+global.entered_house = 1;
 
 UseDoor(TargetPos_x, TargetPos_y, TargetRoom);
 
