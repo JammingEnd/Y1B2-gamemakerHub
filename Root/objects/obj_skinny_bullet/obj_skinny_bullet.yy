@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_skinny_bullet",
-    "path": "sprites/spr_skinny_bullet/spr_skinny_bullet.yy",
+    "name": "purple_spell",
+    "path": "sprites/purple_spell/purple_spell.yy",
   },
   "spriteMaskId": null,
   "visible": true,
