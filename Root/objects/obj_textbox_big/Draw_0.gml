@@ -269,8 +269,8 @@ if draw_char == text_length[page] && page == page_number - 1
 	draw_text_transformed(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 50 + _op_space*op, option[op], 2, 2, 0);
 	
 	//turn the selected option yellow
-	var _c = c_white;
-	 if option_pos == op{_c = c_yellow}
+	var _c = c_black;
+	 if option_pos == op{_c = global.selectColor}
 	 draw_text_transformed_color(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 50 + _op_space*op, option[op], 2, 2, 0, _c, _c, _c, _c, 1);
 	
 	//Draw the selection arrow

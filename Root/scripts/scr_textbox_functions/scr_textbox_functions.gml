@@ -10,10 +10,10 @@ function scr_set_defaults_for_text(){
 	//variable for every letter/character
 	for (var c = 0; c < 500; c++)
 		{
-		col_1[c, page_number] = c_white;
-		col_2[c, page_number] = c_white;
-		col_3[c, page_number] = c_white;
-		col_4[c, page_number] = c_white;
+		col_1[c, page_number] = c_black;
+		col_2[c, page_number] = c_black;
+		col_3[c, page_number] = c_black;
+		col_4[c, page_number] = c_black;
 		
 		float_text[c, page_number] = 0;
 		float_dir[c, page_number] = c*20;
