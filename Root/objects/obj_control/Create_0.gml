@@ -2,6 +2,7 @@
 
 // Game variables
 global.playerControl = true;
+global.playerdiedonce = 0;
 
 //townBGMvolume = audio_sound_get_gain(snd_townBGM);
 //townAmbienceVolume = audio_sound_get_gain(snd_townAmbience);

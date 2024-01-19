@@ -125,6 +125,11 @@ text[page_number] = _text;
 				txtb_spr[page_number] = spr_menu;
 			break;
 			
+			case "Medic":
+				speaker_sprite[page_number] = spr_talk_medic;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			
 			//dont write below this
 			}
 	}
@@ -187,7 +192,7 @@ global.TrustValue = global.TrustValue - _trust;
 
 
 ///param number
-function scr_add_time(_Time){
+function scr_pass_time(_Time){
 	
 obj_player_time.minut += _Time;
 
