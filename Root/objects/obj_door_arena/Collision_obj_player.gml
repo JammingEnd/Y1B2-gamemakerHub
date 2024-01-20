@@ -6,6 +6,7 @@ global.enemy_multi++
 global.LevelTimerMilsec = 0;
 global.LevelTimerSec = 0;
 global.LevelTimerMin = 0;
+global.entered_house = 0;
 
 UseDoor(TargetPos_x, TargetPos_y, TargetRoom);
 

@@ -204,6 +204,9 @@ if speaker_sprite[page] != noone
 	//draw_sprite_ext(txtb_spr[page], txtb_img,  camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - sprite_width/2, camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - sprite_height/2, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, 1);
 	//draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, 1);
 	//draw_sprite_ext(sprite_index, image_index, camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - sprite_width/2, camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - sprite_height/2, speaker_side[page], 1, 0, c_white, 1);
+	draw_set_alpha(0.6);
+	draw_rectangle_color (camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]), camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]), c_black, c_black, c_black, c_black, false);
+	draw_set_alpha(1);
 	draw_sprite_ext(sprite_index, image_index, camera_get_view_x(view_camera[0]) + portrait_x_offset[page], textbox_y, 1, 1, 0, c_white, 1);
 	}
 
@@ -237,7 +240,7 @@ _shake_y = lengthdir_y(1, shake_dir[c, page]);
 }
 
 //the text
-draw_text_color(textbox_x + char_x[c, page] + _shake_x, textbox_y + char_y[c, page] + (_float_y*float_strength[c, page]) + _shake_y, char[c, page], col_1[c, page], col_2[c, page], col_3[c, page], col_4[c, page], 1);
+draw_text_color(textbox_x + char_x[c, page] + _shake_x, textbox_y + char_y[c, page] + (_float_y*float_strength[c, page]) + _shake_y -25, char[c, page], col_1[c, page], col_2[c, page], col_3[c, page], col_4[c, page], 1);
 //remove player contro upon creating
 global.playerControl = false;
 }

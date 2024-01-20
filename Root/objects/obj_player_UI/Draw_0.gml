@@ -31,7 +31,7 @@ draw_set_halign(fa_left);
 
 for (var i = 0; i < op_length; i++)
  {
-	 var _c = c_white;
-	 if pos == i{_c = c_white}
+	 var _c =  #2d2835;
+	 if pos == i{_c =  #2d2835}
 	 draw_text_transformed_color(x+op_border, y+op_border+op_space*i, option[menu_level, i], 1, 1, 0, _c, _c, _c, _c, 1);
  }

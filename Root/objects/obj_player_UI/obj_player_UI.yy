@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_menu",
-    "path": "sprites/spr_menu/spr_menu.yy",
+    "name": "spr_menu_settings",
+    "path": "sprites/spr_menu_settings/spr_menu_settings.yy",
   },
   "spriteMaskId": null,
   "visible": true,

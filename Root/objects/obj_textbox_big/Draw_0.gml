@@ -25,7 +25,6 @@ if setup == false
 			//character on center
 			text_x_offset[p] = 800;
 			portrait_x_offset[p] = 1920;
-			
 			//character on the left
 			if speaker_side[p] == -1{
 				text_x_offset[p] = 480;
@@ -43,7 +42,7 @@ if setup == false
 			
 			
 		//if no character portrait (centers box in middle)
-		text_x_offset[p] = 90;
+		text_x_offset[p] = 180;
 		
 		//setting individual characters and finding where the lines of the text should break
 		for (var c = 0; c < text_length[p]; c++)
@@ -204,6 +203,9 @@ if speaker_sprite[page] != noone
 	//draw_sprite_ext(txtb_spr[page], txtb_img,  camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - sprite_width/2, camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - sprite_height/2, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, 1);
 	//draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, sprite_width/txtb_spr_w, sprite_height/txtb_spr_h, 0, c_white, 1);
 	//draw_sprite_ext(sprite_index, image_index, camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - sprite_width/2, camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - sprite_height/2, speaker_side[page], 1, 0, c_white, 1);
+	draw_set_alpha(0.5);
+	draw_rectangle_color (camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]), camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]), c_black, c_black, c_black, c_black, false);
+	draw_set_alpha(1);
 	draw_sprite_ext(sprite_index, image_index, camera_get_view_x(view_camera[0]) + portrait_x_offset[page], textbox_y, 2, 2, 0, c_white, 1);
 	}
 
@@ -237,7 +239,7 @@ _shake_y = lengthdir_y(1, shake_dir[c, page]);
 }
 
 //the text
-draw_text_transformed_color(textbox_x + char_x[c, page] + _shake_x, textbox_y + char_y[c, page] + (_float_y*float_strength[c, page]) + _shake_y, char[c, page], 2, 2, 0, col_1[c, page], col_2[c, page], col_3[c, page], col_4[c, page], 1);
+draw_text_transformed_color(textbox_x + char_x[c, page] + _shake_x + 80, textbox_y + char_y[c, page] + (_float_y*float_strength[c, page]) + _shake_y, char[c, page], 2, 2, 0, col_1[c, page], col_2[c, page], col_3[c, page], col_4[c, page], 1);
 //remove player contro upon creating
 global.playerControl = false;
 }
@@ -263,7 +265,7 @@ if draw_char == text_length[page] && page == page_number - 1
 	//the option box
 	var _o_w = string_width(option[op]) + _op_bord*2
 	//position of text box               distance from the left   calc new option position
-	draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x + _op_left_offset, (_txtb_y - _op_space*option_number + _op_space*op), (_o_w*1.5)/txtb_spr_w, ((_op_space-10)/txtb_spr_h), 0, c_white, 1)
+	draw_sprite_ext(spr_menu_settings, txtb_img, _txtb_x + _op_left_offset, (_txtb_y - _op_space*option_number + _op_space*op), (_o_w*1.5)/txtb_spr_w, ((_op_space-10)/txtb_spr_h), 0, c_white, 1)
 	
 	//write option text
 	draw_text_transformed(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 50 + _op_space*op, option[op], 2, 2, 0);
