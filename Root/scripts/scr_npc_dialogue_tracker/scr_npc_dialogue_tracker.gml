@@ -76,4 +76,15 @@ global.TrigMedic = _script
 
 }
 
+function scr_cha_scr_trigger_speech_supreme (_script){
+
+global.Supreme = _script
+
+}
+
+function scr_cha_scr_trigger_gertrude (_script){
+
+global.Gertrude = _script
+}
+
 #endregion

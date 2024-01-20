@@ -201,37 +201,29 @@ case "Cauldron":
 
 #region//-------Masked Tutor--------//
 case "Tutor":
-		scr_text("Halt!!", "Tutor");
-		scr_text("You are...", "Tutor");
-		scr_text("It's been a while since we've received a Fallen from Earth Alpha", "Tutor");
-			scr_text_color(41, 47, c_blue, c_blue, c_blue, c_blue);
-			scr_text_shake(41, 47);
-		scr_text("Follow me inside, we will help you get back.")
-		break;
-
+		scr_text("Halt stranger! Reveal thy name and purpose at once!", "Tutor");
+		scr_text("...Where is this place?", "Tutor");
+		scr_text("Preposterous, I am the one asking. How did you find these woods?", "Tutor");
+		scr_text("Fell through a hole in Salem?", "Tutor");
+		scr_text("...an infiltrator wouldn't make such a lackluster lie.", "Tutor");
+		scr_text("and I think I know what this be. Come along child, into the house!!", "Tutor");
+	break;
 #endregion
 
-#region//-------Masked Tutor - Go--------//
-case "Tutor Go":
-		scr_text("We will  have you fight monsters", "Tutor");
-		scr_text("Its for collecting resources", "Tutor");
-			global.startWall = 0;
-		scr_text("Here's a book about magic, you have 1min to learn it", "Tutor");
-		scr_text("You Learned 3 kinds of Magic");
-		scr_text("There's reason for you to do it, you also need to develop your magical strength for this to work", "Tutor");
-		scr_text("The monsters are in the forst down south outside", "Tutor");
-		scr_text("Dont forget the materials and Soul power (duck shaped), you will need them", "Tutor");
-		scr_text("The faster you defeat the monsters the more Soul power (ducks) you gain", "Tutor");
-		scr_text("The more times you go in, the more difficult it gets so dont forget to brew potions and have one of our people tach you to throw spells better.", "Tutor");
-		scr_text("Once you enter the woods, aim with mouse and shoot using left mouse button");
-		scr_text("Right click to change spells");
-		scr_text("NOW GO, you are not the only one we need to take care of", "Tutor");
+#region//-------Enter House 1--------//
+case "Enter House 1":
+		scr_text("Mother Supreme!! An Abigail decendant just arrived!!", "Tutor");
+		scr_text("Where?", "Supreme", -1);
+		scr_text("Tis them, Mother Supreme! Right here!", "Tutor", 1);
+		scr_text("Indeed tis! How wonderful! Thy power shines as did thy ancestor. Oh how we missed Abigails presence.", "Supreme");
+		scr_text("Fear not child, we mean no harm. My name is Annabeth and I am the Supreme witch of the Coven of Nycatlis.", "Supreme");
+		scr_text("Your great grandmother seven genrations back was one of us, child. However, since her tragic execution we have longed for a descender of hers to come back.", "Supreme");
+		scr_text("Great Nyctalis must have sent you to save us!", "Supreme");
+		scr_text("We need 5 ancestral potions and do a reverse ritual. But for that, we needed a full coven, which we now finally have with you here!", "Supreme");
+		scr_text("Head on to the library and chat with our sister Gertrude. She shall start you on your magical journey! We shall meet again soon. Good luck!", "Supreme",-1);
+		scr_text("You can talk to people by pressing <Space> once near.")
 			scr_pass_time(90);
-			scr_cha_scr_Tutor("Tutor Done");
-		break;
-		
-case "Tutor Done":
-	scr_text("I SAID GO!!", "Tutor");
+			global.startWall = 0;
 break;
 
 #endregion

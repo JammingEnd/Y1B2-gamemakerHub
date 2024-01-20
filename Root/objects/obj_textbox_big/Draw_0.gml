@@ -268,12 +268,12 @@ if draw_char == text_length[page] && page == page_number - 1
 	draw_sprite_ext(spr_menu_settings, txtb_img, _txtb_x + _op_left_offset, (_txtb_y - _op_space*option_number + _op_space*op), (_o_w*1.5)/txtb_spr_w, ((_op_space-10)/txtb_spr_h), 0, c_white, 1)
 	
 	//write option text
-	draw_text_transformed(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 50 + _op_space*op, option[op], 2, 2, 0);
+	draw_text_transformed(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 50 + _op_space*op, option[op], 1.5, 1.5, 0);
 	
 	//turn the selected option yellow
 	var _c = #2d2835;
 	 if option_pos == op{_c = global.selectColor}
-	 draw_text_transformed_color(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 50 + _op_space*op, option[op], 2, 2, 0, _c, _c, _c, _c, 1);
+	 draw_text_transformed_color(_txtb_x + _op_left_offset + _op_bord, _txtb_y - _op_space*option_number + 50 + _op_space*op, option[op], 1.5, 1.5, 0, _c, _c, _c, _c, 1);
 	
 	//Draw the selection arrow
 	if option_pos == op

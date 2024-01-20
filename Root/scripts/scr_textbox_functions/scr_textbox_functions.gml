@@ -130,6 +130,16 @@ text[page_number] = _text;
 				txtb_spr[page_number] = spr_menu;
 			break;
 			
+			case "Supreme":
+				speaker_sprite[page_number] = spr_talk_supreme;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			
+			case "Gertrude":
+				speaker_sprite[page_number] = spr_talk_gertrude;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			
 			//dont write below this
 			}
 	}

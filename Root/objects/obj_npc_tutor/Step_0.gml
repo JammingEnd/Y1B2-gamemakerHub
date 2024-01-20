@@ -2,7 +2,7 @@
 // You can write your code in this editor
 text_id = global.Tutor;
 
-if (signal = 1){image_alpha -= 0.005};
+if (signal = 1) && (trigger = 1){image_alpha -= 0.005};
 
 if (image_alpha <= 0){instance_destroy()};
 
