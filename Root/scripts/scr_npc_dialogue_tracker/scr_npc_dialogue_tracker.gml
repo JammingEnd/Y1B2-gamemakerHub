@@ -87,4 +87,9 @@ function scr_cha_scr_trigger_gertrude (_script){
 global.Gertrude = _script
 }
 
+function scr_cha_scr_trigger_anyanka (_script){
+
+global.Anyanka = _script
+}
+
 #endregion

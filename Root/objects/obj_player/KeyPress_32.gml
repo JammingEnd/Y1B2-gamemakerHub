@@ -11,8 +11,8 @@ if (global.playerControl == true)
 		// If NPC is still available
 		if (nearbyNPC.myState == npcState.normal)
 		{
-			//Decide text to show
-			_text = nearbyNPC.text_id;
+			if (obj_player_time.hours = 2) && (obj_player_time.hour >= 2)
+			{_text = "Out of Time"}else{_text = nearbyNPC.text_id;}
 			
 				if (!instance_exists(obj_textbox)) && (!instance_exists(obj_textbox_big))
 				{

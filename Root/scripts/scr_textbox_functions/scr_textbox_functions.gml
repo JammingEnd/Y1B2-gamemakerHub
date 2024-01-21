@@ -140,6 +140,11 @@ text[page_number] = _text;
 				txtb_spr[page_number] = spr_menu;
 			break;
 			
+			case "Anyanka":
+				speaker_sprite[page_number] = spr_talk_anyanka;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			
 			//dont write below this
 			}
 	}

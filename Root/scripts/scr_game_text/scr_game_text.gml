@@ -207,6 +207,7 @@ case "Tutor":
 		scr_text("Fell through a hole in Salem?", "Tutor");
 		scr_text("...an infiltrator wouldn't make such a lackluster lie.", "Tutor");
 		scr_text("and I think I know what this be. Come along child, into the house!!", "Tutor");
+			scr_pass_time(30);
 	break;
 #endregion
 
@@ -222,8 +223,7 @@ case "Enter House 1":
 		scr_text("We need 5 ancestral potions and do a reverse ritual. But for that, we needed a full coven, which we now finally have with you here!", "Supreme");
 		scr_text("Head on to the library and chat with our sister Gertrude. She shall start you on your magical journey! We shall meet again soon. Good luck!", "Supreme",-1);
 		scr_text("You can talk to people by pressing <Space> once near.")
-			scr_pass_time(90);
-			global.startWall = 0;
+			scr_pass_time(30);
 break;
 
 #endregion
@@ -264,15 +264,31 @@ case "Medic_player_died_twice+":
 #region//-------Gertrude--------//
 case "Meet Gertrude":
 		scr_text("Welcome baby witch, I am Gertrude, a Magus. We shall begin your training at once!", "Gertrude");
-		scr_text("The first spells you’ll learn are Mystic strike, Windshear and Fire Blast", "Medic", 1);
-			scr_text_color(55, 65, c_red, c_red, c_red, c_red)
-			scr_text_float(55, 65)
-		scr_text("So I summoned you to warn you about it.", "Medic", 1);
-		scr_text("Whatever you were going to do, maybe don't?", "Medic", 1);
-		scr_text("Or you can keep running into the woods like a wild man", "Medic", 1);
-			scr_cha_scr_trigger_speech_medic("Medic_player_died_twice+")
-			global.playerdiedonce = 0;
+		scr_text("The first spells you will learn is Mystic strike", "Gertrude");
+		scr_text_color(36, 49, c_purple, c_purple, c_purple, c_purple);
+		scr_text("Go in the woods on the south outside, you can practice on monsters there.", "Gertrude");
+		scr_text("You can now cast Mystic strike");
+			scr_text_color(17, 30, c_purple, c_purple, c_purple, c_purple);
+			scr_pass_time(30);
+			global.startWall = 0;
+		scr_text("Hold Left Mouse button to shoot your spell once in the forest.");
+		scr_text("Aim by moving your mouse cursor.");
 		break;
+#endregion
+
+#region//-------Anyanka--------//
+case "Before Gertrude":
+		scr_text("I'm not Gertrude, she's on the left.", "Anyanka");
+		scr_text("Come back to me after you do whatever Gertrude told you.", "Anyanka");
+		break;
+#endregion
+
+#region//-------Out of Time--------//
+case "Out of Time":
+		scr_text("Its past 22:00, You need to defeat the monsters before they get stronger tommorow");
+			scr_text_color(64, 72, c_red, c_orange, c_red, c_orange);
+		break;
+#endregion
 
 	}	
 }
