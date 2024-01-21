@@ -8,7 +8,7 @@ xspd = 0;
 yspd = 0;
 
 //clean up
-dirFix = false;
+dirFix = true;
 maxDist = 8000;
 destroy = false;
 enemyDestroy = true;

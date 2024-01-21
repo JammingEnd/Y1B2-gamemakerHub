@@ -59,7 +59,7 @@ redwand : new create_weapon(
 		24,
 		8,
 		30
-		), 
+		),
 
 }
 

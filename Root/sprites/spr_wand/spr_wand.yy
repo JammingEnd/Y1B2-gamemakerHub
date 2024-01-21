@@ -17,13 +17,13 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 80,
+  "height": 43,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"31a40673-2a66-4267-ac21-059b8745ce51","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 9,
+  "origin": 0,
   "parent": {
     "name": "sprites",
     "path": "folders/Objects/-Official/Player_related/weapons/sprites.yy",
@@ -60,7 +60,7 @@
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
-    "yorigin": 5,
+    "yorigin": 0,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 80,
+  "width": 98,
 }

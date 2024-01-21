@@ -3,6 +3,7 @@ global.DuckCount = 0;
 global.PlayerName = global.PersistantPlayerName;
 
 plHp = 10 + global.HpValue
+unlock = 0;
 
 //damage setup hp, invincibility frames toggle
 	get_damaged_create(plHp, true);

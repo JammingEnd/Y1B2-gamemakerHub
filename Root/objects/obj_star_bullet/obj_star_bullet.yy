@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_star_bullet",
-    "path": "sprites/spr_star_bullet/spr_star_bullet.yy",
+    "name": "spr_lvl_3_magic",
+    "path": "sprites/spr_lvl_3_magic/spr_lvl_3_magic.yy",
   },
   "spriteMaskId": null,
   "visible": true,

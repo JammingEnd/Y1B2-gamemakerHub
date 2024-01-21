@@ -259,6 +259,20 @@ case "Medic_player_died_twice+":
 		scr_text("You were going to die in " + string(global.TempMinuts) + " minuts", "Medic", 1);
 		global.playerdiedonce = 0;
 		break;
+#endregion
+
+#region//-------Gertrude--------//
+case "Meet Gertrude":
+		scr_text("Welcome baby witch, I am Gertrude, a Magus. We shall begin your training at once!", "Gertrude");
+		scr_text("The first spells you’ll learn are Mystic strike, Windshear and Fire Blast", "Medic", 1);
+			scr_text_color(55, 65, c_red, c_red, c_red, c_red)
+			scr_text_float(55, 65)
+		scr_text("So I summoned you to warn you about it.", "Medic", 1);
+		scr_text("Whatever you were going to do, maybe don't?", "Medic", 1);
+		scr_text("Or you can keep running into the woods like a wild man", "Medic", 1);
+			scr_cha_scr_trigger_speech_medic("Medic_player_died_twice+")
+			global.playerdiedonce = 0;
+		break;
+
 	}	
 }
-#endregion

@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "green_spell",
-    "path": "sprites/green_spell/green_spell.yy",
+    "name": "spr_lvl_1_magic",
+    "path": "sprites/spr_lvl_1_magic/spr_lvl_1_magic.yy",
   },
   "spriteMaskId": null,
   "visible": true,

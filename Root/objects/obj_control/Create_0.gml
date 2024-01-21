@@ -6,7 +6,8 @@ global.playerdiedonce = 0;
 global.selectColor = c_purple;
 global.entered_house = 1;
 global.startWall = 0;
-
+global.redwand = 1;
+global.yellowwand = 1;
 //townBGMvolume = audio_sound_get_gain(snd_townBGM);
 //townAmbienceVolume = audio_sound_get_gain(snd_townAmbience);
 global.gameOver = false;

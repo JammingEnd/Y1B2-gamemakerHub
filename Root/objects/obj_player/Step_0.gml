@@ -132,8 +132,12 @@ if gun = 1 {
 	{
 		//change the selecetion
 		selectedWeapon++;
+		if global.redwand = 0 {unlock = 1};
+		if global.yellowwand = 0 {unlock = 2};
 		//so it won't crash trying to acess array option that doesn't exist
-		if selectedWeapon >= array_length(_playerWeapons) {selectedWeapon = 0;};
+		if selectedWeapon >= array_length(_playerWeapons) - unlock
+		
+		{selectedWeapon = 0;};
 		//set the new weapon
 		weapon = _playerWeapons[selectedWeapon];
 	}

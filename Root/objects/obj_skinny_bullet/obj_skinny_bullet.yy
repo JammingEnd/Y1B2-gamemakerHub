@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "purple_spell",
-    "path": "sprites/purple_spell/purple_spell.yy",
+    "name": "spr_lvl2_magic",
+    "path": "sprites/spr_lvl2_magic/spr_lvl2_magic.yy",
   },
   "spriteMaskId": null,
   "visible": true,
