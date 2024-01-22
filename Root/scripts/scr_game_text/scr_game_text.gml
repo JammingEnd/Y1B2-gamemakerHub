@@ -290,5 +290,24 @@ case "Out of Time":
 		break;
 #endregion
 
+#region//-------Cat 1--------//
+case "WiseCat1":
+		scr_text("Meow~");
+		scr_text_float(0,5, 5)
+		scr_text("First arouse in the person an eager want. He who can do this has the whole world with him.");
+		scr_text("He who cannot walks a lonely way.");
+		scr_text("I've seen countless parents expect their child to share the same viewpoint of a thirty year old.");
+		scr_text("The question is always, How do I align what I want with what they want?");
+		scr_text("Don't criticize, condemn or complain");
+		scr_text("Give honest and sincere appreciation");
+		scr_text("Arouse in the other person an eager want");
+		scr_text("Follow these principles and you can get the world to revolve around you");
+			scr_cha_scr_trigger_cat_1("Meow");
+break;
+case"Meow":
+	scr_text("Meow~")
+	scr_text_float(0,5, 5)
+#endregion
+
 	}	
 }

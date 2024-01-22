@@ -60,6 +60,9 @@
     {"name":"inst_6548E612","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_40578DA2","path":"rooms/rm_witch_home/rm_witch_home.yy",},
     {"name":"inst_2489E699","path":"rooms/rm_witch_home/rm_witch_home.yy",},
+    {"name":"inst_D7FBE70","path":"rooms/rm_witch_home/rm_witch_home.yy",},
+    {"name":"inst_748404B6","path":"rooms/rm_witch_home/rm_witch_home.yy",},
+    {"name":"inst_3013E8AA","path":"rooms/rm_witch_home/rm_witch_home.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -131,6 +134,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6548E612","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"potion_purple","path":"objects/potion_purple/potion_purple.yy",},"properties":[],"rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":2800.0,"y":2500.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_40578DA2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"potion_red","path":"objects/potion_red/potion_red.yy",},"properties":[],"rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":2700.0,"y":2500.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2489E699","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_Anyanka","path":"objects/obj_npc_Anyanka/obj_npc_Anyanka.yy",},"properties":[],"rotation":0.0,"scaleX":0.3,"scaleY":0.3,"x":1900.0,"y":3400.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D7FBE70","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_cat_1","path":"objects/obj_npc_cat_1/obj_npc_cat_1.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":4800.0,"y":1400.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_748404B6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_cat_2","path":"objects/obj_npc_cat_2/obj_npc_cat_2.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":4300.0,"y":1800.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3013E8AA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_npc_cat_3","path":"objects/obj_npc_cat_3/obj_npc_cat_3.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":4800.0,"y":2400.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background_1","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":100,"gridY":100,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_witchHouse","path":"sprites/spr_witchHouse/spr_witchHouse.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":false,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
