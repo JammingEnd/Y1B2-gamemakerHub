@@ -306,11 +306,41 @@ case "WiseCat1":
 		scr_text("Arouse in the other person an eager want");
 		scr_text("Follow these principles and you can get the world to revolve around you");
 			scr_cha_scr_trigger_cat_1("Meow");
+			
+case "WiseCat2":
+		scr_text("Meow~");
+		scr_text_float(0,5, 5)
+		scr_text("Don't forget to smile kid.");
+		scr_text("It enriches those whoe receive, without impoverishingthose who give.");
+		scr_text("It happens in a flash and the memory sometimes lasts forever.");
+		scr_text("None are so rich they can get along without it.");
+		scr_text("None so poor but are richer for its benefits.");
+		scr_text("It creates hapiness, daylight to the discouraged, sunshine to the sad, and is the antidote for trouble.");
+		scr_text("Yet it cannot be bought, begged, borrowed, or stolen, for it is no good to anybody till given.");
+		scr_text("Nobody needs a smile so much as those who have none left to give!");
+		scr_cha_scr_trigger_cat_1("Meow");
 break;
+
+case "WiseCat3":
+		scr_text("Meow~");
+		scr_text_float(0,5, 5)
+		scr_text("Want to make people agree with you?");
+		scr_text("If you are going to prove anything, don't let anybody know it.");
+		scr_text("Men must be taught as if you taught them not.");
+		scr_text("and things unknown proposed as things forgot.");
+		scr_text("You cannot teach a man anything; you can only help him to find it within himself.");
+		scr_text("Be wiser than others, but do not tell them so.");
+		scr_text("Only thing you should know is that you know nothing.");
+		scr_text("Quit telling people they are wrong and you will find it that it pays.");
+		scr_cha_scr_trigger_cat_1("Meow");
+break;
+
 case"Meow":
 	scr_text("Meow~")
 	scr_text_float(0,5, 5)
 #endregion
+
+
 
 	}	
 }
