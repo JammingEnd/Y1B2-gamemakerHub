@@ -1,11 +1,19 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
+<<<<<<<< HEAD:Root/sprites/spr_talk_cat_2/spr_talk_cat_2.yy
   "name": "spr_talk_cat_2",
   "bbox_bottom": 412,
   "bbox_left": -3,
   "bbox_right": 323,
   "bbox_top": 268,
+========
+  "name": "spr_frontPlayer",
+  "bbox_bottom": 473,
+  "bbox_left": 4,
+  "bbox_right": 223,
+  "bbox_top": 388,
+>>>>>>>> f16bd8e (Merge branch 'Dev' of https://github.com/JammingEnd/Y1B2-gamemakerHub into Dev):Root/sprites/spr_frontPlayer/spr_frontPlayer.yy
   "bboxMode": 2,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -17,7 +25,11 @@
   ],
   "gridX": 0,
   "gridY": 0,
+<<<<<<<< HEAD:Root/sprites/spr_talk_cat_2/spr_talk_cat_2.yy
   "height": 442,
+========
+  "height": 510,
+>>>>>>>> f16bd8e (Merge branch 'Dev' of https://github.com/JammingEnd/Y1B2-gamemakerHub into Dev):Root/sprites/spr_frontPlayer/spr_frontPlayer.yy
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5bae8107-6ef7-4ac9-a448-f69043a181f8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -59,8 +71,13 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
+<<<<<<<< HEAD:Root/sprites/spr_talk_cat_2/spr_talk_cat_2.yy
     "xorigin": 159,
     "yorigin": 394,
+========
+    "xorigin": 119,
+    "yorigin": 430,
+>>>>>>>> f16bd8e (Merge branch 'Dev' of https://github.com/JammingEnd/Y1B2-gamemakerHub into Dev):Root/sprites/spr_frontPlayer/spr_frontPlayer.yy
   },
   "swatchColours": null,
   "swfPrecision": 2.525,
@@ -70,5 +87,9 @@
   },
   "type": 0,
   "VTile": false,
+<<<<<<<< HEAD:Root/sprites/spr_talk_cat_2/spr_talk_cat_2.yy
   "width": 319,
+========
+  "width": 224,
+>>>>>>>> f16bd8e (Merge branch 'Dev' of https://github.com/JammingEnd/Y1B2-gamemakerHub into Dev):Root/sprites/spr_frontPlayer/spr_frontPlayer.yy
 }

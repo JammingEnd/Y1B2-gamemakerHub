@@ -35,10 +35,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_player_idle_down",
-    "path": "sprites/spr_player_idle_down/spr_player_idle_down.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": {
     "name": "spr_player_idle_down",
     "path": "sprites/spr_player_idle_down/spr_player_idle_down.yy",
