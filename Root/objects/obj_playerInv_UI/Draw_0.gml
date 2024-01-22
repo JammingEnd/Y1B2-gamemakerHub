@@ -38,7 +38,11 @@ x = camera_get_view_x(view_camera[0]) +30;
 y = camera_get_view_y(view_camera[0]) +400;
 
 //draw menu back ground
-draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width, height/sprite_height, 0, c_white, 1);
+//draw only when entering arena
+if obj_player_roomtimer.transparent = 1{scale = 2}else{scale = 1}
+
+//draw menu back ground
+draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width * scale, height/sprite_height * scale, 0, c_white, 1);
 
 //draw the options
 draw_set_valign(fa_top);

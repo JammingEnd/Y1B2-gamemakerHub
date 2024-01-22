@@ -6,7 +6,7 @@ switch (_text_id){
 
 #region //-----------Tutorial Text---------//
 	case "Tutorial1": //script one of NPC Name
-	scr_text("blabla something something paper", "paper_cutscene");
+	scr_text("blabla something something paper", "cutscene_paper");
 	scr_text("somethin somethin running away", "cutscene_1");
 	scr_text("something something crying little bitch", "cutscene_2");
 		scr_text("Welcome, would you like a tutorial? Press W & S to select and Space to Confirm.");
@@ -192,11 +192,7 @@ case "Cauldron":
 
 	case "_brewingPotion":
 		{
-				ExchangeRecoursesForItem(
-				$"{global.whatCurrentPotion}", 
-				CreateItemNamesForRecipe(["Spider_Eye", "Rat_Tail"]),
-				CreateItemAmountForRecipe([3, 1])
-				);
+				add_to_inventory(global.whatCurrentPotion);
 		}
 	break;
 	

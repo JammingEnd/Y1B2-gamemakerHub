@@ -1,4 +1,9 @@
 {
-  "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "FolderOrderSettings": [
+    {"name":"cutscenes","order":1,"path":"folders/Sprites/-Official/cutscenes.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"cutscene_1","order":1,"path":"sprites/cutscene_1/cutscene_1.yy",},
+    {"name":"cutscene_2","order":2,"path":"sprites/cutscene_2/cutscene_2.yy",},
+  ],
 }
