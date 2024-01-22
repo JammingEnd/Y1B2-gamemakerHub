@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"obj_player_xp","order":1,"path":"objects/obj_player_xp/obj_player_xp.yy",},
+  ],
 }

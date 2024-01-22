@@ -26,7 +26,7 @@ y = camera_get_view_y(view_camera[0]);
 if obj_player_roomtimer.transparent = 1{scale = 2}else{scale = 1}
 
 //draw menu back ground
-draw_sprite_ext(spr_timeline , image_index, x+10, y+(145*scale), 0.2*scale, 0.2*scale, 0, c_white, 1);
+draw_sprite_ext(spr_xp_icon_line , image_index, x+10, y+(280*scale), 0.2*scale, 0.2*scale, 0, c_white, 1);
 
 //draw the options
 draw_set_valign(fa_top);
@@ -37,7 +37,6 @@ for (var i = 0; i < op_length; i++)
  {
 	 var _c = #2d2835;
 	 if pos == i{_c = #2d2835}
-	 draw_text_transformed_color(x+(155*scale), (y+190*scale), option[menu_level, i], scale, scale, 0, _c, _c, _c, _c, 1);
-	 draw_text_transformed_color(x+(155*scale), (y+170*scale), "Day " + string(days), scale/2, scale/2, 0, _c, _c, _c, _c, 1);
+	 draw_text_transformed_color(x+(155*scale), (y+315*scale), option[menu_level, i], scale, scale, 0, _c, _c, _c, _c, 1);
  }
 }
