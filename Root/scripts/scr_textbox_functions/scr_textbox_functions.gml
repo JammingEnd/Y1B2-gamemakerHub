@@ -145,6 +145,21 @@ text[page_number] = _text;
 				txtb_spr[page_number] = spr_menu;
 			break;
 			
+			case "Cat1":
+				speaker_sprite[page_number] = spr_talk_cat_1;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			
+			case "Cat2":
+				speaker_sprite[page_number] = spr_talk_cat_2;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			
+			case "Cat3":
+				speaker_sprite[page_number] = spr_talk_cat_3;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			
 			case "paper_cutscene":
 				speaker_sprite[page_number] = spr_paper;
 				txtb_spr[page_number] = spr_menu;

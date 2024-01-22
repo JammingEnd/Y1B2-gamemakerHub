@@ -92,4 +92,19 @@ function scr_cha_scr_trigger_anyanka (_script){
 global.Anyanka = _script
 }
 
+function scr_cha_scr_trigger_cat_1 (_script){
+
+global.Cat1 = _script
+}
+
+function scr_cha_scr_trigger_cat_2 (_script){
+
+global.Cat2 = _script
+}
+
+function scr_cha_scr_trigger_cat_3 (_script){
+
+global.Cat3 = _script
+}
+
 #endregion

@@ -103,10 +103,10 @@ if (vx > 0)
 	}
 
 switch face {
-case 0: sprite_index = spr_player_walk_right; break;
-case 1: sprite_index = spr_player_idle_up; break;
-case 2: sprite_index = spr_player_walk_left; break;
-case 3: sprite_index = spr_player_walk_down; break;
+case 0: sprite_index = spr_leftPlayerMoving; break;
+case 1: sprite_index = spr_backPlayerMoving; break;
+case 2: sprite_index = spr_rightPlayerMoving; break;
+case 3: sprite_index = fprntPlayerMoving; break;
 }
 
 //animate

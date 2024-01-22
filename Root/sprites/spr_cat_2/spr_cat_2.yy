@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Talk Screen",
-    "path": "folders/Sprites/-Official/NPC's/Talk Screen.yy",
+    "name": "NPC's",
+    "path": "folders/Sprites/-Official/NPC's.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bca45ba8-c6b4-40bd-8fa0-c1ffa8d449d3","path":"sprites/spr_cat_2/spr_cat_2.yy",},},},"Disabled":false,"id":"742235c4-050f-4d9e-b474-fe0e96bf2646","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bca45ba8-c6b4-40bd-8fa0-c1ffa8d449d3","path":"sprites/spr_cat_2/spr_cat_2.yy",},},},"Disabled":false,"id":"9647fbd9-c326-4739-bc4b-51d8bd009d25","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
