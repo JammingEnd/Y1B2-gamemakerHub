@@ -91,24 +91,11 @@ function ExchangeXPForItem(XPAmount, ItemInReturn)
 	global.DuckCount -= XPAmount;
 	add_to_inventory(ItemInReturn);
 }
-function ExchangeRecoursesForItem(ReturnItem, ReqItemNames, ReqItemAmount) 
+function ExchangeRecoursesForItem(ReturnItem) 
 {
 	show_debug_message(global.whatCurrentPotion)
-	var canExhange = true;
-	for(i = 0; i < ds_list_size(ReqItemAmount); i++)
-	{
-		
-		if(ds_list_find_index(global.playerInventory, ReqItemNames[| i]))
-		{
-			show_debug_message("req Amount" + ReqItemAmount[| i]);
-			show_debug_message("has amount" + ds_list_find_value(global.playerInventory, ds_list_find_index(global.playerInventory, ReqItemNames[| i])))
-			if(ds_list_find_value(global.playerInventory, ds_list_find_index(global.playerInventory, ReqItemNames[| i])) >= ReqItemAmount[| i])
-			{
-				canExhange = false;
-			}
-		}
-	}
-	if(canExhange == true)
+	
+	if(HasEnoughItemsForRecipe(ReturnItem))
 	{
 		add_to_inventory(ReturnItem);	
 	}
