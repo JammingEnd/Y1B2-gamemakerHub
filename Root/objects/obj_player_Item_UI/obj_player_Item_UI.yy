@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_player_UI",
+  "name": "obj_player_Item_UI",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
@@ -14,7 +14,7 @@
     "path": "folders/Objects/-Official/Menu stuff/Menu Text.yy",
   },
   "parentObjectId": null,
-  "persistent": false,
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -34,5 +34,5 @@
     "path": "sprites/spr_menu_settings/spr_menu_settings.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

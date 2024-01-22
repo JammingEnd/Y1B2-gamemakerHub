@@ -1,7 +1,9 @@
 {
   "FolderOrderSettings": [],
   "ResourceOrderSettings": [
+    {"name":"obj_menu_item","order":3,"path":"objects/obj_menu_item/obj_menu_item.yy",},
     {"name":"obj_player_xp","order":1,"path":"objects/obj_player_xp/obj_player_xp.yy",},
+    {"name":"obj_player_Item_UI","order":2,"path":"objects/obj_player_Item_UI/obj_player_Item_UI.yy",},
     {"name":"obj_RoseSpawner","order":1,"path":"objects/obj_RoseSpawner/obj_RoseSpawner.yy",},
   ],
 }

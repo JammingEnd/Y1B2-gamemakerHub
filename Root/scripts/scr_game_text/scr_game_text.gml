@@ -146,9 +146,10 @@ case "Cauldron":
 	scr_text("The cauldron is hot, but no sign of magic. maybe you should put something in it", "Cauldron")
 		for(i = 0; i < ds_list_size(global.AllRecipes); i++)
 		{
-			scr_option(global.AllRecipes[| i].PotionName, $"PotionLink{i + 1}");	
+			scr_option(global.AllRecipes[| i].PotionName, $"PotionLink{i + 1}");
 			
 		}
+		scr_option("Ancestral Potions","Ancestral Potions");
 	break;
 	case "PotionLink1":
 		{
@@ -200,6 +201,49 @@ case "Cauldron":
 		}
 	break;
 	
+	case "Ancestral Potions":
+	scr_text("Choose the Ancestral Potion to Brew")
+		scr_option("Rattoui: 15 Rat tails", "Potion1")
+		scr_option("Spidader: 15 Spider eyes", "Potion2")
+		scr_option("Snnaka: 15 Snake Skin", "Potion3")
+		scr_option("Rosari: 15 Red Petals", "Potion4")
+	break;
+	
+	case "Potion1":
+	if global.rattail >= 15{
+		scr_text("You brewed Rattoui, one step closer to completeing the ritual.")
+		global.bluepotion = 1}else{
+		scr_text("You don't have enough Rat Tails.")
+		}
+	break;
+	case "Potion2":
+	if global.spidereye >= 15{
+		scr_text("You brewed Spidader, one step closer to completeing the ritual.")
+		global.greenpotion = 1}else{
+		scr_text("You don't have enough Rat Spider Eyes.")
+		}
+	break;
+	case "Potion3":
+	if global.snakeskin >= 15{
+		scr_text("You brewed Snnaka, one step closer to completeing the ritual.")
+		global.orangepotion = 1}else{
+		scr_text("You don't have enough Snake Skin.")
+		}
+	break;
+	case "Potion4":
+	if global.flowerpetal >= 15{
+		scr_text("You brewed Rosari, one step closer to completeing the ritual.")
+		global.redpotion = 1}else{
+		scr_text("You don't have enough Flower Petals.")
+		}
+	break;
+	case "Potion5":
+	if global.spikes >= 15{
+		scr_text("You brewed Rosari, one step closer to completeing the ritual.")
+		global.purplepotion = 1}else{
+		scr_text("You don't have enough Rat Tails.")
+		}
+	break;
 #endregion
 
 #region//-------Masked Tutor--------//
