@@ -289,6 +289,7 @@
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
     {"id":{"name":"Spr_vertical_wall","path":"sprites/Spr_vertical_wall/Spr_vertical_wall.yy",},},
     {"id":{"name":"spr_potion_green","path":"sprites/spr_potion_green/spr_potion_green.yy",},},
+    {"id":{"name":"obj_RoseSpawner","path":"objects/obj_RoseSpawner/obj_RoseSpawner.yy",},},
     {"id":{"name":"green_spell","path":"sprites/green_spell/green_spell.yy",},},
     {"id":{"name":"Spr_rightUp_corner_wall","path":"sprites/Spr_rightUp_corner_wall/Spr_rightUp_corner_wall.yy",},},
     {"id":{"name":"obj_inputs","path":"objects/obj_inputs/obj_inputs.yy",},},

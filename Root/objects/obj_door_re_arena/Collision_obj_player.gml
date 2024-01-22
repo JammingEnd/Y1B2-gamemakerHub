@@ -1,7 +1,7 @@
 var _time = global.TotalTime
 
 if  obj_player_roomtimer.active = 1 {
-global.DuckCount += 15000 - _time;
+global.DuckCount += 150 - _time;
 global.TotalTime = 0;
 }
 
@@ -17,6 +17,7 @@ global.total_spider_spawned = 0;
 global.TempMinuts = 0;
 obj_player_time.hour += 9;
 global.forest_spawn = 1;
+global.outofcombat = 1;
 
 UseDoor(TargetPos_x, TargetPos_y, TargetRoom);
 

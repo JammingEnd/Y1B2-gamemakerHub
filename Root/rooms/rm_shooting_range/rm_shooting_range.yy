@@ -45,12 +45,6 @@
     {"name":"inst_6EDA1EBB","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
     {"name":"inst_3E2A8B6B","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
     {"name":"inst_DA1B7E","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
-    {"name":"inst_7AF82A24","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
-    {"name":"inst_2F82B38E","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
-    {"name":"inst_38F6E9CF","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
-    {"name":"inst_B94E4BF","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
-    {"name":"inst_F211EA7","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
-    {"name":"inst_71D2249A","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
     {"name":"inst_1312FA32","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
     {"name":"inst_43B3B56D","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
     {"name":"inst_728BE08C","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
@@ -73,6 +67,7 @@
     {"name":"inst_D8BCF7A","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
     {"name":"inst_3F353747","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
     {"name":"inst_7AC7C59","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
+    {"name":"inst_7A35CBE1","path":"rooms/rm_shooting_range/rm_shooting_range.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -108,6 +103,9 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_SnakeSpawner","path":"objects/obj_SnakeSpawner/obj_SnakeSpawner.yy",},"propertyId":{"name":"spawnTime","path":"objects/obj_SnakeSpawner/obj_SnakeSpawner.yy",},"value":"630",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_SnakeSpawner","path":"objects/obj_SnakeSpawner/obj_SnakeSpawner.yy",},"propertyId":{"name":"spawnMax","path":"objects/obj_SnakeSpawner/obj_SnakeSpawner.yy",},"value":"4",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":3872.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A35CBE1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_RoseSpawner","path":"objects/obj_RoseSpawner/obj_RoseSpawner.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_RoseSpawner","path":"objects/obj_RoseSpawner/obj_RoseSpawner.yy",},"propertyId":{"name":"spawnMax","path":"objects/obj_RoseSpawner/obj_RoseSpawner.yy",},"value":"3",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"Effect_1","depth":100,"effectEnabled":true,"effectType":"_filter_tintfilter","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_TintCol","type":1,"value":"#FFCC2853",},
@@ -154,12 +152,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6EDA1EBB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bushes_of_love","path":"objects/obj_bushes_of_love/obj_bushes_of_love.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1400.9834,"y":4368.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E2A8B6B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bushes_of_love","path":"objects/obj_bushes_of_love/obj_bushes_of_love.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":924.0,"y":4640.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DA1B7E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_bushes_of_love","path":"objects/obj_bushes_of_love/obj_bushes_of_love.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":4640.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7AF82A24","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rose","path":"objects/obj_rose/obj_rose.yy",},"properties":[],"rotation":0.0,"scaleX":0.22204213,"scaleY":0.25,"x":4160.0,"y":2560.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2F82B38E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rose","path":"objects/obj_rose/obj_rose.yy",},"properties":[],"rotation":0.0,"scaleX":-0.22204214,"scaleY":0.25,"x":1440.0,"y":3040.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_38F6E9CF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rose","path":"objects/obj_rose/obj_rose.yy",},"properties":[],"rotation":0.0,"scaleX":0.22204214,"scaleY":0.25,"x":1920.0,"y":4640.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B94E4BF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rose","path":"objects/obj_rose/obj_rose.yy",},"properties":[],"rotation":0.0,"scaleX":-0.22204214,"scaleY":0.25,"x":4800.0,"y":4480.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F211EA7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rose","path":"objects/obj_rose/obj_rose.yy",},"properties":[],"rotation":0.0,"scaleX":0.22204214,"scaleY":0.25,"x":480.0,"y":640.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_71D2249A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rose","path":"objects/obj_rose/obj_rose.yy",},"properties":[],"rotation":0.0,"scaleX":0.22204214,"scaleY":0.25,"x":2720.0,"y":2080.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17685E3A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_door_re_arena","path":"objects/obj_door_re_arena/obj_door_re_arena.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_door_re_arena","path":"objects/obj_door_re_arena/obj_door_re_arena.yy",},"propertyId":{"name":"TargetPos_x","path":"objects/obj_door_re_arena/obj_door_re_arena.yy",},"value":"1940",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_door_re_arena","path":"objects/obj_door_re_arena/obj_door_re_arena.yy",},"propertyId":{"name":"TargetPos_y","path":"objects/obj_door_re_arena/obj_door_re_arena.yy",},"value":"4900",},
