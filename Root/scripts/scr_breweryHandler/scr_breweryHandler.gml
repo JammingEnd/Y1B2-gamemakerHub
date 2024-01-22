@@ -35,3 +35,48 @@ function CreateItemAmountForRecipe(amounts)
 	}
 	return AmountList;
 }
+
+function HasEnoughItemsForRecipe(potionName)
+{
+	var can_buy = true;
+	var recipeIndex = 0;
+	for(i = 0; i < ds_list_size(global.AllRecipes); i++)
+		{
+			if(global.AllRecipes[| i].PotionName == potionName) 
+			{
+				recipeIndex = i;	
+			}
+			
+		}
+	var recipe = ds_list_find_value(global.AllRecipes, recipeIndex);
+	
+	for(i = 0; i < ds_list_size(recipe.ItemAmountList); i++)
+	{
+		var playerItemIndex = 0;
+		var itemToSearch = recipe.ItemAmountList[| i].RequireName;
+		for(b = 0; b < ds_list_size(global.playerInventory); b++) 
+		{
+			var itemInPlayerInv = global.playerInventory[| b].itemName;
+			if(recipe.ItemAmountList[| b].RequireName == itemInPlayerInv)
+			{
+				playerItemIndex = b;
+			}
+		}
+		if(instance_exists(global.playerInventory[| playerItemIndex]))
+		{
+			if(global.playerInventory[| playerItemIndex].amount >= recipe.ItemAmountList[| i].RequireAmount)
+			{
+				can_buy = true	
+			}
+			else {
+				can_buy = false	
+			}
+		}
+		else {
+			can_buy = false;
+		}
+		
+	}
+	return can_buy;
+	
+}

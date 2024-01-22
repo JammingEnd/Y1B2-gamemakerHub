@@ -259,4 +259,6 @@
     {"name":"obj_prompt","order":1,"path":"objects/obj_prompt/obj_prompt.yy",},
     {"name":"spr_player_walk_right","order":6,"path":"sprites/spr_player_walk_right/spr_player_walk_right.yy",},
   ],
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [],
 }

@@ -57,6 +57,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Menu","folderPath":"folders/Sprites/-Official/Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NPC's","folderPath":"folders/Sprites/-Official/NPC's.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Talk Screen","folderPath":"folders/Sprites/-Official/NPC's/Talk Screen.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Sprites/-Official/player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Weapon","folderPath":"folders/Sprites/-Official/Weapon.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Temp Sprites","folderPath":"folders/Sprites/Temp Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Little Town Stuff","folderPath":"folders/Sprites/Temp Sprites/Little Town Stuff.yy",},
