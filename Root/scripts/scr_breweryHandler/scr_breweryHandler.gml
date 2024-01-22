@@ -35,3 +35,8 @@ function CreateItemAmountForRecipe(amounts)
 	}
 	return AmountList;
 }
+
+function HasEnoughItemsForRecipe(potionName)
+{
+	var recipeIndex = ds_list_find_index(global.AllRecipes, potionName)
+}
