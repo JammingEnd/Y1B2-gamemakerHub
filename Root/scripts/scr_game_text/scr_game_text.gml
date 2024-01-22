@@ -5,7 +5,11 @@ function scr_game_text(_text_id){
 switch (_text_id){
 
 #region //-----------Tutorial Text---------//
+
 	case "Tutorial1": //script one of NPC Name
+	scr_text("blabla something something paper", "cutscene_paper");
+	scr_text("somethin somethin running away", "cutscene_1");
+	scr_text("something something crying little bitch", "cutscene_2");
 		scr_text("Welcome, would you like a tutorial? Press W & S to select and Space to Confirm.");
 			scr_option("Yes", "player wants tutorial");
 			scr_option("No", "player hates tutorial");
