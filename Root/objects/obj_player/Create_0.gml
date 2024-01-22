@@ -40,16 +40,16 @@ audio_listener_set_orientation(0,0,1,0,0,0,1);
 	// Player Sprite array [myState][dir]
 	// Idle (Temp Sprites)
 	face = 3;
-	playerSpr[playerState.idle][0] = spr_player_idle_right;
-	playerSpr[playerState.idle][1] = spr_player_idle_up;
-	playerSpr[playerState.idle][2] = spr_player_idle_left;
-	playerSpr[playerState.idle][3] = spr_player_idle_down;
+	playerSpr[playerState.idle][0] = spr_leftPlayerMoving;
+	playerSpr[playerState.idle][1] = spr_backPlayerMoving;
+	playerSpr[playerState.idle][2] = spr_rightPlayerMoving;
+	playerSpr[playerState.idle][3] = fprntPlayerMoving;
 
 	// Walking (Temp Sprites)
-	playerSpr[playerState.walking][0] = spr_player_walk_right;
-	playerSpr[playerState.walking][1] = spr_player_walk_up;
-	playerSpr[playerState.walking][2] = spr_player_walk_left;
-	playerSpr[playerState.walking][3] = spr_player_walk_down;
+	playerSpr[playerState.walking][0] = spr_leftPlayerMoving;
+	playerSpr[playerState.walking][1] = spr_backPlayerMoving;
+	playerSpr[playerState.walking][2] = spr_rightPlayerMoving;
+	playerSpr[playerState.walking][3] = fprntPlayerMoving;
 
 	sprite_index = playerSpr[playerState.walking][face];
 	

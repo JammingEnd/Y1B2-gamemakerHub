@@ -36,8 +36,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_idle_down",
-    "path": "sprites/spr_player_idle_down/spr_player_idle_down.yy",
+    "name": "spr_frontPlayer",
+    "path": "sprites/spr_frontPlayer/spr_frontPlayer.yy",
   },
   "spriteMaskId": {
     "name": "spr_player_idle_down",
