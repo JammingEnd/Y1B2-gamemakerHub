@@ -380,14 +380,19 @@ case "Come back to Gertrude":
 case "Gertrude Spells":
 		scr_text("Here are the spells I can teach you.", "Gertrude");
 		 scr_option("Wind Cutter: 20", "Wind Cutter");
-		 if global.DuckCount >= 20{global.yellowwand = 1; global.DuckCount -= 20
+		 scr_option("Wind Cutter: 40", "Fire Wave")
+break;
+			 
+case "Wind Cutter":
+ if global.DuckCount >= 20{global.yellowwand = 1; global.DuckCount -= 20
 			scr_text("You learned Wind Cutter"); 
 			 }else{scr_text("You don't have enough potential.")}
-		 scr_option("Wind Cutter: 40", "Fire Wave")
-		 if global.DuckCount >= 40{global.redwand = 1; global.DuckCount -= 40
+break;
+
+case "Fire Wave":
+if global.DuckCount >= 40{global.redwand = 1; global.DuckCount -= 40
 			 scr_text("You learned Fire Wave"); 
 			 }else{scr_text("You don't have enough potential.")}
-		 
 break;
 #endregion
 
