@@ -131,7 +131,7 @@ switch (_text_id){
 			global.DamageValue = global.DamageValue + 0.25
 			scr_pass_time(60);
 		    }else{
-			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
+			scr_text("Seems, you dont have enough potential ", "Weapon_Smith");
 			}
 			break;
 		case "Firerate_Upgrade":
@@ -141,7 +141,7 @@ switch (_text_id){
 			global.DuckCount = global.DuckCount - 15
 			scr_pass_time(60);
 		}else{
-			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
+			scr_text("Seems, you dont have enough potential ", "Weapon_Smith");
 		}
 			break;
 		case "HP_Upgrade":
@@ -151,7 +151,7 @@ switch (_text_id){
 			global.DuckCount = global.DuckCount - 5
 			scr_pass_time(30);
 		}else{
-			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
+			scr_text("Seems, you dont have enough potential ", "Weapon_Smith");
 		}
 			break;
 #endregion
