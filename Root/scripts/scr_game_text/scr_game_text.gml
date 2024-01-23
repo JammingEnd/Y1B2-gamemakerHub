@@ -119,9 +119,9 @@ switch (_text_id){
 
 	case "Weapon Smith":
 		scr_text("What do ya need son? I'can teach you a thing or two with some of that power you accumulated", "Weapon_Smith")
-			scr_option("Increase Power", "Damage_Upgrade");
-			scr_option("Faster Casting", "Firerate_Upgrade");
-			scr_option("Self Vitality", "HP_Upgrade");
+			scr_option("Increase Power (10)", "Damage_Upgrade");
+			scr_option("Faster Casting (10)", "Firerate_Upgrade");
+			scr_option("Self Vitality (10)", "HP_Upgrade");
 		break;
 		case "Damage_Upgrade":
 			if global.DuckCount >= 10
@@ -160,8 +160,8 @@ switch (_text_id){
 case "Cauldron":
 	scr_text("The cauldron is hot, but no sign of magic. maybe you should put something in it", "Cauldron")
 	
-	scr_option("health potion", "hp_link");
-	scr_option("speed potion", "spd_link");
+	scr_option("health potion (3 rattail, 1 spider eye)", "hp_link");
+	scr_option("speed potion (2 rattail, 2 spider eye)", "spd_link");
 	scr_option("Ancestral potion", "Ancestral Potions");
 	
 	break;
@@ -169,6 +169,8 @@ case "Cauldron":
 	if(global.rattail >= 3 && global.spidereye >= 1)
 	{
 			scr_text("Brewed a health potion");
+			global.rattail -= 3;
+			global.spidereye -= 1;
 			global.healthpotion++
 	}
 	else
@@ -177,9 +179,11 @@ case "Cauldron":
 	}
 	break;
 	case "spd_link":
-	if(global.rattail >= 3 && global.spidereye >= 1)
+	if(global.rattail >= 2 && global.spidereye >= 2)
 	{
 			scr_text("Brewed a speed potion");
+			global.rattail -= 2;
+			global.spidereye -= 2;
 			global.speedpotions++
 	}
 	else
@@ -425,7 +429,7 @@ case "Full Heal":
 
 #region//-------Out of Time--------//
 case "Out of Time":
-		scr_text("Its past 22:00, You need to defeat the monsters before they get stronger tommorow");
+		scr_text("Its past 22:00, You need to defeat the monsters down in the forest before they get stronger tommorow");
 			scr_text_color(64, 72, c_red, c_orange, c_red, c_orange);
 		break;
 #endregion

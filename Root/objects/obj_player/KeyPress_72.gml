@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(ExistInInventory("Speed_Potion") == true )
+if(global.speedpotions > 0 )
 {
-	remove_from_inventory("Speed_Potion");
+	global.speedpotions--;
 	SpeedPotionTimer += 5;
 	SpeedPotionActive = true;
 }
