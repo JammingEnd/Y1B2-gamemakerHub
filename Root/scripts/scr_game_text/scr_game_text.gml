@@ -119,9 +119,9 @@ switch (_text_id){
 
 	case "Weapon Smith":
 		scr_text("What do ya need son? I'can teach you a thing or two with some of that power you accumulated", "Weapon_Smith")
-			scr_option("Increase Power", "Damage_Upgrade");
-			scr_option("Faster Casting", "Firerate_Upgrade");
-			scr_option("Self Vitality", "HP_Upgrade");
+			scr_option("Increase Power (10)", "Damage_Upgrade");
+			scr_option("Faster Casting (10)", "Firerate_Upgrade");
+			scr_option("Self Vitality (10)", "HP_Upgrade");
 		break;
 		case "Damage_Upgrade":
 			if global.DuckCount >= 10
