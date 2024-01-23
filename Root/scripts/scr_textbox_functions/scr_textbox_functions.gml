@@ -151,7 +151,7 @@ text[page_number] = _text;
 			break;
 			
 			case "Cat2":
-				speaker_sprite[page_number] = spr_talk_cat_2;
+				speaker_sprite[page_number] = spr_cat_2;
 				txtb_spr[page_number] = spr_menu;
 			break;
 			

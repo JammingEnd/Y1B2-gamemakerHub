@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_UI",
-    "path": "sprites/spr_player_UI/spr_player_UI.yy",
+    "name": "spr_arrow_text_box",
+    "path": "sprites/spr_arrow_text_box/spr_arrow_text_box.yy",
   },
   "spriteMaskId": null,
   "visible": true,
