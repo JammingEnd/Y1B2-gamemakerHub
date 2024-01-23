@@ -28,7 +28,7 @@ global.total_rose_spawned = 0;
 global.rattail = 0;
 global.spidereye = 0;
 global.snakeskin = 0;
-global.flowerpetal = 15;
+global.flowerpetal = 0;
 
 
 

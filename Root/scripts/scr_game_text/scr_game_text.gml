@@ -9,7 +9,7 @@ switch (_text_id){
 	scr_text("blabla something something paper", "paper_cutscene");
 	scr_text("somethin somethin running away", "cutscene_1");
 	scr_text("something something crying little bitch", "cutscene_2");
-		scr_text("Welcome, would you like a tutorial? Press W & S to select and Space to Confirm.");
+		scr_text("Welcome, would you like a tutorial? Press W & S on the key board to select and Space bar to Confirm.");
 			scr_option("Yes", "player wants tutorial");
 			scr_option("No", "player hates tutorial");
 			break;
@@ -17,8 +17,6 @@ switch (_text_id){
 				case ("player wants tutorial"):
 				scr_text("Press Space to progress through or skip dialogue")
 				scr_text("W,A,S,D is used to move your character, relationally to the direction you want to move");
-				scr_text("Press Space once you are close to a character or object to try and interact with them.")
-				scr_text("Things you can interact with will have a flickering icon above it once approched")
 				scr_text("Thats all for now, good luck!!")
 					scr_text_float(19, 30, 4);
 					scr_option("Ok", "Tutorial Forest");
@@ -29,8 +27,8 @@ switch (_text_id){
 				scr_text("After tripping into a portal you find yourself in this Straaaange place")
 					scr_text_float(55,65, 4)
 					scr_text_color(55, 65, c_orange,c_orange,c_orange,c_orange)
-				scr_text("You see a small house up north...")
-				scr_text("And a huge forest down South")
+				scr_text("You see a small house up North...")
+				scr_text("And a huge forest down South...")
 				
 				break;
 			
@@ -119,25 +117,38 @@ switch (_text_id){
 #region//-------Weapon Smith--------//
 
 	case "Weapon Smith":
-		scr_text("What do ya need son? I've got upgrades for ya.", "Weapon_Smith")
-			scr_option("+Damage -10Ducks", "Damage_Upgrade");
-			scr_option("+Firerate -15Ducks ", "Firerate_Upgrade");
-			scr_option("+HP -5Ducks, HP_Upgrade", "HP_Upgrade");
+		scr_text("What do ya need son? I'can teach you a thing or two with some of that power you accumulated", "Weapon_Smith")
+			scr_option("Increase Power", "Damage_Upgrade");
+			scr_option("Faster Casting", "Firerate_Upgrade");
+			scr_option("Self Vitality", "HP_Upgrade");
 		break;
 		case "Damage_Upgrade":
+			if global.DuckCount >= 10
+			{
 			scr_text("Here ya go.", "Weapon_Smith");
-			global.DamageValue = global.DamageValue + 1
 			global.DuckCount = global.DuckCount - 10
+			global.DamageValue = global.DamageValue + 1
+		    }else{
+			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
+			}
 			break;
 		case "Firerate_Upgrade":
+		if global.DuckCount >= 15{
 			scr_text("Here ya go.", "Weapon_Smith")
 			global.FireRateValue = global.FireRateValue + 1
 			global.DuckCount = global.DuckCount - 15
+		}else{
+			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
+		}
 			break;
 		case "HP_Upgrade":
+		if global.DuckCount >= 5 {
 			scr_text("Here ya go.", "Weapon_Smith")
 			global.HpValue += 10
 			global.DuckCount = global.DuckCount - 5
+		}else{
+			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
+		}
 			break;
 #endregion
 
@@ -341,41 +352,47 @@ case "Out of Time":
 case "WiseCat1":
 		scr_text("Meow~");
 		scr_text_float(0,5, 5)
-		scr_text("First arouse in the person an eager want. He who can do this has the whole world with him.");
-		scr_text("He who cannot walks a lonely way.");
-		scr_text("I've seen countless parents expect their child to share the same viewpoint of a thirty year old.");
-		scr_text("The question is always, How do I align what I want with what they want?");
-		scr_text("Don't criticize, condemn or complain");
-		scr_text("Give honest and sincere appreciation");
-		scr_text("Arouse in the other person an eager want");
-		scr_text("Follow these principles and you can get the world to revolve around you");
+		scr_text("First arouse in the person an eager want. He who can do this has the whole world with him.","Cat1");
+		scr_text("He who cannot walks a lonely way.","Cat1");
+		scr_text("I've seen countless parents expect their child to share the same viewpoint of a thirty year old.","Cat1");
+		scr_text("The question is always, How do I align what I want with what they want?","Cat1");
+		scr_text("Don't criticize, condemn or complain","Cat1");
+		scr_text("Give honest and sincere appreciation","Cat1");
+		scr_text("Arouse in the other person an eager want","Cat1");
+		scr_text("Follow these principles and you can find the world revolve around you","Cat1");
+		if (!obj_player_time.hours = 2) && (!obj_player_time.hour >= 2)
+			{scr_pass_time(30);}
 			scr_cha_scr_trigger_cat_1("Meow");
 			
 case "WiseCat2":
 		scr_text("Meow~");
 		scr_text_float(0,5, 5)
-		scr_text("Don't forget to smile kid.");
-		scr_text("It enriches those whoe receive, without impoverishingthose who give.");
-		scr_text("It happens in a flash and the memory sometimes lasts forever.");
-		scr_text("None are so rich they can get along without it.");
-		scr_text("None so poor but are richer for its benefits.");
-		scr_text("It creates hapiness, daylight to the discouraged, sunshine to the sad, and is the antidote for trouble.");
-		scr_text("Yet it cannot be bought, begged, borrowed, or stolen, for it is no good to anybody till given.");
-		scr_text("Nobody needs a smile so much as those who have none left to give!");
+		scr_text("Don't forget to smile kid.","Cat2");
+		scr_text("It enriches those whoe receive, without impoverishingthose who give.","Cat2");
+		scr_text("It happens in a flash and the memory sometimes lasts forever.","Cat2");
+		scr_text("None are so rich they can get along without it.","Cat2");
+		scr_text("None so poor but are richer for its benefits.","Cat2");
+		scr_text("It creates hapiness, daylight to the discouraged, sunshine to the sad, and is an antidote for trouble.","Cat2");
+		scr_text("Yet it cannot be bought, begged, borrowed, or stolen, for it is no good to anybody till given.","Cat2");
+		scr_text("Nobody needs a smile so much as those who have none left to give!","Cat2");
+		if (!obj_player_time.hours = 2) && (!obj_player_time.hour >= 2)
+			{scr_pass_time(30);}
 		scr_cha_scr_trigger_cat_1("Meow");
 break;
 
 case "WiseCat3":
 		scr_text("Meow~");
 		scr_text_float(0,5, 5)
-		scr_text("Want to make people agree with you?");
-		scr_text("If you are going to prove anything, don't let anybody know it.");
-		scr_text("Men must be taught as if you taught them not.");
-		scr_text("and things unknown proposed as things forgot.");
-		scr_text("You cannot teach a man anything; you can only help him to find it within himself.");
-		scr_text("Be wiser than others, but do not tell them so.");
-		scr_text("Only thing you should know is that you know nothing.");
-		scr_text("Quit telling people they are wrong and you will find it that it pays.");
+		scr_text("Want to make people agree with you?", "Cat3");
+		scr_text("If you are going to prove anything, don't let anybody know it.", "Cat3");
+		scr_text("Men must be taught as if you taught them not.", "Cat3");
+		scr_text("and things unknown proposed as things forgot.", "Cat3");
+		scr_text("You cannot teach a man anything; you can only help him to find it within himself.", "Cat3");
+		scr_text("Be wiser than others, but do not tell them so.", "Cat3");
+		scr_text("Only thing you should know is that you know nothing.", "Cat3");
+		scr_text("Quit telling people they are wrong and you will find it that it pays.", "Cat3");
+		if (!obj_player_time.hours = 2) && (!obj_player_time.hour >= 2)
+			{scr_pass_time(30);}
 		scr_cha_scr_trigger_cat_1("Meow");
 break;
 
