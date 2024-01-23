@@ -400,14 +400,19 @@ case "Before Gertrude":
 case "After Gertrude":
 		scr_text("Interact with the Cauldron, and just dump the resources in it to brew", "Anyanka");
 		scr_text("I can also Heal you with for the price of a bit of your potential", "Anyanka");
-		scr_cha_scr_trigger_gertrude("Heal meee")
+		scr_cha_scr_trigger_gertrude("Heal meee");
 		break;
 #endregion
 
 case "Heal meee":
 		scr_text("Need a Heal?", "Anyanka");
-		scr_option{"Full Heal", "Full Heal"}
+		scr_option("Full Heal", "Full Heal");
 		break;
+
+case "Full Heal":
+	if global.DuckCount >= 3 {obj_player.hp += obj_player.maxHp; scr_text("You healed to full");}
+	break;
+
 #endregion
 
 #region//-------Out of Time--------//
@@ -434,7 +439,7 @@ case "WiseCat1":
 		scr_text("You feel your spells strengthen significantly")
 		global.DamageValue = global.DamageValue + 1
 			scr_cha_scr_trigger_cat_1("Meow");
-			
+			break;			
 case "WiseCat2":
 		scr_text("Meow~");
 		scr_text_float(0,5, 5)
