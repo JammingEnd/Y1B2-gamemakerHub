@@ -411,6 +411,7 @@ case "Heal meee":
 
 case "Full Heal":
 	if global.DuckCount >= 3 {obj_player.hp += obj_player.maxHp; scr_text("You healed to full");}
+	else{scr_text("You dont have enough potential.")}
 	break;
 
 #endregion
