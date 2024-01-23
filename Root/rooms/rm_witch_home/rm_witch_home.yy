@@ -93,7 +93,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A628EBD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"trigger_speech_area","path":"objects/trigger_speech_area/trigger_speech_area.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"trigger_speech_area","path":"objects/trigger_speech_area/trigger_speech_area.yy",},"propertyId":{"name":"text_id","path":"objects/trigger_speech_area/trigger_speech_area.yy",},"value":"Enter House 1",},
           ],"rotation":0.0,"scaleX":8.5625,"scaleY":4.75,"x":2326.0,"y":3124.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":100,"gridY":100,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6295DA67","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":26.25,"x":5061.5,"y":100.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_31C0CC21","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"rotation":0.0,"scaleX":32.75,"scaleY":1.5375,"x":43.925293,"y":-95.7,},
@@ -199,7 +199,7 @@
   "roomSettings": {
     "Height": 4000,
     "inheritRoomSettings": false,
-    "persistent": false,
+    "persistent": true,
     "Width": 5200,
   },
   "sequenceId": null,

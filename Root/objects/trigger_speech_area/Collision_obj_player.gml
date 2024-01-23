@@ -13,12 +13,12 @@ if (global.playerControl == true)
 					if obj_player_roomtimer.transparent = 0{
 					//create text & text box & positioning
 					create_textbox(_text);
-					instance_destroy();
 					character.signal = 1;
+					instance_destroy();
 					}else{
 					create_textbox_big(_text);
-					instance_destroy();
 					character.signal = 1;
+					instance_destroy();
 					}
 				}
 }
