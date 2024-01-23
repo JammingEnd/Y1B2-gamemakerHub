@@ -208,11 +208,7 @@ case "Cauldron":
 
 	case "_brewingPotion":
 		{
-				ExchangeRecoursesForItem(
-				$"{global.whatCurrentPotion}", 
-				CreateItemNamesForRecipe(["Spider_Eye", "Rat_Tail"]),
-				CreateItemAmountForRecipe([3, 1])
-				);
+				add_to_inventory(global.whatCurrentPotion);
 		}
 	break;
 	

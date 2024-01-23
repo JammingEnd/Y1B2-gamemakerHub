@@ -21,6 +21,7 @@ playerInventory = global.playerInventory;
 op_length = 0;
 menu_level = 0;
 
+scale = 0;
 fadeMe = 0;
 fadeSpeed = 0.1;
 image_alpha = 0;

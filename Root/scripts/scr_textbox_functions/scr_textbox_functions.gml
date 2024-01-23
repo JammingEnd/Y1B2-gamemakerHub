@@ -159,7 +159,18 @@ text[page_number] = _text;
 				speaker_sprite[page_number] = spr_talk_cat_3;
 				txtb_spr[page_number] = spr_menu;
 			break;
-			
+			case "cutscene_paper":
+				speaker_sprite[page_number] = cutscene_paper;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			case "cutscene_1":
+				speaker_sprite[page_number] = cutscene_1;
+				txtb_spr[page_number] = spr_menu;
+			break;
+			case "cutscene_2":
+				speaker_sprite[page_number] = cutscene_2;
+				txtb_spr[page_number] = spr_menu;
+			break;
 			//dont write below this
 			}
 	}
