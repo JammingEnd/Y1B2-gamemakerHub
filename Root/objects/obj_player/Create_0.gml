@@ -1,5 +1,4 @@
 //global values
-global.DuckCount = 0;
 global.PlayerName = global.PersistantPlayerName;
 
 plHp = 10 + global.HpValue

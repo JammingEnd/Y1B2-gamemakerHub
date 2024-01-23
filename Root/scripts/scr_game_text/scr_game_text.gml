@@ -6,10 +6,11 @@ switch (_text_id){
 
 #region //-----------Tutorial Text---------//
 	case "Tutorial1": //script one of NPC Name
-	scr_text("blabla something something paper", "cutscene_paper");
-	scr_text("somethin somethin running away", "cutscene_1");
-	scr_text("something something crying little bitch", "cutscene_2");
-		scr_text("Welcome, would you like a tutorial? Press W & S to select and Space to Confirm.");
+	scr_text("Dear Mom and Dad, I am momentarily distancing myself from the house to take time and think of our recent argument.", "paper_cutscene");
+	scr_text("...don't worry about me as I will be back home by tonight.", "paper_cutscene");
+	scr_text("I decided to take a jog through the woods, to cool my nerves.", "cutscene_1");
+	scr_text("I decided to rest, deep in my thoughts untill...", "cutscene_2");
+		scr_text("Welcome, would you like a tutorial? Press W & S on the key board to select and Space bar to Confirm.");
 			scr_option("Yes", "player wants tutorial");
 			scr_option("No", "player hates tutorial");
 			break;
@@ -17,8 +18,6 @@ switch (_text_id){
 				case ("player wants tutorial"):
 				scr_text("Press Space to progress through or skip dialogue")
 				scr_text("W,A,S,D is used to move your character, relationally to the direction you want to move");
-				scr_text("Press Space once you are close to a character or object to try and interact with them.")
-				scr_text("Things you can interact with will have a flickering icon above it once approched")
 				scr_text("Thats all for now, good luck!!")
 					scr_text_float(19, 30, 4);
 					scr_option("Ok", "Tutorial Forest");
@@ -26,11 +25,11 @@ switch (_text_id){
 				
 				case "Tutorial Forest":
 				room_goto(rm_forest);
-				scr_text("After tripping into a portal you find yourself in this Straaaange place")
-					scr_text_float(55,65, 4)
-					scr_text_color(55, 65, c_orange,c_orange,c_orange,c_orange)
-				scr_text("You see a small house up north...")
-				scr_text("And a huge forest down South")
+				scr_text("The forest around me turned into a field of dead leaves...")
+				scr_text("You see a small house up North...")
+				scr_text_color(25, 30, c_red,c_red,c_red,c_red)
+				scr_text("And a huge forest down South...")
+				scr_text_color(23, 28, c_blue,c_blue,c_blue,c_blue)
 				
 				break;
 			
@@ -119,25 +118,41 @@ switch (_text_id){
 #region//-------Weapon Smith--------//
 
 	case "Weapon Smith":
-		scr_text("What do ya need son? I've got upgrades for ya.", "Weapon_Smith")
-			scr_option("+Damage -10Ducks", "Damage_Upgrade");
-			scr_option("+Firerate -15Ducks ", "Firerate_Upgrade");
-			scr_option("+HP -5Ducks, HP_Upgrade", "HP_Upgrade");
+		scr_text("What do ya need son? I'can teach you a thing or two with some of that power you accumulated", "Weapon_Smith")
+			scr_option("Increase Power", "Damage_Upgrade");
+			scr_option("Faster Casting", "Firerate_Upgrade");
+			scr_option("Self Vitality", "HP_Upgrade");
 		break;
 		case "Damage_Upgrade":
+			if global.DuckCount >= 10
+			{
 			scr_text("Here ya go.", "Weapon_Smith");
-			global.DamageValue = global.DamageValue + 1
 			global.DuckCount = global.DuckCount - 10
+			global.DamageValue = global.DamageValue + 0.25
+			scr_pass_time(60);
+		    }else{
+			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
+			}
 			break;
 		case "Firerate_Upgrade":
+		if global.DuckCount >= 15{
 			scr_text("Here ya go.", "Weapon_Smith")
-			global.FireRateValue = global.FireRateValue + 1
+			global.FireRateValue = global.FireRateValue + 0.5
 			global.DuckCount = global.DuckCount - 15
+			scr_pass_time(60);
+		}else{
+			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
+		}
 			break;
 		case "HP_Upgrade":
+		if global.DuckCount >= 5 {
 			scr_text("Here ya go.", "Weapon_Smith")
 			global.HpValue += 10
 			global.DuckCount = global.DuckCount - 5
+			scr_pass_time(30);
+		}else{
+			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
+		}
 			break;
 #endregion
 
@@ -146,9 +161,10 @@ case "Cauldron":
 	scr_text("The cauldron is hot, but no sign of magic. maybe you should put something in it", "Cauldron")
 		for(i = 0; i < ds_list_size(global.AllRecipes); i++)
 		{
-			scr_option(global.AllRecipes[| i].PotionName, $"PotionLink{i + 1}");	
+			scr_option(global.AllRecipes[| i].PotionName, $"PotionLink{i + 1}");
 			
 		}
+		scr_option("Ancestral Potions","Ancestral Potions");
 	break;
 	case "PotionLink1":
 		{
@@ -196,6 +212,49 @@ case "Cauldron":
 		}
 	break;
 	
+	case "Ancestral Potions":
+	scr_text("Choose the Ancestral Potion to Brew")
+		scr_option("Rattoui: 15 Rat tails", "Potion1")
+		scr_option("Spidader: 15 Spider eyes", "Potion2")
+		scr_option("Snnaka: 15 Snake Skin", "Potion3")
+		scr_option("Rosari: 15 Red Petals", "Potion4")
+	break;
+	
+	case "Potion1":
+	if global.rattail >= 15{
+		scr_text("You brewed Rattoui, one step closer to completeing the ritual.")
+		global.bluepotion = 1}else{
+		scr_text("You don't have enough Rat Tails.")
+		}
+	break;
+	case "Potion2":
+	if global.spidereye >= 15{
+		scr_text("You brewed Spidader, one step closer to completeing the ritual.")
+		global.greenpotion = 1}else{
+		scr_text("You don't have enough Rat Spider Eyes.")
+		}
+	break;
+	case "Potion3":
+	if global.snakeskin >= 15{
+		scr_text("You brewed Snnaka, one step closer to completeing the ritual.")
+		global.orangepotion = 1}else{
+		scr_text("You don't have enough Snake Skin.")
+		}
+	break;
+	case "Potion4":
+	if global.flowerpetal >= 15{
+		scr_text("You brewed Rosari, one step closer to completeing the ritual.")
+		global.redpotion = 1}else{
+		scr_text("You don't have enough Flower Petals.")
+		}
+	break;
+	case "Potion5":
+	if global.spikes >= 15{
+		scr_text("You brewed Rosari, one step closer to completeing the ritual.")
+		global.purplepotion = 1}else{
+		scr_text("You don't have enough Rat Tails.")
+		}
+	break;
 #endregion
 
 #region//-------Masked Tutor--------//
@@ -203,11 +262,15 @@ case "Tutor":
 		scr_text("Halt stranger! Reveal thy name and purpose at once!", "Tutor");
 		scr_text("...Where is this place?", "Tutor");
 		scr_text("Preposterous, I am the one asking. How did you find these woods?", "Tutor");
+		scr_option("Explain", "Explain");
+break;
+
+case "Explain":
 		scr_text("Fell through a hole in Salem?", "Tutor");
 		scr_text("...an infiltrator wouldn't make such a lackluster lie.", "Tutor");
 		scr_text("and I think I know what this be. Come along child, into the house!!", "Tutor");
 			scr_pass_time(30);
-	break;
+break;
 #endregion
 
 #region//-------Enter House 1--------//
@@ -293,20 +356,56 @@ case "Out of Time":
 case "WiseCat1":
 		scr_text("Meow~");
 		scr_text_float(0,5, 5)
-		scr_text("First arouse in the person an eager want. He who can do this has the whole world with him.");
-		scr_text("He who cannot walks a lonely way.");
-		scr_text("I've seen countless parents expect their child to share the same viewpoint of a thirty year old.");
-		scr_text("The question is always, How do I align what I want with what they want?");
-		scr_text("Don't criticize, condemn or complain");
-		scr_text("Give honest and sincere appreciation");
-		scr_text("Arouse in the other person an eager want");
-		scr_text("Follow these principles and you can get the world to revolve around you");
+		scr_text("First arouse in the person an eager want. He who can do this has the whole world with him.","Cat1");
+		scr_text("He who cannot walks a lonely way.","Cat1");
+		scr_text("I've seen countless parents expect their child to share the same viewpoint of a thirty year old.","Cat1");
+		scr_text("The question is always, How do I align what I want with what they want?","Cat1");
+		scr_text("Don't criticize, condemn or complain","Cat1");
+		scr_text("Give honest and sincere appreciation","Cat1");
+		scr_text("Arouse in the other person an eager want","Cat1");
+		scr_text("Follow these principles and you can find the world revolve around you","Cat1");
+		if (!obj_player_time.hours = 2) && (!obj_player_time.hour >= 2)
+			{scr_pass_time(30);}
 			scr_cha_scr_trigger_cat_1("Meow");
+			
+case "WiseCat2":
+		scr_text("Meow~");
+		scr_text_float(0,5, 5)
+		scr_text("Don't forget to smile kid.","Cat2");
+		scr_text("It enriches those whoe receive, without impoverishingthose who give.","Cat2");
+		scr_text("It happens in a flash and the memory sometimes lasts forever.","Cat2");
+		scr_text("None are so rich they can get along without it.","Cat2");
+		scr_text("None so poor but are richer for its benefits.","Cat2");
+		scr_text("It creates hapiness, daylight to the discouraged, sunshine to the sad, and is an antidote for trouble.","Cat2");
+		scr_text("Yet it cannot be bought, begged, borrowed, or stolen, for it is no good to anybody till given.","Cat2");
+		scr_text("Nobody needs a smile so much as those who have none left to give!","Cat2");
+		if (!obj_player_time.hours = 2) && (!obj_player_time.hour >= 2)
+			{scr_pass_time(30);}
+		scr_cha_scr_trigger_cat_1("Meow");
 break;
+
+case "WiseCat3":
+		scr_text("Meow~");
+		scr_text_float(0,5, 5)
+		scr_text("Want to make people agree with you?", "Cat3");
+		scr_text("If you are going to prove anything, don't let anybody know it.", "Cat3");
+		scr_text("Men must be taught as if you taught them not.", "Cat3");
+		scr_text("and things unknown proposed as things forgot.", "Cat3");
+		scr_text("You cannot teach a man anything; you can only help him to find it within himself.", "Cat3");
+		scr_text("Be wiser than others, but do not tell them so.", "Cat3");
+		scr_text("Only thing you should know is that you know nothing.", "Cat3");
+		scr_text("Quit telling people they are wrong and you will find it that it pays.", "Cat3");
+		if (!obj_player_time.hours = 2) && (!obj_player_time.hour >= 2)
+			{scr_pass_time(30);}
+		scr_cha_scr_trigger_cat_1("Meow");
+break;
+
 case"Meow":
 	scr_text("Meow~")
 	scr_text_float(0,5, 5)
 #endregion
+
+
 
 	}	
 }

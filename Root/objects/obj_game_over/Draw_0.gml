@@ -32,7 +32,6 @@ draw_set_alpha(1);
 if acceptKey && alpha >= 1
 {
 	if room = rm_shooting_range {if (global.enemy_multi >= 2) {global.enemy_multi--}};
-	global.DuckCount = 0;
 	global.current_enemy_count = 0;
 	obj_player_time.minut -= global.TempMinuts;
 	room_goto(rm_witch_home);
@@ -40,4 +39,5 @@ if acceptKey && alpha >= 1
 	if !instance_exists(obj_player)
 	{instance_create_depth (4580, 584, 0, obj_player);};
 	instance_destroy (obj_game_over);
+	global.outofcombat = 1;
 }

@@ -34,5 +34,5 @@
     "path": "sprites/spr_menu_settings/spr_menu_settings.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

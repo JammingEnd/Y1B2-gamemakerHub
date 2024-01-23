@@ -22,6 +22,14 @@ global.total_spider_spawned = 0;
 global.current_snake_count = 0;
 global.total_snake_spawned = 0;
 
+global.current_rose_count = 0;
+global.total_rose_spawned = 0;
+
+global.rattail = 0;
+global.spidereye = 0;
+global.snakeskin = 0;
+global.flowerpetal = 0;
+
 
 
 

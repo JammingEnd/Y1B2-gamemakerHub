@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_spider_eye",
-    "path": "sprites/spr_spider_eye/spr_spider_eye.yy",
+    "name": "spr_pedal",
+    "path": "sprites/spr_pedal/spr_pedal.yy",
   },
   "spriteMaskId": {
     "name": "scr_item_drop",
