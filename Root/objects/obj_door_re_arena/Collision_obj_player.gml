@@ -1,7 +1,6 @@
 var _time = global.TotalTime
 
 if  obj_player_roomtimer.active = 1 {
-global.DuckCount += 150 - _time;
 global.TotalTime = 0;
 }
 

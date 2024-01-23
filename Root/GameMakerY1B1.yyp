@@ -327,6 +327,7 @@
     {"id":{"name":"spr_spiky","path":"sprites/spr_spiky/spr_spiky.yy",},},
     {"id":{"name":"obj_damage_enemy","path":"objects/obj_damage_enemy/obj_damage_enemy.yy",},},
     {"id":{"name":"spr_exitbutton2","path":"sprites/spr_exitbutton2/spr_exitbutton2.yy",},},
+    {"id":{"name":"exclamation_point","path":"sprites/exclamation_point/exclamation_point.yy",},},
     {"id":{"name":"spr_enemy_bullet_mini","path":"sprites/spr_enemy_bullet_mini/spr_enemy_bullet_mini.yy",},},
     {"id":{"name":"spr_tree_2","path":"sprites/spr_tree_2/spr_tree_2.yy",},},
     {"id":{"name":"obj_exit_button","path":"objects/obj_exit_button/obj_exit_button.yy",},},
