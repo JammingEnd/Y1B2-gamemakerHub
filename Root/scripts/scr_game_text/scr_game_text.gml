@@ -145,9 +145,10 @@ switch (_text_id){
 		}
 			break;
 		case "HP_Upgrade":
-		if global.DuckCount >= 5 {
+		if global.DuckCount >= 10 {
 			scr_text("Here ya go.", "Weapon_Smith")
-			global.HpValue += 10
+			global.HpValue += 10;
+			obj_player.hp += 10;
 			global.DuckCount = global.DuckCount - 5
 			scr_pass_time(30);
 		}else{
