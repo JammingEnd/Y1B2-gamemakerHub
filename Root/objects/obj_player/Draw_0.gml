@@ -16,8 +16,8 @@ if aimDir >= 180 && aimDir < 360
 }
 	
 //draw hp as number
-draw_text(x, y-50, "EnemyCount:" + string(global.current_enemy_count));
-draw_text(x, y +0, "Duck Count:" + string(global.DuckCount));
+//draw_text(x, y-50, "EnemyCount:" + string(global.current_enemy_count));
+//draw_text(x, y +0, "Duck Count:" + string(global.DuckCount));
 
 //give hp UI hp values
 obj_player_health.option[0,0] = (string(hp)+"/"+string(maxHp));

@@ -360,7 +360,7 @@ case "Medic_player_died_twice+":
 case "Meet Gertrude":
 		scr_text("Welcome baby witch, I am Gertrude, a Magus. We shall begin your training at once!", "Gertrude");
 		scr_text("The first spells you will learn is Mystic strike", "Gertrude");
-		scr_text_color(36, 49, c_purple, c_purple, c_purple, c_purple);
+		scr_text_color(35, 49, c_purple, c_purple, c_purple, c_purple);
 		scr_text("Go in the woods on the south outside, you can practice on monsters there.", "Gertrude");
 		scr_text("You can now cast Mystic strike");
 			scr_text_color(17, 30, c_purple, c_purple, c_purple, c_purple);
