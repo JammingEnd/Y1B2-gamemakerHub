@@ -8,7 +8,7 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"npcname","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"Tutor Go",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_par_npc","path":"objects/obj_par_npc/obj_par_npc.yy",},"propertyId":{"name":"npcname","path":"objects/obj_par_npc/obj_par_npc.yy",},"value":"WiseCat3",},
   ],
   "parent": {
     "name": "More Official",
