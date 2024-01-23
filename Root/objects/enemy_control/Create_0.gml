@@ -30,6 +30,7 @@ global.spidereye = 0;
 global.snakeskin = 0;
 global.flowerpetal = 0;
 
-
+global.healthpotion = 0;
+global.speedpotions = 0
 
 

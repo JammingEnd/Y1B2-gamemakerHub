@@ -7,7 +7,7 @@ instance_create_depth(x+random_range(-25, 25), y+random_range(-25, 25), -y, obj_
 global.current_enemy_count--
 global.current_rat_count--
 
-OnDeath(obj_enemy_bob);
+//OnDeath(obj_enemy_bob);
 
 
 

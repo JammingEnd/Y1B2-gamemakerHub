@@ -3,12 +3,13 @@
     {"name":"cutscenes","order":1,"path":"folders/Sprites/-Official/cutscenes.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"cutscene_1","order":1,"path":"sprites/cutscene_1/cutscene_1.yy",},
-    {"name":"cutscene_2","order":2,"path":"sprites/cutscene_2/cutscene_2.yy",},
     {"name":"obj_menu_item","order":3,"path":"objects/obj_menu_item/obj_menu_item.yy",},
     {"name":"obj_player_xp","order":1,"path":"objects/obj_player_xp/obj_player_xp.yy",},
+    {"name":"cutscene_1","order":1,"path":"sprites/cutscene_1/cutscene_1.yy",},
     {"name":"obj_player_Item_UI","order":2,"path":"objects/obj_player_Item_UI/obj_player_Item_UI.yy",},
+    {"name":"cutscene_2","order":2,"path":"sprites/cutscene_2/cutscene_2.yy",},
     {"name":"obj_RoseSpawner","order":1,"path":"objects/obj_RoseSpawner/obj_RoseSpawner.yy",},
     {"name":"exclamation_point","order":1,"path":"sprites/exclamation_point/exclamation_point.yy",},
+    {"name":"obj_menu_inventory","order":4,"path":"objects/obj_menu_inventory/obj_menu_inventory.yy",},
   ],
 }

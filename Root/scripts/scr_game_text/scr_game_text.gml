@@ -7,7 +7,7 @@ switch (_text_id){
 #region //-----------Tutorial Text---------//
 	case "Tutorial1": //script one of NPC Name
 	scr_text("Dear Mom and Dad, I am momentarily distancing myself from the house to take time and think of our recent argument.", "paper_cutscene");
-	scr_text("...don't worry about me as I will be back home by tonight.", "paper_cutscene");
+	scr_text("...don't worry about me as I will be back home by tonight.", "cutscene_paper");
 	scr_text("I decided to take a jog through the woods, to cool my nerves.", "cutscene_1");
 	scr_text("I decided to rest, deep in my thoughts untill...", "cutscene_2");
 		scr_text("Welcome, would you like a tutorial? Press W & S on the key board to select and Space bar to Confirm.");
@@ -159,59 +159,89 @@ switch (_text_id){
 #region //---------Cauldron------//
 case "Cauldron":
 	scr_text("The cauldron is hot, but no sign of magic. maybe you should put something in it", "Cauldron")
-		for(i = 0; i < ds_list_size(global.AllRecipes); i++)
-		{
-			scr_option(global.AllRecipes[| i].PotionName, $"PotionLink{i + 1}");
-			
-		}
-		scr_option("Ancestral Potions","Ancestral Potions");
-	break;
-	case "PotionLink1":
-		{
-				var costString = "Cost:";
-				var index = 0;
-				for (i = 0; i < ds_list_size(global.AllRecipes[| index].ItemAmountList); i++)
-				{
-					
-						show_debug_message(string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount) + "Yippeee");
-						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireName);
-						costString +=  " (";
-						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireAmount);
-						costString += "),";
-						global.whatCurrentPotion = global.AllRecipes[| index].PotionName; 
-						
-				}
-				scr_text(costString, "Cauldron");
-				
-				scr_option("Brew", "_brewingPotion")
-		}
-	break;
-	case "PotionLink2":
-		{
-				var costString = "Cost:";
-				var index = 1;
-				for (i = 0; i < ds_list_size(global.AllRecipes[| index].ItemAmountList); i++)
-				{
-					
-						//show_debug_message(string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount) + "Yippeee");
-						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireName);
-						costString += " (";
-						costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireAmount);
-						costString += "),";
-						global.whatCurrentPotion = global.AllRecipes[| index].PotionName; 
-				}
-				scr_text(costString, "Cauldron");
-				
-				scr_option("Brew", "_brewingPotion");
-		}
-	break;
-
-	case "_brewingPotion":
-		{
-				add_to_inventory(global.whatCurrentPotion);
-		}
-	break;
 	
+	scr_option("health potion", "hp_link");
+	scr_option("speed potion", "spd_link");
+	
+	break;
+	case "hp_link":
+	if(global.rattail >= 3 && global.spidereye >= 1)
+	{
+			scr_text("Brewed a health potion");
+			global.healthpotion++
+	}
+	else
+	{
+		scr_text("Not enough ingredients");
+	}
+	break;
+	case "spd_link":
+	if(global.rattail >= 3 && global.spidereye >= 1)
+	{
+			scr_text("Brewed a speed potion");
+			global.speedpotions++
+	}
+	else
+	{
+		scr_text("Not enough ingredients");
+	}
+	break;
+	#region //------------ decap --------------//
+	//	for(i = 0; i < ds_list_size(global.AllRecipes); i++)
+	//	{
+	//		scr_option(global.AllRecipes[| i].PotionName, $"PotionLink{i + 1}");
+	//		
+	//	}
+	//	scr_option("Ancestral Potions","Ancestral Potions");
+	//  break;
+	//case "PotionLink1":
+	//	{
+	//			var costString = "Cost:";
+	//			var index = 0;
+	//			for (i = 0; i < ds_list_size(global.AllRecipes[| index].ItemAmountList); i++)
+	//			{
+	//				
+	//					show_debug_message(string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount) + "Yippeee");
+	//					costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireName);
+	//					costString +=  " (";
+	//					costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireAmount);
+	//					costString += "),";
+	//					global.whatCurrentPotion = global.AllRecipes[| index].PotionName; 
+	//			
+	//			}
+	//			scr_text(costString, "Cauldron");
+	//			
+	//			scr_option("Brew", "_brewingPotion")
+	//	}
+	//break;
+	//case "PotionLink2":
+	//	{
+	//			var costString = "Cost:";
+	//			var index = 1;
+	//			for (i = 0; i < ds_list_size(global.AllRecipes[| index].ItemAmountList); i++)
+	//			{
+	//				
+	//					//show_debug_message(string(global.AllRecipes[| 0].ItemAmountList[| i].RequireAmount) + "Yippeee");
+	//					costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireName);
+	//					costString += " (";
+	//					costString += string(global.AllRecipes[| index].ItemAmountList[| i].RequireAmount);
+	//					costString += "),";
+	//					global.whatCurrentPotion = global.AllRecipes[| index].PotionName; 
+	//			}
+	//			scr_text(costString, "Cauldron");
+	//			
+	//			scr_option("Brew", "_brewingPotion");
+	//			
+	//	}
+	//break;
+    //
+	//case "_brewingPotion":
+	//	{
+	//			add_to_inventory(global.whatCurrentPotion);
+	//	}
+	//break;
+	//
+	#endregion
 	case "Ancestral Potions":
 	scr_text("Choose the Ancestral Potion to Brew")
 		scr_option("Rattoui: 15 Rat tails", "Potion1")
