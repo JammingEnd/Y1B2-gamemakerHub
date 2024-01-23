@@ -162,6 +162,7 @@ case "Cauldron":
 	
 	scr_option("health potion", "hp_link");
 	scr_option("speed potion", "spd_link");
+	scr_option("Ancestral potion", "Ancestral Potions");
 	
 	break;
 	case "hp_link":
@@ -325,7 +326,7 @@ break;
 #region//-------Statue--------//
 case "Statue":
 		scr_text("It is written: A tribute to our spirit animal SNUSNU", "Statue");
-		scr_text("You are going to be offering 5 diffrent special potions to this statue in order to open a portal back to your home", "Tutor");
+		scr_text("You are going to be offering 5 ancestral potions to this statue in order to open a portal back to your home", "Tutor");
 			scr_text_color(40, 55, c_purple, c_purple, c_purple, c_purple)
 			scr_text_float(40, 55)
 		scr_text("You feel a stare of anticipation from the statue", "Statue");
@@ -373,6 +374,7 @@ case "Come back to Gertrude":
 		scr_text("Splendid, I see you have gained potential in the woods as well as the resources we need.", "Gertrude");
 		scr_text("Talk to Anyanka over there on the right about making potions.", "Gertrude");
 		scr_text("Talk to me when you want to learn new spells, the one you know is very weak.", "Gertrude");
+		scr_cha_scr_trigger_gertrude("Gertrude Spells");
 		break;
 		
 case "Gertrude Spells":
@@ -393,6 +395,18 @@ break;
 case "Before Gertrude":
 		scr_text("I'm not Gertrude, she's on the left.", "Anyanka");
 		scr_text("Come back to me after you do whatever Gertrude told you.", "Anyanka");
+		break;
+		
+case "After Gertrude":
+		scr_text("Interact with the Cauldron, and just dump the resources in it to brew", "Anyanka");
+		scr_text("I can also Heal you with for the price of a bit of your potential", "Anyanka");
+		scr_cha_scr_trigger_gertrude("Heal meee")
+		break;
+#endregion
+
+case "Heal meee":
+		scr_text("Need a Heal?", "Anyanka");
+		scr_option{"Full Heal", "Full Heal"}
 		break;
 #endregion
 
