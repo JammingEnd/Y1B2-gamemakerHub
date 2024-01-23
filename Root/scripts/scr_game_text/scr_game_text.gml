@@ -361,7 +361,9 @@ case "Meet Gertrude":
 		scr_text("Welcome baby witch, I am Gertrude, a Magus. We shall begin your training at once!", "Gertrude");
 		scr_text("The first spells you will learn is Mystic strike", "Gertrude");
 		scr_text_color(35, 49, c_purple, c_purple, c_purple, c_purple);
-		scr_text("Go in the woods on the south outside, you can practice on monsters there.", "Gertrude");
+		scr_text("Go in the woods on the south outside, you can practice on monsters there and gain potential.", "Gertrude");
+		scr_text("You can talk to the person near the statue to spend your potential", "Gertrude");
+		scr_text("Talk to the person next to me once you got the material to make the ancestral potions", "Gertrude");
 		scr_text("You can now cast Mystic strike");
 			scr_text_color(17, 30, c_purple, c_purple, c_purple, c_purple);
 			scr_pass_time(30);
@@ -399,7 +401,7 @@ break;
 #region//-------Anyanka--------//
 case "Before Gertrude":
 		scr_text("I'm not Gertrude, she's on the left.", "Anyanka");
-		scr_text("Come back to me after you do whatever Gertrude told you.", "Anyanka");
+		scr_text("Come back to me after you do whatever Gertrude told you to make potions.", "Anyanka");
 		break;
 		
 case "After Gertrude":
