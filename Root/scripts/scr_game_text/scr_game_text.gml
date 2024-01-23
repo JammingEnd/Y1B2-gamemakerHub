@@ -423,7 +423,7 @@ case "Full Heal":
 
 #region//-------Out of Time--------//
 case "Out of Time":
-		scr_text("Its past 22:00, You need to defeat the monsters before they get stronger tommorow");
+		scr_text("Its past 22:00, You need to defeat the monsters down in the forest before they get stronger tommorow");
 			scr_text_color(64, 72, c_red, c_orange, c_red, c_orange);
 		break;
 #endregion
