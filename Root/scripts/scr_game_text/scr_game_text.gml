@@ -313,6 +313,8 @@ case "Enter House 1":
 		scr_text("Your great grandmother seven genrations back was one of us, child. However, since her tragic execution we have longed for a descender of hers to come back.", "Supreme");
 		scr_text("Great Nyctalis must have sent you to save us!", "Supreme");
 		scr_text("We need 5 ancestral potions and do a reverse ritual. But for that, we needed a full coven, which we now finally have with you here!", "Supreme");
+		scr_text_color(8, 27, c_purple, c_purple, c_purple, c_purple)
+		scr_text_float(8, 27, 4)
 		scr_text("Head on to the library and chat with our sister Gertrude. She shall start you on your magical journey! We shall meet again soon. Good luck!", "Supreme",-1);
 		scr_text("You can talk to people by pressing <Space> once near.")
 			scr_pass_time(30);
@@ -366,6 +368,25 @@ case "Meet Gertrude":
 		scr_text("Hold Left Mouse button to shoot your spell once in the forest.");
 		scr_text("Aim by moving your mouse cursor.");
 		break;
+		
+case "Come back to Gertrude":
+		scr_text("Splendid, I see you have gained potential in the woods as well as the resources we need.", "Gertrude");
+		scr_text("Talk to Anyanka over there on the right about making potions.", "Gertrude");
+		scr_text("Talk to me when you want to learn new spells, the one you know is very weak.", "Gertrude");
+		break;
+		
+case "Gertrude Spells":
+		scr_text("Here are the spells I can teach you.", "Gertrude");
+		 scr_option("Wind Cutter: 20", "Wind Cutter");
+		 if global.DuckCount >= 20{global.yellowwand = 1; global.DuckCount -= 20
+			scr_text("You learned Wind Cutter"); 
+			 }else{scr_text("You don't have enough potential.")}
+		 scr_option("Wind Cutter: 40", "Fire Wave")
+		 if global.DuckCount >= 40{global.redwand = 1; global.DuckCount -= 40
+			 scr_text("You learned Fire Wave"); 
+			 }else{scr_text("You don't have enough potential.")}
+		 
+break;
 #endregion
 
 #region//-------Anyanka--------//
@@ -396,6 +417,8 @@ case "WiseCat1":
 		scr_text("Follow these principles and you can find the world revolve around you","Cat1");
 		if (!obj_player_time.hours = 2) && (!obj_player_time.hour >= 2)
 			{scr_pass_time(30);}
+		scr_text("You feel your spells strengthen significantly")
+		global.DamageValue = global.DamageValue + 1
 			scr_cha_scr_trigger_cat_1("Meow");
 			
 case "WiseCat2":
@@ -411,6 +434,8 @@ case "WiseCat2":
 		scr_text("Nobody needs a smile so much as those who have none left to give!","Cat2");
 		if (!obj_player_time.hours = 2) && (!obj_player_time.hour >= 2)
 			{scr_pass_time(30);}
+		scr_text("You feel your spells strengthen significantly")
+		global.FireRateValue = global.FireRateValue + 1
 		scr_cha_scr_trigger_cat_1("Meow");
 break;
 
@@ -427,6 +452,8 @@ case "WiseCat3":
 		scr_text("Quit telling people they are wrong and you will find it that it pays.", "Cat3");
 		if (!obj_player_time.hours = 2) && (!obj_player_time.hour >= 2)
 			{scr_pass_time(30);}
+		scr_text("You feel your muscles mass grow")
+		global.HpValue += 20
 		scr_cha_scr_trigger_cat_1("Meow");
 break;
 
