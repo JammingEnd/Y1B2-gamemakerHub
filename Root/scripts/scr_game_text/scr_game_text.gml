@@ -160,8 +160,8 @@ switch (_text_id){
 case "Cauldron":
 	scr_text("The cauldron is hot, but no sign of magic. maybe you should put something in it", "Cauldron")
 	
-	scr_option("health potion", "hp_link");
-	scr_option("speed potion", "spd_link");
+	scr_option("health potion (3 rattail, 1 spider eye)", "hp_link");
+	scr_option("speed potion (2 rattail, 2 spider eye)", "spd_link");
 	scr_option("Ancestral potion", "Ancestral Potions");
 	
 	break;
@@ -169,6 +169,8 @@ case "Cauldron":
 	if(global.rattail >= 3 && global.spidereye >= 1)
 	{
 			scr_text("Brewed a health potion");
+			global.rattail -= 3;
+			global.spidereye -= 1;
 			global.healthpotion++
 	}
 	else
@@ -177,9 +179,11 @@ case "Cauldron":
 	}
 	break;
 	case "spd_link":
-	if(global.rattail >= 3 && global.spidereye >= 1)
+	if(global.rattail >= 2 && global.spidereye >= 2)
 	{
 			scr_text("Brewed a speed potion");
+			global.rattail -= 2;
+			global.spidereye -= 2;
 			global.speedpotions++
 	}
 	else
