@@ -5,8 +5,8 @@ option[0, 0] = ("Rat Tail: " + string(global.rattail));
 option[0, 1] = ("Spider Eye: " + string(global.spidereye));
 option[0, 2] = ("Snake Skin: " + string(global.snakeskin));
 option[0, 3] = ("Flower Petal: " + string(global.flowerpetal));
-option[0, 3] = ("Health Potion: " + string(global.healthpotion));
-option[0, 3] = ("Speed Potion: " + string(global.speedpotions));
+option[0, 4] = ("Health Potion: " + string(global.healthpotion));
+option[0, 5] = ("Speed Potion: " + string(global.speedpotions));
 
 //correct option length
 op_length = array_length(option[menu_level])
