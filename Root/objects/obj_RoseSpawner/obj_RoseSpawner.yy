@@ -36,5 +36,5 @@
     "path": "sprites/Sprite83/Sprite83.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
