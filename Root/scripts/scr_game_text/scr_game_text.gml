@@ -6,9 +6,10 @@ switch (_text_id){
 
 #region //-----------Tutorial Text---------//
 	case "Tutorial1": //script one of NPC Name
-	scr_text("blabla something something paper", "paper_cutscene");
-	scr_text("somethin somethin running away", "cutscene_1");
-	scr_text("something something crying little bitch", "cutscene_2");
+	scr_text("Dear Mom and Dad, I am momentarily distancing myself from the house to take time and think of our recent argument.", "paper_cutscene");
+	scr_text("...don't worry about me as I will be back home by tonight.", "paper_cutscene");
+	scr_text("I decided to take a jog through the woods, to cool my nerves.", "cutscene_1");
+	scr_text("I decided to rest, deep in my thoughts untill...", "cutscene_2");
 		scr_text("Welcome, would you like a tutorial? Press W & S on the key board to select and Space bar to Confirm.");
 			scr_option("Yes", "player wants tutorial");
 			scr_option("No", "player hates tutorial");
@@ -24,11 +25,11 @@ switch (_text_id){
 				
 				case "Tutorial Forest":
 				room_goto(rm_forest);
-				scr_text("After tripping into a portal you find yourself in this Straaaange place")
-					scr_text_float(55,65, 4)
-					scr_text_color(55, 65, c_orange,c_orange,c_orange,c_orange)
+				scr_text("The forest around me turned into a field of dead leaves...")
 				scr_text("You see a small house up North...")
+				scr_text_color(25, 30, c_red,c_red,c_red,c_red)
 				scr_text("And a huge forest down South...")
+				scr_text_color(23, 28, c_blue,c_blue,c_blue,c_blue)
 				
 				break;
 			
@@ -127,7 +128,8 @@ switch (_text_id){
 			{
 			scr_text("Here ya go.", "Weapon_Smith");
 			global.DuckCount = global.DuckCount - 10
-			global.DamageValue = global.DamageValue + 1
+			global.DamageValue = global.DamageValue + 0.25
+			scr_pass_time(60);
 		    }else{
 			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
 			}
@@ -135,8 +137,9 @@ switch (_text_id){
 		case "Firerate_Upgrade":
 		if global.DuckCount >= 15{
 			scr_text("Here ya go.", "Weapon_Smith")
-			global.FireRateValue = global.FireRateValue + 1
+			global.FireRateValue = global.FireRateValue + 0.5
 			global.DuckCount = global.DuckCount - 15
+			scr_pass_time(60);
 		}else{
 			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
 		}
@@ -146,6 +149,7 @@ switch (_text_id){
 			scr_text("Here ya go.", "Weapon_Smith")
 			global.HpValue += 10
 			global.DuckCount = global.DuckCount - 5
+			scr_pass_time(30);
 		}else{
 			scr_text("Seems, you have reached your max potential for now.", "Weapon_Smith");
 		}
@@ -262,11 +266,15 @@ case "Tutor":
 		scr_text("Halt stranger! Reveal thy name and purpose at once!", "Tutor");
 		scr_text("...Where is this place?", "Tutor");
 		scr_text("Preposterous, I am the one asking. How did you find these woods?", "Tutor");
+		scr_option("Explain", "Explain");
+break;
+
+case "Explain":
 		scr_text("Fell through a hole in Salem?", "Tutor");
 		scr_text("...an infiltrator wouldn't make such a lackluster lie.", "Tutor");
 		scr_text("and I think I know what this be. Come along child, into the house!!", "Tutor");
 			scr_pass_time(30);
-	break;
+break;
 #endregion
 
 #region//-------Enter House 1--------//
